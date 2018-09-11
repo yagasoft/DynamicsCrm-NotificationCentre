@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{9100d5b6-ca97-4cdc-a50f-7803a0120301}</formid>
+    <IntroducedVersion>0.0.1.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1900">
+      <tabs>
+        <tab id="{ab726583-76ed-48c6-a2c0-39ce302778b2}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{16ff34e0-58d3-4549-b5b1-a420a1d60df8}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d50641b7-c987-66e0-d217-9db7b92d41e9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Notification Message" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_notificationmessageid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ldv_notificationmessageid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{64c6966b-1ad0-90e5-3dd4-971abd7be2bc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Team" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_teamid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ldv_teamid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{b9061d47-a622-427a-b812-d23326d69cef}" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ec3b4089-027b-4660-9672-af4c69fc9940}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{6ca15ebf-1c00-4892-bd80-eb59411c6fbf}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0daf7dec-3600-401e-a633-d8d50a41719b}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Quick Create Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <returnedtypecode>10022</returnedtypecode>
+    <savedqueryid>{54c85b46-72db-4b8e-b065-600e3f12b39f}</savedqueryid>
+    <layoutxml>
+      <grid name="" object="10022" jump="ldv_name" select="1" icon="1" preview="0">
+        <row name="ldv_notificationmessagerole" id="ldv_notificationmessageroleid">
+          <cell name="ldv_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>64</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="ldv_notificationmessagerole">
+          <attribute name="ldv_notificationmessageroleid" />
+          <attribute name="ldv_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.0.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Notification Message Role Lookup View" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

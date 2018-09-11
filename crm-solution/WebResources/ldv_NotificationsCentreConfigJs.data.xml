@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{9d3c941e-81ca-e611-80c2-00155d5f3d01}</WebResourceId>
+  <Name>ldv_NotificationsCentreConfigJs</Name>
+  <DisplayName>Notifications Centre Config JS</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>0.1.1.1</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/ldv_NotificationsCentreConfigJs9D3C941E-81CA-E611-80C2-00155D5F3D01</FileName>
+</WebResource>

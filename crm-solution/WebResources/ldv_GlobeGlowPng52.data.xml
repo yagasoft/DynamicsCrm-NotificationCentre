@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{dc149327-a3cf-e611-80c4-00155d5f3d01}</WebResourceId>
+  <Name>ldv_GlobeGlowPng52</Name>
+  <DisplayName>Globe Glow PNG 52</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.1.1.1</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/ldv_GlobeGlowPng52DC149327-A3CF-E611-80C4-00155D5F3D01</FileName>
+</WebResource>

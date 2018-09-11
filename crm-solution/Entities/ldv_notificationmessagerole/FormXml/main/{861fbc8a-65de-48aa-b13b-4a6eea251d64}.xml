@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{861fbc8a-65de-48aa-b13b-4a6eea251d64}</formid>
+    <IntroducedVersion>0.0.1.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{825ad502-9b14-4b71-b873-49b748bbab06}" IsUserDefined="1" name="{825ad502-9b14-4b71-b873-49b748bbab06}" locklevel="0" expanded="true" showlabel="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{35edeb86-4764-480c-b7ef-d218f03c2ce9}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cb0be52b-42b7-1015-341a-262075801955}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Notification Message" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_notificationmessageid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ldv_notificationmessageid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4722bb0c-e74a-a668-d85a-c70434576a97}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Role" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_roleid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ldv_roleid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{10f6a46e-35d6-4f4a-9419-967d20bd1ac2}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9efd5af2-09a1-4cc3-84f4-8c7fd0c2d7e9}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ldv_name" uniqueid="{38052913-ba79-a239-0b4b-b7348398ac57}" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

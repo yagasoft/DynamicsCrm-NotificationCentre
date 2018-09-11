@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{b41126af-9e37-4c8b-8ff2-41ec6b4995eb}</formid>
+    <IntroducedVersion>0.0.1.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab verticallayout="true" id="{7a25ae4d-1986-49c4-b7db-bec5bf9168e4}" IsUserDefined="1" name="{7a25ae4d-1986-49c4-b7db-bec5bf9168e4}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="Message" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{fe2df276-f207-4c86-944b-0c08bbbc0b8c}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9dee31f0-c12d-4cbe-b459-89d9fa294908}">
+                        <labels>
+                          <label description="Title" languagecode="1033" />
+                        </labels>
+                        <control id="subject" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" uniqueid="{4099a3ee-0603-d399-8218-c8b1c1c456b1}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ce42b558-58ab-4dc4-afcb-1a8f71a29919}">
+                        <labels>
+                          <label description="Regarding" languagecode="1033" />
+                        </labels>
+                        <control id="regardingobjectid" classid="{F3015350-44A2-4aa0-97B5-00166532B5E9}" datafieldname="regardingobjectid" uniqueid="{0e77051e-1ec4-87b1-0828-1a12c1357908}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c4e7830b-33a6-07c5-381c-98b6c416bed0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Notification Source" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_notificationsource" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ldv_notificationsource" disabled="true" uniqueid="{a010b0aa-82e7-3aa1-2973-442dc9d773b6}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{129c2837-a99a-e9a0-b741-ed325a6763cb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Date Created" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="true" uniqueid="{1ce1e9c8-2b49-e8ba-2a83-864ae19874ed}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e9bc0709-8265-4464-6478-93cd2497429e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Last Updated" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="true" uniqueid="{228b0ca4-cb33-5bd2-260d-9c6a6309b3c6}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b4d93135-365b-575b-acb7-627d3944b0b5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Content Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_contentmodifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ldv_contentmodifiedon" disabled="true" uniqueid="{5186e1ca-4218-0d11-c17b-bbb14a19b83b}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{529f7228-2aaa-4eb3-966f-b075c6a56900}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="{7a25ae4d-1986-49c4-b7db-bec5bf9168e4}_section_2" showlabel="false" showbar="false" locklevel="0" id="{4b519ce8-bcdb-1c8d-1009-6884cd732a4e}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top" height="auto">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row height="auto">
+                      <cell id="{ab52dd89-b1b3-6533-7eae-e4a566db0703}" showlabel="true" locklevel="0" auto="true">
+                        <labels>
+                          <label description="Message" languagecode="1033" />
+                        </labels>
+                        <control id="description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" uniqueid="{cb246ee7-6b83-d8b3-612c-23b64ba51d01}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_3" id="{ee9889c3-3bdc-22b0-6491-5446b66cbc72}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Scope" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{ed005706-3451-3e4b-84bc-832cd8c7b062}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cbd2e8bc-3882-0726-01e5-d741a1d3b40b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Global Message" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_isglobalmessage" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="ldv_isglobalmessage" disabled="false" uniqueid="{d3db2253-e7e1-bb2e-a264-6d9d567dad00}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_3_section_2" showlabel="false" showbar="false" locklevel="0" id="{9eaa116a-b39d-6074-4104-c75d73b4440d}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3b783d94-8c18-6b16-8e6d-d7c9384bebca}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Role" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_roleid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ldv_roleid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b4a7e1e2-d3a8-d2a7-79e7-418c45800c02}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Team" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_teamid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ldv_teamid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0665cd48-40cc-96ae-1b82-c57ba72304c0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="User" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_userid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ldv_userid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="RolesTab" id="{969b9454-03b6-015e-d854-0079eab7d400}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_4_section_1" showlabel="false" showbar="false" locklevel="0" id="{118be921-3e04-0e2a-8135-231a8b880c59}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" height="auto" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b31618db-78b1-8e05-8e2c-195b7d79aacb}" showlabel="true" colspan="2" auto="true" rowspan="4">
+                        <labels>
+                          <label description="Roles" languagecode="1033" />
+                        </labels>
+                        <control id="RolesGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{9b085295-4ed2-6b13-8c54-9aeae70a0556}">
+                          <parameters>
+                            <ViewId>{670C7365-98AA-40EB-BFE5-B38F5C538CF5}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>ldv_ldv_notificationmessage_ldv_notificationmessagerole_NotificationMessageId</RelationshipName>
+                            <TargetEntityType>ldv_notificationmessagerole</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>true</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{670C7365-98AA-40EB-BFE5-B38F5C538CF5}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId></VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>250</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row height="auto"></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="TeamsTab" id="{089b5496-5e6b-b85e-1291-eb6a191e53cb}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_5_section_1" showlabel="false" showbar="false" locklevel="0" id="{7a241bce-b4d6-6618-c720-471e013043a0}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" height="auto" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{20040e31-91d8-9b8d-2bd1-173d32420cc9}" showlabel="true" colspan="2" auto="true" rowspan="4">
+                        <labels>
+                          <label description="Teams" languagecode="1033" />
+                        </labels>
+                        <control id="TeamsGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{14773d1e-95b5-8eba-d49d-5d4c6ed64383}">
+                          <parameters>
+                            <ViewId>{109A79D2-DBCB-4351-8B1D-35960F35D86F}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>ldv_ldv_notificationmessage_ldv_notificationmessageteam_NotificationMessageId</RelationshipName>
+                            <TargetEntityType>ldv_notificationmessageteam</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>true</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{109A79D2-DBCB-4351-8B1D-35960F35D86F}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId></VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>250</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row height="auto"></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="UsersTab" id="{65923968-d4c4-59ec-acd2-76632b887850}" IsUserDefined="0" locklevel="0" showlabel="false" expanded="true">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_6_section_1" showlabel="false" showbar="false" locklevel="0" id="{40c3b12c-1109-d668-46b0-9482d3a90165}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" height="auto" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4bd9e4b4-56b2-05e9-a366-2dab2e43895c}" showlabel="true" colspan="2" auto="true" rowspan="4">
+                        <labels>
+                          <label description="Users" languagecode="1033" />
+                        </labels>
+                        <control id="UsersGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{26a19853-eb1a-0c0e-25d8-46864b000da7}">
+                          <parameters>
+                            <ViewId>{63621DA5-A754-4CC7-A00E-BB9AB699F062}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>ldv_ldv_notificationmessage_ldv_notificationmessageuser_NotificationMessageId</RelationshipName>
+                            <TargetEntityType>ldv_notificationmessageuser</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>true</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{63621DA5-A754-4CC7-A00E-BB9AB699F062}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId></VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>250</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row height="auto"></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="ReportsTab" id="{e3a08a4d-2b84-14bc-2713-605d108da487}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Reports" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_7_section_1" showlabel="false" showbar="false" locklevel="0" id="{41cd5029-b234-a0e4-5cbb-903180aa77bb}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" height="auto">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a7965be1-da85-6803-b3a6-cd06c11910ee}" showlabel="true" colspan="1" auto="true" rowspan="4">
+                        <labels>
+                          <label description="Notification Reads" languagecode="1033" />
+                        </labels>
+                        <control id="ReadsGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{de025de6-4044-7d14-0e5c-3bd50de6b1a0}">
+                          <parameters>
+                            <ViewId>{05D8F50F-20A5-46FE-AD5D-E15F80F16473}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>ldv_ldv_notificationmessage_ldv_notificationread_NotificationMessageId</RelationshipName>
+                            <TargetEntityType>ldv_notificationread</TargetEntityType>
+                            <AutoExpand>Auto</AutoExpand>
+                            <EnableQuickFind>true</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{05D8F50F-20A5-46FE-AD5D-E15F80F16473}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId></VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>250</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row></row>
+                    <row></row>
+                    <row height="auto"></row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{77aa1429-380f-400b-b24e-dc88f9828e59}" celllabelposition="Top" columns="1111" labelwidth="115">
+        <rows>
+          <row>
+            <cell id="{be5d9705-1b2e-a39a-2adc-16b770b25c95}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6f36f3f3-70a3-4f5d-bafc-40e3c1f0f5d0}" showlabel="true" locklevel="0" visible="false">
+              <labels>
+                <label description="Activity Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" uniqueid="{3a925d0e-824e-b287-05dc-ec3b149d7978}" />
+            </cell>
+            <cell id="{8ea3eec3-2e24-c421-2ab3-218d65c413d4}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="true" uniqueid="{814ad003-b2e8-7751-486e-c753c19e3776}" />
+            </cell>
+            <cell id="{e0542582-5a45-46e0-9858-10290506ebf5}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" uniqueid="{9139b723-8532-7dc9-8663-35116e59cd81}" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="ldv_CommonGenericJs" libraryUniqueId="{6dedbc8c-b44d-8811-8b16-518936c890d7}" />
+        <Library name="ldv_CommonGenericSchemaJs" libraryUniqueId="{e0c52368-7ad3-aa38-aa5e-e2c5a774b095}" />
+        <Library name="ldv_NotificationsCentreFormJs" libraryUniqueId="{537c7ecb-0015-160e-2cc8-0d0a95a553a1}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="OnLoad" libraryName="ldv_NotificationsCentreFormJs" handlerUniqueId="{e83ace25-6831-aeb5-c385-33857825edbe}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="ldv_isglobalmessage">
+          <Handlers>
+            <Handler functionName="IsGlobal_OnChange" libraryName="ldv_NotificationsCentreFormJs" handlerUniqueId="{58a6e60a-72c5-9abc-c5d4-b722c7c80b6b}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

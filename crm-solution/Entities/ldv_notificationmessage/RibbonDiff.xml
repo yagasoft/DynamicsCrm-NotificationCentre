@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <CustomAction Id="ldv.ldv_notificationmessage.Draft.Button.CustomAction" Location="Mscrm.Form.ldv_notificationmessage.MainTab.Save.Controls._children" Sequence="45">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:ldv.ldv_notificationmessage.Draft.Button.Alt" Command="ldv.ldv_notificationmessage.Draft.Command" Id="ldv.ldv_notificationmessage.Draft.Button" Image32by32="$webresource:ldv_DraftPng32" Image16by16="$webresource:ldv_DraftPng16" LabelText="$LocLabels:ldv.ldv_notificationmessage.Draft.Button.LabelText" Sequence="45" TemplateAlias="o2" ToolTipTitle="$LocLabels:ldv.ldv_notificationmessage.Draft.Button.ToolTipTitle" ToolTipDescription="$LocLabels:ldv.ldv_notificationmessage.Draft.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="ldv.ldv_notificationmessage.Open.Button.CustomAction" Location="Mscrm.Form.ldv_notificationmessage.MainTab.Save.Controls._children" Sequence="43">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:ldv.ldv_notificationmessage.Open.Button.Alt" Command="ldv.ldv_notificationmessage.Open.Command" Id="ldv.ldv_notificationmessage.Open.Button" Image32by32="$webresource:ldv_QueuePng32" Image16by16="$webresource:ldv_QueuePng16" LabelText="$LocLabels:ldv.ldv_notificationmessage.Open.Button.LabelText" Sequence="43" TemplateAlias="o2" ToolTipTitle="$LocLabels:ldv.ldv_notificationmessage.Open.Button.ToolTipTitle" ToolTipDescription="$LocLabels:ldv.ldv_notificationmessage.Open.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <HideCustomAction HideActionId="ldv.Mscrm.Form.ldv_notificationmessage.Close.Hide" Location="Mscrm.Form.ldv_notificationmessage.Close" />
+    <CustomAction Id="ldv.Mscrm.Form.ldv_notificationmessage.SaveAsComplete.CustomAction" Location="Mscrm.Form.ldv_notificationmessage.MainTab.Save.Controls._children" Sequence="20">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:Mscrm.Form.ldv_notificationmessage.SaveAsComplete.Alt" Command="Mscrm.SavePrimaryActivityAsComplete" Id="Mscrm.Form.ldv_notificationmessage.SaveAsComplete" Image32by32="/_imgs/ribbon/Deactivate_32.png" Image16by16="/_imgs/ribbon/Deactivate_16.png" LabelText="$LocLabels:Mscrm.Form.ldv_notificationmessage.SaveAsComplete.LabelText" Sequence="20" TemplateAlias="o1" ToolTipTitle="$LocLabels:Mscrm.Form.ldv_notificationmessage.SaveAsComplete.ToolTipTitle" ToolTipDescription="$LocLabels:Mscrm.Form.ldv_notificationmessage.SaveAsComplete.ToolTipDescription" ModernImage="SaveAsComplete" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="ldv.ldv_notificationmessage.Draft.Command">
+      <EnableRules>
+        <EnableRule Id="ldv.ldv_notificationmessage.Draft.EnableRule" />
+        <EnableRule Id="Mscrm.CanWritePrimary" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.PrimaryIsActive" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="SetToDraft" Library="$webresource:ldv_NotificationsCentreFormRibbonJs" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="ldv.ldv_notificationmessage.Open.Command">
+      <EnableRules>
+        <EnableRule Id="ldv.ldv_notificationmessage.Open.EnableRule" />
+        <EnableRule Id="Mscrm.CanWritePrimary" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.PrimaryIsActive" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="SetToOpen" Library="$webresource:ldv_NotificationsCentreFormRibbonJs" />
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="Mscrm.Form.Activate">
+      <EnableRules>
+        <EnableRule Id="Mscrm.CanWritePrimary" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.CanWritePrimary" />
+        <DisplayRule Id="Mscrm.PrimaryIsInactive" />
+        <DisplayRule Id="Mscrm.PrimaryEntityHasStatecode" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="Mscrm.CommandBarActions.activate" Library="/_static/_common/scripts/CommandBarActions.js">
+          <CrmParameter Value="FirstPrimaryItemId" />
+          <CrmParameter Value="PrimaryEntityTypeName" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules>
+      <DisplayRule Id="Mscrm.CanWritePrimary">
+        <EntityPrivilegeRule PrivilegeType="Write" PrivilegeDepth="Basic" AppliesTo="PrimaryEntity" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.PrimaryEntityHasStatecode">
+        <EntityPropertyRule AppliesTo="PrimaryEntity" PropertyName="HasStateCode" PropertyValue="true" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.PrimaryIsActive">
+        <FormStateRule State="Existing" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.PrimaryIsInactive">
+        <FormStateRule State="Disabled" />
+      </DisplayRule>
+      <DisplayRule Id="Mscrm.PrimaryIsNotActivity">
+        <EntityPropertyRule AppliesTo="PrimaryEntity" PropertyName="IsActivity" PropertyValue="false" />
+      </DisplayRule>
+    </DisplayRules>
+    <EnableRules>
+      <EnableRule Id="ldv.ldv_notificationmessage.Draft.EnableRule">
+        <ValueRule Field="statuscode" Value="1" Default="false" InvertResult="false" />
+      </EnableRule>
+      <EnableRule Id="ldv.ldv_notificationmessage.Open.EnableRule">
+        <ValueRule Field="statuscode" Value="753240000" Default="false" InvertResult="false" />
+      </EnableRule>
+      <EnableRule Id="Mscrm.CanWritePrimary">
+        <RecordPrivilegeRule PrivilegeType="Write" AppliesTo="PrimaryEntity" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="ldv.ldv_notificationmessage.Draft.Button.Alt">
+      <Titles>
+        <Title description="Edit Message" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ldv.ldv_notificationmessage.Draft.Button.LabelText">
+      <Titles>
+        <Title description="Edit Message" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ldv.ldv_notificationmessage.Draft.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Edit Message" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ldv.ldv_notificationmessage.Draft.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Edit Message" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ldv.ldv_notificationmessage.Open.Button.Alt">
+      <Titles>
+        <Title description="Publish Message" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ldv.ldv_notificationmessage.Open.Button.LabelText">
+      <Titles>
+        <Title description="Publish Message" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ldv.ldv_notificationmessage.Open.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Publish Message" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ldv.ldv_notificationmessage.Open.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Publish Message" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Form.ldv_notificationmessage.SaveAsComplete.Alt">
+      <Titles>
+        <Title description="Close" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Form.ldv_notificationmessage.SaveAsComplete.LabelText">
+      <Titles>
+        <Title description="Close" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Form.ldv_notificationmessage.SaveAsComplete.ToolTipDescription">
+      <Titles>
+        <Title description="Save the {0} and change the status to 'Completed' from 'Open' or 'Cancelled' from 'Draft'." languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="Mscrm.Form.ldv_notificationmessage.SaveAsComplete.ToolTipTitle">
+      <Titles>
+        <Title description="Close" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

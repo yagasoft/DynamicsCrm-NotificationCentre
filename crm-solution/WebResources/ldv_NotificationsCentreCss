@@ -1,0 +1,276 @@
+﻿.ncHiddenKeepSpace
+{
+	visibility: hidden;
+}
+
+.ncEllipsis
+{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ncUrl
+{
+	text-decoration: underline;
+	color: blue;
+}
+
+.mainContainer
+{
+	border: 1px solid black;
+	box-shadow: 5px 5px 8px #aaa;
+	background: white;
+}
+
+/*#region Icon */
+
+#ncMainContainer
+{
+	/*width: 42px;*/
+}
+
+#ncQuickCreate
+{
+	/*text-shadow: 1px 1px 1px #cecece;
+	font-size: 1.7em;*/
+	height: 17px;
+	width: 17px;
+	/*line-height: 10px;
+	color: #969696;*/
+	left: -8px;
+	bottom: 3px;
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	z-index: 9999;
+}
+
+.ncQuickCreateHover
+{
+	height: 20px !important;
+	width: 20px !important;
+	/*font-size: 2.5em !important;
+	height: 21px !important;
+	color: #003dff !important;
+	left: -14px !important;*/
+}
+
+#ncIcon
+{
+	position: relative;
+}
+
+#ncTabDividerContainer
+{
+	z-index: 1;
+}
+
+#ncIconImage
+{
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+#ncCounter
+{
+	font-size: 0.76em;
+	text-align: center;
+	vertical-align: middle;
+	left: 25px;
+	top: 3px;
+	position: absolute;
+	padding-top: 0px;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-bottom: 1px;
+	box-shadow: 0px 0px 5px #444;
+	border-radius: 2px;
+	background: #BF0000; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #BF0000 0%, #ED3434 70%, #F2797B 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #BF0000 0%, #ED3434 70%, #F2797B 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #BF0000 0%, #ED3434 70%, #F2797B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	z-index: 99999;
+}
+
+/*#endregion Icon */
+
+/*#region Popup */
+
+#ncPopupBar
+{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+#ncPopupBarList
+{
+	width: 300px;
+}
+
+/*#endregion Popup */
+
+/*#region Frame */
+
+#ncFrame
+{
+	position: absolute;
+	z-index: 999;
+}
+
+.arrow_box
+{
+	position: relative;
+	/*background: #E8F5FE;*/
+	background: #FFF;
+	border: 1px solid black;
+}
+
+.arrow_box:after, .arrow_box:before
+{
+	bottom: 100%;
+	left: 18px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after
+{
+	border-color: #FFF;
+	border-color: rgba(232, 245, 254, 0);
+	border-bottom-color: #FFF;
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+.arrow_box:before
+{
+	border-color: black;
+	border-color: rgba(0, 0, 0, 0);
+	border-bottom-color: black;
+	border-width: 12px;
+	margin-left: -12px;
+}
+
+#ncTopBar
+{
+	padding-top: 2px;
+	padding-right: 5px;
+	margin-bottom: 1px;
+	text-align: right;
+	background-color: #FFF;
+	box-shadow: 0px 1px 6px #000;
+}
+
+#ncNewIconContainer
+{
+}
+
+#ncNewIcon
+{
+	height: 17px;
+	width: 17px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#ncNewIconText
+{
+	margin-left: 2px;
+	float: right;
+}
+
+#ncListContainer
+{
+	position: relative;
+	z-index: -1;
+	width: 300px;
+	height: 45px;
+	overflow-y: auto;
+}
+
+/*#endregion Frame */
+
+/*#region List */
+
+#ncLoadingDiv
+{
+	padding: 10px;
+	text-align: center;
+}
+
+.ncSeparator
+{
+	margin: 0;
+}
+
+/*#endregion List */
+
+/*#region Message */
+
+.ncMessageContainer
+{
+	padding: 2px;
+	margin: 0;
+}
+
+.ncMessageTitle
+{
+	position: relative;
+	top: 50%;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.ncSourceIcon
+{
+	margin: 0px;
+	margin-left: 3px;
+	margin-right: 3px;
+	float: left;
+}
+
+.ncMessageUnread
+{
+	background-color: rgb(177, 214, 240);
+}
+
+.ncMessageHover
+{
+	background-color: rgb(215, 235, 249);
+}
+
+.ncHoverFrame
+{
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	border: 1px solid black;
+	box-shadow: 3px 3px 6px #555;
+	background: white;
+	padding: 5px;
+	z-index: 9999;
+}
+
+.ncReadIcon
+{
+	position: absolute;
+	top: 1px;
+	right: 0px;
+	float: right;
+	margin-right: 10px;
+}
+
+.ncDate
+{
+	position: absolute;
+	bottom: 1px;
+	right: 1px;
+}
+
+/*#endregion Message */

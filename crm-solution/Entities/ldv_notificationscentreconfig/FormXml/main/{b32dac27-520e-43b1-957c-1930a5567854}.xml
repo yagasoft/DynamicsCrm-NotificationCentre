@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{b32dac27-520e-43b1-957c-1930a5567854}</formid>
+    <IntroducedVersion>0.1.1.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab verticallayout="true" id="{ed7a8581-e9e1-4b9d-b891-aa08961654ee}" IsUserDefined="1" name="{ed7a8581-e9e1-4b9d-b891-aa08961654ee}" locklevel="0" expanded="true" showlabel="false">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="true" showbar="true" IsUserDefined="0" id="{b302ec7b-9744-463b-9a3a-f6f1b5cebe14}" name="{b302ec7b-9744-463b-9a3a-f6f1b5cebe14}" columns="1" locklevel="0" labelwidth="150" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{dc7d926e-f2ed-481a-bcef-0a7bf6b7bd75}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ldv_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{050c65ce-e388-5116-b856-076dbb9768d9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Default" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_isdefault" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="ldv_isdefault" disabled="false" uniqueid="{15a1e981-eeb5-db49-87ad-68c23ea96083}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8f118d7e-95b0-455f-bc46-da46d54b1bb1}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{ed7a8581-e9e1-4b9d-b891-aa08961654ee}_section_3" showlabel="true" showbar="true" locklevel="0" id="{b7e18e18-4955-a96e-13cb-d8d3baa8de57}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="150" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Retrieve Count" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3b0cb429-d06d-9e44-9ec1-a2ad22831576}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Count Per Page" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_countperpage" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="ldv_countperpage" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="{ed7a8581-e9e1-4b9d-b891-aa08961654ee}_section_4" showlabel="true" showbar="true" locklevel="0" id="{7e29185b-683e-15cc-65e8-85de8beb4c17}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="150" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Counter" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{99ec016a-99ae-beee-5c52-00c9c8c73d3e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Refresh Interval" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_refreshinterval" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="ldv_refreshinterval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e9e0d2b7-c935-81a6-726b-72cd69448ba5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Counter Limit" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_counterlimit" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="ldv_counterlimit" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="{ed7a8581-e9e1-4b9d-b891-aa08961654ee}_section_5" showlabel="true" showbar="true" locklevel="0" id="{d6437e69-5236-de70-e8d6-e832c8d8cdc5}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="150" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Popup" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9ee29edc-3dea-cba2-0972-311d8628ebe0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Popup Enabled" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_ispopupenabled" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="ldv_ispopupenabled" disabled="false" uniqueid="{2a847a7e-b772-1031-4b62-1dd09b8984ec}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{54d6e8a9-8dc3-76db-738e-352789801c8b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Popup Timeout" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_popuptimeout" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="ldv_popuptimeout" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="ldv_CommonGenericJs" libraryUniqueId="{c3945a5d-6075-7793-76a7-a994e1b54190}" />
+        <Library name="ldv_CommonGenericSchemaJs" libraryUniqueId="{bc94bb20-0d6b-8d4e-5e7a-cad90b99cc14}" />
+        <Library name="ldv_NotificationsCentreConfigJs" libraryUniqueId="{1d4a4b0a-580e-04ee-0384-c85998d7451c}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="OnLoad" libraryName="ldv_NotificationsCentreConfigJs" handlerUniqueId="{a868bda6-8de1-a33b-d4a1-b9704446d607}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="ldv_ispopupenabled">
+          <Handlers>
+            <Handler functionName="IsPopupEnabled_OnChange" libraryName="ldv_NotificationsCentreConfigJs" handlerUniqueId="{e4e6159c-60ac-2277-ee07-b9da771d354a}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="ldv_isdefault">
+          <Handlers>
+            <Handler functionName="IsDefault_OnChange" libraryName="ldv_NotificationsCentreConfigJs" handlerUniqueId="{177e0a3e-98b5-eac6-8e63-e991120c764b}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

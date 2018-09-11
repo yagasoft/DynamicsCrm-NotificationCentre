@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <returnedtypecode>10028</returnedtypecode>
+    <savedqueryid>{5859f9d5-568e-43d2-aa04-08e8437d0d21}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" object="10028" jump="ldv_name" select="1" icon="1" preview="1">
+        <row name="result" id="ldv_notificationscentreconfigid">
+          <cell name="ldv_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="ldv_notificationscentreconfig">
+          <attribute name="ldv_notificationscentreconfigid" />
+          <attribute name="ldv_name" />
+          <attribute name="createdon" />
+          <order attribute="ldv_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Notifications Centre Configs" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

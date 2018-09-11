@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <returnedtypecode>10028</returnedtypecode>
+    <savedqueryid>{0a9875e6-e2d6-49cd-92f8-ab7bc8f4a3a9}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" object="10028" jump="ldv_name" select="1" icon="1" preview="1">
+        <row name="result" id="ldv_notificationscentreconfigid">
+          <cell name="ldv_name" width="200" />
+          <cell name="ldv_isdefault" width="75" />
+          <cell name="ldv_countperpage" width="100" />
+          <cell name="ldv_refreshinterval" width="100" />
+          <cell name="ldv_counterlimit" width="100" />
+          <cell name="ldv_ispopupenabled" width="100" />
+          <cell name="ldv_popuptimeout" width="100" />
+          <cell name="ownerid" width="125" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="ldv_notificationscentreconfig">
+          <attribute name="ldv_name" />
+          <attribute name="createdon" />
+          <order attribute="ldv_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="ldv_name" operator="like" value="{0}" />
+          </filter>
+          <attribute name="ldv_refreshinterval" />
+          <attribute name="ldv_popuptimeout" />
+          <attribute name="ldv_ispopupenabled" />
+          <attribute name="ownerid" />
+          <attribute name="ldv_isdefault" />
+          <attribute name="ldv_counterlimit" />
+          <attribute name="ldv_countperpage" />
+          <attribute name="ldv_notificationscentreconfigid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>0.1.1.1</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active Notifications Centre Configs" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

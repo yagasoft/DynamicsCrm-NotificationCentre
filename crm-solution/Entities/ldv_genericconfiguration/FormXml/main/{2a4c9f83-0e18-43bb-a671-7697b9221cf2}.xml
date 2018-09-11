@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{2a4c9f83-0e18-43bb-a671-7697b9221cf2}</formid>
+    <IntroducedVersion>0.1.1.1</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1900">
+      <tabs>
+        <tab verticallayout="true" id="{3caa6f22-bafd-4dc4-8b6b-5ef10f2b76a7}" IsUserDefined="1" name="{3caa6f22-bafd-4dc4-8b6b-5ef10f2b76a7}" locklevel="0" expanded="true" showlabel="false" labelid="{6b4e5e04-95d3-419a-8bac-fcd82355135d}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{19102333-ae4b-4170-a5ce-cc8b109e09ae}" labelid="{57c8ec25-fa82-4c9a-b9e6-a0ededf149b5}" name="{19102333-ae4b-4170-a5ce-cc8b109e09ae}" columns="1" locklevel="0" labelwidth="170" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5cc14184-82bb-1644-1c67-684a5a37a17e}" showlabel="true" locklevel="0" labelid="{dac75e4f-bb2e-4b90-b0c3-f6b0cd0cfd61}">
+                        <labels>
+                          <label description="Notifications Centre Enabled" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_isnotificationscentreenabled" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="ldv_isnotificationscentreenabled" disabled="false" uniqueid="{1b007a4c-6124-5bb8-a7ad-dc46b7acdd21}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="{3caa6f22-bafd-4dc4-8b6b-5ef10f2b76a7}_section_2" showlabel="false" showbar="false" locklevel="0" id="{9cb15278-b46c-b033-c00c-80d42051e24b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{8c090460-69b8-4241-ab63-ba41d7823dbb}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{fe91229c-94f3-4a4e-a17a-1ee95a7113f2}" labelid="{84a2271b-f537-4be4-9d8d-9ea07c6c798f}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ldv_name" disabled="true" uniqueid="{7c1a294d-b10e-8577-e1a0-da8cb1b23258}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{128024ac-defd-4548-9f31-81e4c9ffa087}" labelid="{3a406739-8d9a-4d22-946a-70e4b3b577ec}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="true" uniqueid="{ac46e983-da9b-e082-7c74-69449b254a18}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7b805a0a-48b6-8540-3b6c-388409e8aaca}" showlabel="true" locklevel="0" labelid="{2ee891ca-5f63-450a-bddf-bdb22939f94d}" visible="false">
+                        <labels>
+                          <label description="Log Level" languagecode="1033" />
+                        </labels>
+                        <control id="ldv_loglevel" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ldv_loglevel" disabled="false" uniqueid="{e78d53b4-561b-5b8c-ed0a-dc7642665535}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <DisplayConditions Order="4">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Notifications Centre" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>
