@@ -468,21 +468,17 @@
     <value>Unique identifier for the user that owns the record.</value>
     <comment>ldv_notificationscentreconfig Description for EntityRelationship 'user_ldv_notificationscentreconfig'</comment>
   </data>
-  <data name="15062:Description,linkdevelopmentldv75324" xml:space="preserve">
-    <value>The default publisher for link development</value>
-    <comment> 'linkdevelopment' : Description for Solution Publisher</comment>
-  </data>
   <data name="15062:Description,NotificationCentre" xml:space="preserve">
     <value>Refer to Yagasoft.com for any enquiries.</value>
     <comment> 'NotificationCentre' : Description for Solution</comment>
   </data>
-  <data name="15062:LocalizedName,linkdevelopmentldv75324" xml:space="preserve">
-    <value>LINK Development</value>
-    <comment> 'linkdevelopment' : LocalizedName for Solution Publisher</comment>
-  </data>
   <data name="15062:LocalizedName,NotificationCentre" xml:space="preserve">
     <value>Notification Centre</value>
     <comment> 'NotificationCentre' : LocalizedName for Solution</comment>
+  </data>
+  <data name="15062:LocalizedName,yagasoftys71786" xml:space="preserve">
+    <value>Yagasoft</value>
+    <comment> 'yagasoft' : LocalizedName for Solution Publisher</comment>
   </data>
   <data name="1:Description,ldv_genericconfigurationentityldv_genericconfiguration" xml:space="preserve">
     <value />

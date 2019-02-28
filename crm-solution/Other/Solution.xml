@@ -8,20 +8,18 @@
     <Descriptions>
       <Description description="Refer to Yagasoft.com for any enquiries." languagecode="1033" />
     </Descriptions>
-    <Version>2.1.1.1</Version>
+    <Version>3.1.1.1</Version>
     <Managed>0</Managed>
     <Publisher>
-      <UniqueName>linkdevelopment</UniqueName>
+      <UniqueName>yagasoft</UniqueName>
       <LocalizedNames>
-        <LocalizedName description="LINK Development" languagecode="1033" />
+        <LocalizedName description="Yagasoft" languagecode="1033" />
       </LocalizedNames>
-      <Descriptions>
-        <Description description="The default publisher for link development" languagecode="1033" />
-      </Descriptions>
-      <EMailAddress xsi:nil="true"></EMailAddress>
-      <SupportingWebsiteUrl>http://www.linkdev.com</SupportingWebsiteUrl>
-      <CustomizationPrefix>ldv</CustomizationPrefix>
-      <CustomizationOptionValuePrefix>75324</CustomizationOptionValuePrefix>
+      <Descriptions />
+      <EMailAddress>mail@yagasoft.com</EMailAddress>
+      <SupportingWebsiteUrl>http://yagasoft.com</SupportingWebsiteUrl>
+      <CustomizationPrefix>ys</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>71786</CustomizationOptionValuePrefix>
       <Addresses>
         <Address>
           <AddressNumber>1</AddressNumber>
@@ -104,8 +102,8 @@
       <RootComponent type="61" schemaName="ldv_NotificationsCentreLibsCss" behavior="0" />
       <RootComponent type="61" schemaName="ldv_NotificationsCentreLibsJs" behavior="0" />
       <RootComponent type="61" schemaName="ldv_NotificationsCentreRibbonJs" behavior="0" />
-      <RootComponent type="91" schemaName="LinkDev.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" behavior="0" />
-      <RootComponent type="91" schemaName="LinkDev.NotificationCentre.Steps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" behavior="0" />
+      <RootComponent type="91" schemaName="Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" behavior="0" />
+      <RootComponent type="91" schemaName="Yagasoft.NotificationCentre.Steps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
@@ -157,36 +155,36 @@
         <Dependent key="15" type="60" displayName="Quick Create Form" parentDisplayName="Notification Message" id="{606e486e-feb3-4f98-b754-8a154561f71c}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="16" type="61" schemaName="ldv_CommonGenericJs" displayName="ldv_CommonGenericJs" solution="Active" />
-        <Dependent key="14" type="60" displayName="Information" parentDisplayName="Notifications Centre Config" id="{b32dac27-520e-43b1-957c-1930a5567854}" />
+        <Required key="16" type="61" schemaName="ldv_BellPng32" displayName="ldv_BellPng32" solution="Active" />
+        <Dependent key="10" type="1" schemaName="ldv_notificationmessage" displayName="Notification Message" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="16" type="61" schemaName="ldv_CommonGenericJs" displayName="ldv_CommonGenericJs" solution="Active" />
-        <Dependent key="15" type="60" displayName="Quick Create Form" parentDisplayName="Notification Message" id="{606e486e-feb3-4f98-b754-8a154561f71c}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="16" type="61" schemaName="ldv_CommonGenericJs" displayName="ldv_CommonGenericJs" solution="Active" />
-        <Dependent key="13" type="60" displayName="Information" parentDisplayName="Notification Message" id="{b41126af-9e37-4c8b-8ff2-41ec6b4995eb}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="17" type="61" schemaName="ldv_crmlogconfig32png" displayName="ldv_crmlogconfig32png" solution="Active" />
-        <Dependent key="8" type="1" schemaName="ldv_notificationscentreconfig" displayName="Notifications Centre Config" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="17" type="61" schemaName="ldv_crmlogconfig32png" displayName="ldv_crmlogconfig32png" solution="Active" />
-        <Dependent key="0" type="1" schemaName="ldv_genericconfiguration" displayName="Generic Configuration" />
+        <Required key="17" type="61" schemaName="ldv_DraftPng32" displayName="ldv_DraftPng32" solution="Active" />
+        <Dependent key="6" type="50" schemaName="ldv_notificationmessage:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
       </MissingDependency>
       <MissingDependency>
         <Required key="18" type="61" schemaName="ldv_DraftPng16" displayName="ldv_DraftPng16" solution="Active" />
         <Dependent key="6" type="50" schemaName="ldv_notificationmessage:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="19" type="61" schemaName="ldv_BellPng32" displayName="ldv_BellPng32" solution="Active" />
-        <Dependent key="10" type="1" schemaName="ldv_notificationmessage" displayName="Notification Message" />
+        <Required key="19" type="61" schemaName="ldv_CommonGenericJs" displayName="ldv_CommonGenericJs" solution="Active" />
+        <Dependent key="14" type="60" displayName="Information" parentDisplayName="Notifications Centre Config" id="{b32dac27-520e-43b1-957c-1930a5567854}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="20" type="61" schemaName="ldv_DraftPng32" displayName="ldv_DraftPng32" solution="Active" />
-        <Dependent key="6" type="50" schemaName="ldv_notificationmessage:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+        <Required key="19" type="61" schemaName="ldv_CommonGenericJs" displayName="ldv_CommonGenericJs" solution="Active" />
+        <Dependent key="15" type="60" displayName="Quick Create Form" parentDisplayName="Notification Message" id="{606e486e-feb3-4f98-b754-8a154561f71c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="19" type="61" schemaName="ldv_CommonGenericJs" displayName="ldv_CommonGenericJs" solution="Active" />
+        <Dependent key="13" type="60" displayName="Information" parentDisplayName="Notification Message" id="{b41126af-9e37-4c8b-8ff2-41ec6b4995eb}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="61" schemaName="ldv_crmlogconfig32png" displayName="ldv_crmlogconfig32png" solution="Active" />
+        <Dependent key="8" type="1" schemaName="ldv_notificationscentreconfig" displayName="Notifications Centre Config" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="61" schemaName="ldv_crmlogconfig32png" displayName="ldv_crmlogconfig32png" solution="Active" />
+        <Dependent key="0" type="1" schemaName="ldv_genericconfiguration" displayName="Generic Configuration" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

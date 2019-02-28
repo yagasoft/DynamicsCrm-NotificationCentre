@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yagasoft/DynamicsCrm-NotificationCentre?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-### Version: 2.1.1.1
+### Version: 3.1.1.1
 ---
 
 A CRM solution that injects a button into CRM's navigation bar, which shows notifications in near real-time from within CRM.
@@ -30,8 +30,10 @@ I will post a complete guide soon.
 		
 ## Changes
 
+#### _v3.1.1.1 (2019-02-28)_
++ Changed: moved to a new namespace
 #### _v2.1.1.1 (2018-09-11)_
 + Initial release
 
 ---
-**Copyright &copy; by Ahmed el-Sawalhy ([Yagasoft](http://yagasoft.com))** -- _GPL v3 Licence_
+**Copyright &copy; by Ahmed Elsawalhy ([Yagasoft](http://yagasoft.com))** -- _GPL v3 Licence_
