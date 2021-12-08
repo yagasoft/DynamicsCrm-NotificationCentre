@@ -54,6 +54,7 @@
   <EntityRelationship Name="lk_ldv_notificationread_modifiedby" />
   <EntityRelationship Name="lk_ldv_notificationscentreconfig_createdby" />
   <EntityRelationship Name="lk_ldv_notificationscentreconfig_modifiedby" />
+  <EntityRelationship Name="msdyn_playbookinstance_ldv_notificationmessages" />
   <EntityRelationship Name="msdyn_postalbum_ldv_notificationmessages" />
   <EntityRelationship Name="opportunity_ldv_notificationmessages" />
   <EntityRelationship Name="owner_ldv_notificationmessagerole" />
@@ -63,6 +64,7 @@
   <EntityRelationship Name="owner_ldv_notificationscentreconfig" />
   <EntityRelationship Name="quote_ldv_notificationmessages" />
   <EntityRelationship Name="salesorder_ldv_notificationmessages" />
+  <EntityRelationship Name="site_ldv_notificationmessages" />
   <EntityRelationship Name="team_ldv_notificationmessagerole" />
   <EntityRelationship Name="team_ldv_notificationmessageteam" />
   <EntityRelationship Name="team_ldv_notificationmessageuser" />

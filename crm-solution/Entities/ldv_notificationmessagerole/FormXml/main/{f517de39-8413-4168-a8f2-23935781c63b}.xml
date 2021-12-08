@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <forms>
   <systemform>
-    <formid>{b8485cec-32a4-4f28-85d6-edb47ad4d547}</formid>
+    <formid>{f517de39-8413-4168-a8f2-23935781c63b}</formid>
     <IntroducedVersion>0.0.1.1</IntroducedVersion>
-    <FormPresentation>1</FormPresentation>
-    <FormActivationState>1</FormActivationState>
+    <FormPresentation>2</FormPresentation>
+    <FormActivationState>0</FormActivationState>
     <form>
       <tabs>
-        <tab verticallayout="true" id="{0541b3fa-1eb3-4b80-9eea-5ae32ee14b58}" IsUserDefined="1">
+        <tab verticallayout="true" id="{8f8d5447-5398-4a38-9989-5c91dd46641b}" IsUserDefined="1">
           <labels>
             <label description="General Info" languagecode="1033" />
           </labels>
           <columns>
             <column width="24%">
               <sections>
-                <section showlabel="false" showbar="false" IsUserDefined="0" id="{da47e7cf-c7ec-47ca-ad25-3e6d412d8c80}">
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{2e4ecb81-fc5f-4025-838c-a0075a96ff39}">
                   <labels>
                     <label description="General" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{3d2daf02-037c-4757-8b39-7a0028f7b08a}">
+                      <cell id="{5c816157-25bf-4538-a76e-7076edbbc042}">
                         <labels>
                           <label description="Name" languagecode="1033" />
                         </labels>
@@ -28,7 +28,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{b9aabc7e-e10d-470e-878b-6eaa5ae7ab24}">
+                      <cell id="{5cd445c0-396f-405c-a8fc-32efb99a63c2}">
                         <labels>
                           <label description="Owner" languagecode="1033" />
                         </labels>
@@ -41,17 +41,17 @@
             </column>
             <column width="38%">
               <sections>
-                <section showlabel="true" showbar="false" id="{58327167-764b-4faa-b512-a4ecacba8936}" IsUserDefined="0" height="auto">
+                <section showlabel="true" showbar="false" id="{9d6ac92f-15ec-4882-8165-fea80bf92e43}" IsUserDefined="0" height="auto">
                   <labels>
                     <label description="TIMELINE" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell showlabel="false" colspan="1" rowspan="18" auto="false" id="{f4f5420e-b1ba-4bef-b6d6-ebcb224aac17}">
+                      <cell showlabel="false" colspan="1" rowspan="18" auto="false" id="{8d061d9f-2a56-426c-beb8-5018b21588c9}">
                         <labels>
                           <label description="Conversation Tabs" languagecode="1033" />
                         </labels>
-                        <control id="interactionwallcontrol" classid="{1F179106-FA28-4495-961E-F6BD93C21974}" />
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" />
                       </cell>
                     </row>
                     <row />
@@ -77,7 +77,7 @@
             </column>
             <column width="38%">
               <sections>
-                <section showlabel="true" columns="1" showbar="false" id="{3c5b6cc4-b52d-43a6-af61-b035baccabed}" name="ref_pan_{3c5b6cc4-b52d-43a6-af61-b035baccabed}" IsUserDefined="0">
+                <section showlabel="true" columns="1" showbar="false" id="{745d779a-f933-48ef-a167-288d579d1ff5}" name="ref_pan_{745d779a-f933-48ef-a167-288d579d1ff5}" IsUserDefined="0">
                   <labels>
                     <label description="RELATED" languagecode="1033" />
                   </labels>
@@ -90,11 +90,12 @@
           </columns>
         </tab>
       </tabs>
-      <header id="{6444743b-eadf-4164-b7bf-422bc1fa0321}" celllabelposition="Left" columns="1111">
+      <header id="{3a0b0582-55b9-4995-9a89-8779d152d72f}" celllabelposition="Left" columns="1111">
         <rows>
           <row />
         </rows>
       </header>
+      <DisplayConditions Order="2" />
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

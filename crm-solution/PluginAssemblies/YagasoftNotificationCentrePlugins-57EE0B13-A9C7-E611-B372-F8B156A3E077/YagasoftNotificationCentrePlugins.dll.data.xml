@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<PluginAssembly FullName="Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" CustomizationLevel="1">
+<PluginAssembly FullName="Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" PluginAssemblyId="57ee0b13-a9c7-e611-b372-f8b156a3e077" CustomizationLevel="1">
   <IsolationMode>2</IsolationMode>
   <SourceType>0</SourceType>
   <IntroducedVersion>1.0</IntroducedVersion>
   <FileName>/PluginAssemblies/YagasoftNotificationCentrePlugins-57EE0B13-A9C7-E611-B372-F8B156A3E077/YagasoftNotificationCentrePlugins.dll</FileName>
   <PluginTypes>
-    <PluginType AssemblyQualifiedName="Yagasoft.NotificationCentre.Plugins.ClearReadOnModify, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" Name="Yagasoft.NotificationCentre.Plugins.ClearReadOnModify">
+    <PluginType AssemblyQualifiedName="Yagasoft.NotificationCentre.Plugins.ClearReadOnModify, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" PluginTypeId="cd26146e-5158-ec11-9af3-000d3a4c87c6" Name="Yagasoft.NotificationCentre.Plugins.ClearReadOnModify">
       <FriendlyName>ClearReadOnModify</FriendlyName>
     </PluginType>
-    <PluginType AssemblyQualifiedName="Yagasoft.NotificationCentre.Plugins.NotifyOfActivity, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" Name="Yagasoft.NotificationCentre.Plugins.NotifyOfActivity">
+    <PluginType AssemblyQualifiedName="Yagasoft.NotificationCentre.Plugins.NotifyOfActivity, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" PluginTypeId="ce26146e-5158-ec11-9af3-000d3a4c87c6" Name="Yagasoft.NotificationCentre.Plugins.NotifyOfActivity">
       <FriendlyName>NotifyOfActivity</FriendlyName>
     </PluginType>
-    <PluginType AssemblyQualifiedName="Yagasoft.NotificationCentre.Plugins.RelateSingleTarget, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" Name="Yagasoft.NotificationCentre.Plugins.RelateSingleTarget">
+    <PluginType AssemblyQualifiedName="Yagasoft.NotificationCentre.Plugins.RelateSingleTarget, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" PluginTypeId="cf26146e-5158-ec11-9af3-000d3a4c87c6" Name="Yagasoft.NotificationCentre.Plugins.RelateSingleTarget">
       <FriendlyName>RelateSingleTarget</FriendlyName>
     </PluginType>
-    <PluginType AssemblyQualifiedName="Yagasoft.NotificationCentre.Plugins.SetClosedStatus, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" Name="Yagasoft.NotificationCentre.Plugins.SetClosedStatus">
+    <PluginType AssemblyQualifiedName="Yagasoft.NotificationCentre.Plugins.SetClosedStatus, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" PluginTypeId="d026146e-5158-ec11-9af3-000d3a4c87c6" Name="Yagasoft.NotificationCentre.Plugins.SetClosedStatus">
       <FriendlyName>SetClosedStatus</FriendlyName>
     </PluginType>
-    <PluginType AssemblyQualifiedName="Yagasoft.NotificationCentre.Plugins.SetContentModified, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" Name="Yagasoft.NotificationCentre.Plugins.SetContentModified">
+    <PluginType AssemblyQualifiedName="Yagasoft.NotificationCentre.Plugins.SetContentModified, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" PluginTypeId="d126146e-5158-ec11-9af3-000d3a4c87c6" Name="Yagasoft.NotificationCentre.Plugins.SetContentModified">
       <FriendlyName>SetContentModified</FriendlyName>
     </PluginType>
-    <PluginType AssemblyQualifiedName="Yagasoft.NotificationCentre.Plugins.SetTypeCode, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" Name="Yagasoft.NotificationCentre.Plugins.SetTypeCode">
+    <PluginType AssemblyQualifiedName="Yagasoft.NotificationCentre.Plugins.SetTypeCode, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" PluginTypeId="d226146e-5158-ec11-9af3-000d3a4c87c6" Name="Yagasoft.NotificationCentre.Plugins.SetTypeCode">
       <FriendlyName>SetTypeCode</FriendlyName>
     </PluginType>
   </PluginTypes>

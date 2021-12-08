@@ -17,14 +17,13 @@
   <IsTransacted>1</IsTransacted>
   <IntroducedVersion>0.1.1.1</IntroducedVersion>
   <IsCustomizable>1</IsCustomizable>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
   <PrimaryEntity>ldv_notificationscentreconfig</PrimaryEntity>
-  <ProcessTriggers>
-    <ProcessTrigger processtriggerid="{e7fbf7f3-b9ca-e611-80c3-00155d5f3d01}">
-      <scope>1</scope>
-      <event>load</event>
-      <pipelinestage>0</pipelinestage>
-      <iscustomizable>1</iscustomizable>
-      <primaryentitytypecode>ldv_notificationscentreconfig</primaryentitytypecode>
-    </ProcessTrigger>
-  </ProcessTriggers>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Defaults" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="Click to add description" />
+  </Descriptions>
 </Workflow>

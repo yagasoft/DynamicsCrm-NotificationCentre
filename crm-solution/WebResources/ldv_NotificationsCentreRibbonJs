@@ -1,4 +1,4 @@
-﻿/// <reference path="../../../../LinkDev.Libraries/LinkDev.Libraries.Common/Scripts/ldv_CommonGeneric.js" />
+﻿/// <reference path="../../../../Yagasoft.Libraries/Yagasoft.Libraries.Common/Scripts/ldv_CommonGeneric.js" />
 /// <reference path="../Refs/Xrm.Page.js" />
 
 var NcIsParentParent = parent && !parent.$('#TabHome').length;
@@ -128,13 +128,25 @@ function AddNotificationsIcon()
 				'<a href="#" class="navTabButtonLink" onkeypress="return true;" onclick="return false;" unselectable="on">' +
 				'<span id="ncIcon" class="navTabButtonImageContainer" unselectable="on">' +
 				'<img id="ncIconImage" src="' + Xrm.Page.context.getClientUrl() + '/WebResources/ldv_GlobePng52">' +
-				'<span id="ncCounter" class="ncHiddenKeepSpace"></span>' +
+				'<span id="ncCounter" class="ncHiddenKeepSpace nc-counter-old"></span>' +
 				//'<img id="ncQuickCreate" src="' + Xrm.Page.context.getClientUrl() + '/WebResources/ldv_PlusGreyIconPng25" />' +
 				'</a>' +
 				'<span id="ncTabDividerContainer" class="navTabButtonImageContainer" unselectable="on">' +
 				'<img class="navTabDivider" alt="|" src="/_imgs/NavBar/NavBarDivider.png" unselectable="on">' +
 				'</span>' +
 				'</span>');
+
+        
+        NcParent.$('div[data-id="topBar"]').children(":last").children(":first")
+            .prepend('<div id="ncMainContainer" class="navTabButton nc-new">' +
+                '<a href="#" class="navTabButtonLink" onkeypress="return true;" onclick="return false;" unselectable="on">' +
+                '<span id="ncIcon" class="navTabButtonImageContainer" unselectable="on">' +
+                '<img id="ncIconImage" src="' + Xrm.Page.context.getClientUrl() + '/WebResources/ldv_GlobePng52">' +
+                '<span id="ncCounter" class="ncHiddenKeepSpace nc-counter"></span>' +
+                //'<img id="ncQuickCreate" src="' + Xrm.Page.context.getClientUrl() + '/WebResources/ldv_PlusGreyIconPng25" />' +
+                '</a>' +
+                '</div>');
+        NcParent.$('#ncMainContainer').addClass(NcParent.$('[data-id="searchLauncher"]').attr('class'));
 	}
 	catch (e)
 	{
@@ -211,11 +223,11 @@ function FetchConfiguration(callback)
 						{
 							try
 							{
-								NcParent.NcSettings.CountPerPage = config["ldv_countperpage"];
-								NcParent.NcSettings.RefreshInterval = config["ldv_refreshinterval"];
-								NcParent.NcSettings.CounterLimit = config["ldv_counterlimit"];
+								NcParent.NcSettings.CountPerPage = config["ldv_countperpage"] || 10;
+								NcParent.NcSettings.RefreshInterval = config["ldv_refreshinterval"] || 5;
+								NcParent.NcSettings.CounterLimit = config["ldv_counterlimit"] || 10;
 								NcParent.NcSettings.IsPopupEnabled = config["ldv_ispopupenabled"];
-								NcParent.NcSettings.PopupTimeout = config["ldv_popuptimeout"];
+								NcParent.NcSettings.PopupTimeout = config["ldv_popuptimeout"] || 5;
 							}
 							catch (e)
 							{
@@ -310,7 +322,7 @@ function LoadWebResources(resources, callback, scopeWindow)
 	/// <summary>
 	///     Takes an array of resource names and loads them into the current context using "LoadScript".<br />
 	///     The resources param accepts a string as well in case a single resource is needed instead.<br />
-	///     Author: Ahmed el-Sawalhy
+	///     Author: Ahmed Elsawalhy
 	/// </summary>
 	/// <param name="resources" type="String[] | string" optional="false">The resource[s] to load.</param>
 	/// <param name="callback" type="Function" optional="true">A function to call after resource[s] has been loaded.</param>
@@ -367,7 +379,7 @@ function LoadScript(url, callback, scopeWindow)
 {
 	/// <summary>
 	///     Takes a URL of a script file and loads it into the current context, and then calls the function passed.<br />
-	///     Author: Ahmed el-Sawalhy<br />
+	///     Author: Ahmed Elsawalhy<br />
 	///     credit: http://stackoverflow.com/a/950146/1919456
 	/// </summary>
 	/// <param name="url" type="String" optional="false">The URL to the script file.</param>

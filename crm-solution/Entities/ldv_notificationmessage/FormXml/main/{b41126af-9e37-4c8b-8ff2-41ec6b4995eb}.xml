@@ -190,7 +190,7 @@
                             <ViewIds>{670C7365-98AA-40EB-BFE5-B38F5C538CF5}</ViewIds>
                             <EnableJumpBar>false</EnableJumpBar>
                             <ChartGridMode>Grid</ChartGridMode>
-                            <VisualizationId></VisualizationId>
+                            <VisualizationId />
                             <IsUserChart>false</IsUserChart>
                             <EnableChartPicker>false</EnableChartPicker>
                             <RecordsPerPage>250</RecordsPerPage>
@@ -198,9 +198,9 @@
                         </control>
                       </cell>
                     </row>
-                    <row></row>
-                    <row></row>
-                    <row height="auto"></row>
+                    <row />
+                    <row />
+                    <row height="auto" />
                   </rows>
                 </section>
               </sections>
@@ -236,7 +236,7 @@
                             <ViewIds>{109A79D2-DBCB-4351-8B1D-35960F35D86F}</ViewIds>
                             <EnableJumpBar>false</EnableJumpBar>
                             <ChartGridMode>Grid</ChartGridMode>
-                            <VisualizationId></VisualizationId>
+                            <VisualizationId />
                             <IsUserChart>false</IsUserChart>
                             <EnableChartPicker>false</EnableChartPicker>
                             <RecordsPerPage>250</RecordsPerPage>
@@ -244,9 +244,9 @@
                         </control>
                       </cell>
                     </row>
-                    <row></row>
-                    <row></row>
-                    <row height="auto"></row>
+                    <row />
+                    <row />
+                    <row height="auto" />
                   </rows>
                 </section>
               </sections>
@@ -282,7 +282,7 @@
                             <ViewIds>{63621DA5-A754-4CC7-A00E-BB9AB699F062}</ViewIds>
                             <EnableJumpBar>false</EnableJumpBar>
                             <ChartGridMode>Grid</ChartGridMode>
-                            <VisualizationId></VisualizationId>
+                            <VisualizationId />
                             <IsUserChart>false</IsUserChart>
                             <EnableChartPicker>false</EnableChartPicker>
                             <RecordsPerPage>250</RecordsPerPage>
@@ -290,9 +290,9 @@
                         </control>
                       </cell>
                     </row>
-                    <row></row>
-                    <row></row>
-                    <row height="auto"></row>
+                    <row />
+                    <row />
+                    <row height="auto" />
                   </rows>
                 </section>
               </sections>
@@ -328,7 +328,7 @@
                             <ViewIds>{05D8F50F-20A5-46FE-AD5D-E15F80F16473}</ViewIds>
                             <EnableJumpBar>false</EnableJumpBar>
                             <ChartGridMode>Grid</ChartGridMode>
-                            <VisualizationId></VisualizationId>
+                            <VisualizationId />
                             <IsUserChart>false</IsUserChart>
                             <EnableChartPicker>false</EnableChartPicker>
                             <RecordsPerPage>250</RecordsPerPage>
@@ -336,9 +336,9 @@
                         </control>
                       </cell>
                     </row>
-                    <row></row>
-                    <row></row>
-                    <row height="auto"></row>
+                    <row />
+                    <row />
+                    <row height="auto" />
                   </rows>
                 </section>
               </sections>
@@ -414,7 +414,7 @@
       <events>
         <event name="onload" application="false" active="false">
           <Handlers>
-            <Handler functionName="OnLoad" libraryName="ldv_NotificationsCentreFormJs" handlerUniqueId="{e83ace25-6831-aeb5-c385-33857825edbe}" enabled="true" parameters="" passExecutionContext="false" />
+            <Handler functionName="OnLoad" libraryName="ldv_NotificationsCentreFormJs" handlerUniqueId="{e83ace25-6831-aeb5-c385-33857825edbe}" enabled="true" parameters="" passExecutionContext="true" />
           </Handlers>
         </event>
         <event name="onchange" application="false" active="false" attribute="ldv_isglobalmessage">

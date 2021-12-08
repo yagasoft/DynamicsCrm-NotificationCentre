@@ -1,9 +1,9 @@
-﻿/// <reference path="../../../../Yagasoft.Libraries/Yagasoft.Libraries.Common/Scripts/ldv_CommonGeneric.js" />
-/// <reference path="../Refs/Xrm.Page.js" />
-/// <reference path="../../../../Yagasoft.Libraries/Yagasoft.Libraries.Common/CrmSchemaJs.js" />
+﻿/// <reference path="../Refs/Xrm.Page.js" />
 
-function OnLoad()
+function OnLoad(executionContext)
 {
+    SetAnchoredExecutionContext(executionContext);
+	
 	if (!GetFieldValue(Sdk.NotificationsCentreConfig.Name))
 	{
 		SetFieldValue(Sdk.NotificationsCentreConfig.Name,

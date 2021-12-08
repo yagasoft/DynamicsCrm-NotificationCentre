@@ -128,13 +128,25 @@ function AddNotificationsIcon()
 				'<a href="#" class="navTabButtonLink" onkeypress="return true;" onclick="return false;" unselectable="on">' +
 				'<span id="ncIcon" class="navTabButtonImageContainer" unselectable="on">' +
 				'<img id="ncIconImage" src="' + Xrm.Page.context.getClientUrl() + '/WebResources/ldv_GlobePng52">' +
-				'<span id="ncCounter" class="ncHiddenKeepSpace"></span>' +
+				'<span id="ncCounter" class="ncHiddenKeepSpace nc-counter-old"></span>' +
 				//'<img id="ncQuickCreate" src="' + Xrm.Page.context.getClientUrl() + '/WebResources/ldv_PlusGreyIconPng25" />' +
 				'</a>' +
 				'<span id="ncTabDividerContainer" class="navTabButtonImageContainer" unselectable="on">' +
 				'<img class="navTabDivider" alt="|" src="/_imgs/NavBar/NavBarDivider.png" unselectable="on">' +
 				'</span>' +
 				'</span>');
+
+        
+        NcParent.$('div[data-id="topBar"]').children(":last").children(":first")
+            .prepend('<div id="ncMainContainer" class="navTabButton nc-new">' +
+                '<a href="#" class="navTabButtonLink" onkeypress="return true;" onclick="return false;" unselectable="on">' +
+                '<span id="ncIcon" class="navTabButtonImageContainer" unselectable="on">' +
+                '<img id="ncIconImage" src="' + Xrm.Page.context.getClientUrl() + '/WebResources/ldv_GlobePng52">' +
+                '<span id="ncCounter" class="ncHiddenKeepSpace nc-counter"></span>' +
+                //'<img id="ncQuickCreate" src="' + Xrm.Page.context.getClientUrl() + '/WebResources/ldv_PlusGreyIconPng25" />' +
+                '</a>' +
+                '</div>');
+        NcParent.$('#ncMainContainer').addClass(NcParent.$('[data-id="searchLauncher"]').attr('class'));
 	}
 	catch (e)
 	{
@@ -211,11 +223,11 @@ function FetchConfiguration(callback)
 						{
 							try
 							{
-								NcParent.NcSettings.CountPerPage = config["ldv_countperpage"];
-								NcParent.NcSettings.RefreshInterval = config["ldv_refreshinterval"];
-								NcParent.NcSettings.CounterLimit = config["ldv_counterlimit"];
+								NcParent.NcSettings.CountPerPage = config["ldv_countperpage"] || 10;
+								NcParent.NcSettings.RefreshInterval = config["ldv_refreshinterval"] || 5;
+								NcParent.NcSettings.CounterLimit = config["ldv_counterlimit"] || 10;
 								NcParent.NcSettings.IsPopupEnabled = config["ldv_ispopupenabled"];
-								NcParent.NcSettings.PopupTimeout = config["ldv_popuptimeout"];
+								NcParent.NcSettings.PopupTimeout = config["ldv_popuptimeout"] || 5;
 							}
 							catch (e)
 							{

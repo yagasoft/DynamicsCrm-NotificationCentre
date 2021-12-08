@@ -154,7 +154,7 @@
       <events>
         <event name="onload" application="false" active="false">
           <Handlers>
-            <Handler functionName="OnLoad" libraryName="ldv_NotificationsCentreConfigJs" handlerUniqueId="{a868bda6-8de1-a33b-d4a1-b9704446d607}" enabled="true" parameters="" passExecutionContext="false" />
+            <Handler functionName="OnLoad" libraryName="ldv_NotificationsCentreConfigJs" handlerUniqueId="{a868bda6-8de1-a33b-d4a1-b9704446d607}" enabled="true" parameters="" passExecutionContext="true" />
           </Handlers>
         </event>
         <event name="onchange" application="false" active="false" attribute="ldv_ispopupenabled">

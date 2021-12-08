@@ -3,7 +3,7 @@
   <EntityRelationship Name="ldv_notificationmessage_owner_ownerid">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>8.1.1.2</IntroducedVersion>
+    <IntroducedVersion>3.1.1.1</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>ldv_notificationmessage</ReferencingEntityName>
     <ReferencedEntityName>Owner</ReferencedEntityName>
@@ -12,6 +12,7 @@
     <CascadeReparent>NoCascade</CascadeReparent>
     <CascadeShare>NoCascade</CascadeShare>
     <CascadeUnshare>NoCascade</CascadeUnshare>
+    <CascadeRollupView>NoCascade</CascadeRollupView>
     <ReferencingAttributeName>OwnerId</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>

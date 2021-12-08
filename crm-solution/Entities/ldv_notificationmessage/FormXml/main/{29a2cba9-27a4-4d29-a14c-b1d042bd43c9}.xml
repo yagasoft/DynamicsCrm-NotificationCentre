@@ -3,8 +3,8 @@
   <systemform>
     <formid>{29a2cba9-27a4-4d29-a14c-b1d042bd43c9}</formid>
     <IntroducedVersion>0.0.1.1</IntroducedVersion>
-    <FormPresentation>1</FormPresentation>
-    <FormActivationState>1</FormActivationState>
+    <FormPresentation>2</FormPresentation>
+    <FormActivationState>0</FormActivationState>
     <form>
       <tabs>
         <tab verticallayout="true" id="{871063f8-872e-4a25-93ec-d643b4973254}" IsUserDefined="1">
@@ -91,6 +91,7 @@
           </row>
         </rows>
       </header>
+      <DisplayConditions Order="2" />
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>

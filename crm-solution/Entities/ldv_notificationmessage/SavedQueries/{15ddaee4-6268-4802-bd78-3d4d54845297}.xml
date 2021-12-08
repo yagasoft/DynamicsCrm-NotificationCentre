@@ -6,10 +6,9 @@
     <isquickfindquery>1</isquickfindquery>
     <isprivate>0</isprivate>
     <isdefault>1</isdefault>
-    <returnedtypecode>10021</returnedtypecode>
     <savedqueryid>{15ddaee4-6268-4802-bd78-3d4d54845297}</savedqueryid>
     <layoutxml>
-      <grid name="resultset" object="10021" jump="subject" select="1" icon="1" preview="1">
+      <grid name="resultset" jump="subject" select="1" icon="1" preview="1">
         <row name="result" id="activityid">
           <cell name="subject" width="300" />
           <cell name="createdon" width="125" />

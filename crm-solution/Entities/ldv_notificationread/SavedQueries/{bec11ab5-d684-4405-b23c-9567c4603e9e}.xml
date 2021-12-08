@@ -6,10 +6,9 @@
     <isquickfindquery>0</isquickfindquery>
     <isprivate>0</isprivate>
     <isdefault>1</isdefault>
-    <returnedtypecode>10025</returnedtypecode>
     <savedqueryid>{bec11ab5-d684-4405-b23c-9567c4603e9e}</savedqueryid>
     <layoutxml>
-      <grid name="" object="10025" jump="ldv_name" select="1" icon="1" preview="0">
+      <grid name="" jump="ldv_name" select="1" icon="1" preview="0">
         <row name="ldv_notificationread" id="ldv_notificationreadid">
           <cell name="ldv_name" width="300" />
           <cell name="createdon" width="125" />

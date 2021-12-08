@@ -129,7 +129,7 @@
       <events>
         <event name="onload" application="false" active="false">
           <Handlers>
-            <Handler functionName="OnLoad" libraryName="ldv_NotificationsCentreFormJs" handlerUniqueId="{d578185a-a194-ea50-1aab-93ebe6ddea24}" enabled="true" parameters="" passExecutionContext="false" />
+            <Handler functionName="OnLoad" libraryName="ldv_NotificationsCentreFormJs" handlerUniqueId="{d578185a-a194-ea50-1aab-93ebe6ddea24}" enabled="true" parameters="" passExecutionContext="true" />
           </Handlers>
         </event>
         <event name="onchange" application="false" active="false" attribute="ldv_isglobalmessage">

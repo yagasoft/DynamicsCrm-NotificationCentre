@@ -392,6 +392,10 @@
     <value>Unique identifier of the user who modified the record.</value>
     <comment>ldv_notificationscentreconfig Description for EntityRelationship 'lk_ldv_notificationscentreconfig_modifiedby'</comment>
   </data>
+  <data name="10:Description,msdyn_playbookinstance_ldv_notificationmessages" xml:space="preserve">
+    <value>Unique identifier of the object with which the activity is associated.</value>
+    <comment>ldv_notificationmessage Description for EntityRelationship 'msdyn_playbookinstance_ldv_notificationmessages'</comment>
+  </data>
   <data name="10:Description,msdyn_postalbum_ldv_notificationmessages" xml:space="preserve">
     <value>Unique identifier of the object with which the activity is associated.</value>
     <comment>ldv_notificationmessage Description for EntityRelationship 'msdyn_postalbum_ldv_notificationmessages'</comment>
@@ -427,6 +431,10 @@
   <data name="10:Description,salesorder_ldv_notificationmessages" xml:space="preserve">
     <value>Unique identifier of the object with which the activity is associated.</value>
     <comment>ldv_notificationmessage Description for EntityRelationship 'salesorder_ldv_notificationmessages'</comment>
+  </data>
+  <data name="10:Description,site_ldv_notificationmessages" xml:space="preserve">
+    <value>Unique identifier of the object with which the activity is associated.</value>
+    <comment>ldv_notificationmessage Description for EntityRelationship 'site_ldv_notificationmessages'</comment>
   </data>
   <data name="10:Description,team_ldv_notificationmessagerole" xml:space="preserve">
     <value>Unique identifier for the team that owns the record.</value>
@@ -469,7 +477,7 @@
     <comment>ldv_notificationscentreconfig Description for EntityRelationship 'user_ldv_notificationscentreconfig'</comment>
   </data>
   <data name="15062:Description,NotificationCentre" xml:space="preserve">
-    <value>Refer to Yagasoft.com for any enquiries.</value>
+    <value>Refer to Yagasoft.com (Ahmed Elsawalhy) for support.</value>
     <comment> 'NotificationCentre' : Description for Solution</comment>
   </data>
   <data name="15062:LocalizedName,NotificationCentre" xml:space="preserve">
@@ -479,10 +487,6 @@
   <data name="15062:LocalizedName,yagasoftys71786" xml:space="preserve">
     <value>Yagasoft</value>
     <comment> 'yagasoft' : LocalizedName for Solution Publisher</comment>
-  </data>
-  <data name="1:Description,ldv_genericconfigurationentityldv_genericconfiguration" xml:space="preserve">
-    <value />
-    <comment> 'ldv_genericconfiguration' : Description for Entity</comment>
   </data>
   <data name="1:Description,ldv_genericconfigurationldv_genericconfiguration_ldv_isnotificationscentreenabled" xml:space="preserve">
     <value />
@@ -808,18 +812,6 @@
     <value>Owner Id</value>
     <comment>'ldv_notificationmessagerole' : Description for Attribute 'OwnerId' on Entity</comment>
   </data>
-  <data name="1:Description,ldv_notificationmessageroleOwnerIdName" xml:space="preserve">
-    <value>Name of the owner</value>
-    <comment>'ldv_notificationmessagerole' : Description for Attribute 'OwnerIdName' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationmessageroleOwnerIdType" xml:space="preserve">
-    <value>Owner Id Type</value>
-    <comment>'ldv_notificationmessagerole' : Description for Attribute 'OwnerIdType' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationmessageroleOwnerIdYomiName" xml:space="preserve">
-    <value>Yomi name of the owner</value>
-    <comment>'ldv_notificationmessagerole' : Description for Attribute 'OwnerIdYomiName' on Entity</comment>
-  </data>
   <data name="1:Description,ldv_notificationmessageroleOwningBusinessUnit" xml:space="preserve">
     <value>Unique identifier for the business unit that owns the record</value>
     <comment>'ldv_notificationmessagerole' : Description for Attribute 'OwningBusinessUnit' on Entity</comment>
@@ -968,18 +960,6 @@
     <value>Owner Id</value>
     <comment>'ldv_notificationmessageteam' : Description for Attribute 'OwnerId' on Entity</comment>
   </data>
-  <data name="1:Description,ldv_notificationmessageteamOwnerIdName" xml:space="preserve">
-    <value>Name of the owner</value>
-    <comment>'ldv_notificationmessageteam' : Description for Attribute 'OwnerIdName' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationmessageteamOwnerIdType" xml:space="preserve">
-    <value>Owner Id Type</value>
-    <comment>'ldv_notificationmessageteam' : Description for Attribute 'OwnerIdType' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationmessageteamOwnerIdYomiName" xml:space="preserve">
-    <value>Yomi name of the owner</value>
-    <comment>'ldv_notificationmessageteam' : Description for Attribute 'OwnerIdYomiName' on Entity</comment>
-  </data>
   <data name="1:Description,ldv_notificationmessageteamOwningBusinessUnit" xml:space="preserve">
     <value>Unique identifier for the business unit that owns the record</value>
     <comment>'ldv_notificationmessageteam' : Description for Attribute 'OwningBusinessUnit' on Entity</comment>
@@ -1084,18 +1064,6 @@
     <value>Owner Id</value>
     <comment>'ldv_notificationmessageuser' : Description for Attribute 'OwnerId' on Entity</comment>
   </data>
-  <data name="1:Description,ldv_notificationmessageuserOwnerIdName" xml:space="preserve">
-    <value>Name of the owner</value>
-    <comment>'ldv_notificationmessageuser' : Description for Attribute 'OwnerIdName' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationmessageuserOwnerIdType" xml:space="preserve">
-    <value>Owner Id Type</value>
-    <comment>'ldv_notificationmessageuser' : Description for Attribute 'OwnerIdType' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationmessageuserOwnerIdYomiName" xml:space="preserve">
-    <value>Yomi name of the owner</value>
-    <comment>'ldv_notificationmessageuser' : Description for Attribute 'OwnerIdYomiName' on Entity</comment>
-  </data>
   <data name="1:Description,ldv_notificationmessageuserOwningBusinessUnit" xml:space="preserve">
     <value>Unique identifier for the business unit that owns the record</value>
     <comment>'ldv_notificationmessageuser' : Description for Attribute 'OwningBusinessUnit' on Entity</comment>
@@ -1192,18 +1160,6 @@
     <value>Owner Id</value>
     <comment>'ldv_notificationread' : Description for Attribute 'OwnerId' on Entity</comment>
   </data>
-  <data name="1:Description,ldv_notificationreadOwnerIdName" xml:space="preserve">
-    <value>Name of the owner</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'OwnerIdName' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadOwnerIdType" xml:space="preserve">
-    <value>Owner Id Type</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'OwnerIdType' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadOwnerIdYomiName" xml:space="preserve">
-    <value>Yomi name of the owner</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'OwnerIdYomiName' on Entity</comment>
-  </data>
   <data name="1:Description,ldv_notificationreadOwningBusinessUnit" xml:space="preserve">
     <value>Unique identifier for the business unit that owns the record</value>
     <comment>'ldv_notificationread' : Description for Attribute 'OwningBusinessUnit' on Entity</comment>
@@ -1293,11 +1249,11 @@
     <comment>'ldv_notificationscentreconfig' : Description for OptionSet 'ldv_notificationscentreconfig_statuscode' on Entity</comment>
   </data>
   <data name="1:Description,ldv_notificationscentreconfigldv_PopupTimeout" xml:space="preserve">
-    <value />
+    <value>In seconds.</value>
     <comment>'ldv_notificationscentreconfig' : Description for Attribute 'ldv_PopupTimeout' on Entity</comment>
   </data>
   <data name="1:Description,ldv_notificationscentreconfigldv_RefreshInterval" xml:space="preserve">
-    <value />
+    <value>In seconds. Default: 5 seconds. Setting a very small value will result in hitting the server too often with a query to retrieve messages.</value>
     <comment>'ldv_notificationscentreconfig' : Description for Attribute 'ldv_RefreshInterval' on Entity</comment>
   </data>
   <data name="1:Description,ldv_notificationscentreconfigModifiedBy" xml:space="preserve">
@@ -1319,18 +1275,6 @@
   <data name="1:Description,ldv_notificationscentreconfigOwnerId" xml:space="preserve">
     <value>Owner Id</value>
     <comment>'ldv_notificationscentreconfig' : Description for Attribute 'OwnerId' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationscentreconfigOwnerIdName" xml:space="preserve">
-    <value>Name of the owner</value>
-    <comment>'ldv_notificationscentreconfig' : Description for Attribute 'OwnerIdName' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationscentreconfigOwnerIdType" xml:space="preserve">
-    <value>Owner Id Type</value>
-    <comment>'ldv_notificationscentreconfig' : Description for Attribute 'OwnerIdType' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationscentreconfigOwnerIdYomiName" xml:space="preserve">
-    <value>Yomi name of the owner</value>
-    <comment>'ldv_notificationscentreconfig' : Description for Attribute 'OwnerIdYomiName' on Entity</comment>
   </data>
   <data name="1:Description,ldv_notificationscentreconfigOwningBusinessUnit" xml:space="preserve">
     <value>Unique identifier for the business unit that owns the record</value>
@@ -1368,10 +1312,6 @@
     <value>A form for this entity.</value>
     <comment>'Notification Message Role' : Description for systemform in Entity FormXml ID: '{861fbc8a-65de-48aa-b13b-4a6eea251d64}'</comment>
   </data>
-  <data name="1:Description,Notification Message Role{da0e5abd-1662-4ebb-a32f-60a3ed855551}" xml:space="preserve">
-    <value>This is the form that is displayed for the CRM Mobile application.</value>
-    <comment>'Notification Message Role' : Description for systemform in Entity FormXml ID: '{da0e5abd-1662-4ebb-a32f-60a3ed855551}'</comment>
-  </data>
   <data name="1:Description,Notification Message Role{f517de39-8413-4168-a8f2-23935781c63b}" xml:space="preserve">
     <value>A form for this entity.</value>
     <comment>'Notification Message Role' : Description for systemform in Entity FormXml ID: '{f517de39-8413-4168-a8f2-23935781c63b}'</comment>
@@ -1384,10 +1324,6 @@
     <value>A form for this entity.</value>
     <comment>'Notification Message Team' : Description for systemform in Entity FormXml ID: '{b8485cec-32a4-4f28-85d6-edb47ad4d547}'</comment>
   </data>
-  <data name="1:Description,Notification Message Team{ccf02312-39f2-4c0e-841b-30ecf45c7efa}" xml:space="preserve">
-    <value>This is the form that is displayed for the CRM Mobile application.</value>
-    <comment>'Notification Message Team' : Description for systemform in Entity FormXml ID: '{ccf02312-39f2-4c0e-841b-30ecf45c7efa}'</comment>
-  </data>
   <data name="1:Description,Notification Message Team{fe9dc990-2f48-454f-9947-8986fc1251e3}" xml:space="preserve">
     <value>A form for this entity.</value>
     <comment>'Notification Message Team' : Description for systemform in Entity FormXml ID: '{fe9dc990-2f48-454f-9947-8986fc1251e3}'</comment>
@@ -1395,10 +1331,6 @@
   <data name="1:Description,Notification Message User{076d187f-4043-48ee-9381-7b4ae24110b7}" xml:space="preserve">
     <value>A card form for this entity.</value>
     <comment>'Notification Message User' : Description for systemform in Entity FormXml ID: '{076d187f-4043-48ee-9381-7b4ae24110b7}'</comment>
-  </data>
-  <data name="1:Description,Notification Message User{1989f23b-0feb-4a3a-98be-c3c64da62714}" xml:space="preserve">
-    <value>This is the form that is displayed for the CRM Mobile application.</value>
-    <comment>'Notification Message User' : Description for systemform in Entity FormXml ID: '{1989f23b-0feb-4a3a-98be-c3c64da62714}'</comment>
   </data>
   <data name="1:Description,Notification Message User{71f893fb-f1c6-4921-88ac-0a31a37b183b}" xml:space="preserve">
     <value>A form for this entity.</value>
@@ -1416,10 +1348,6 @@
     <value>A form for this entity.</value>
     <comment>'Notification Message' : Description for systemform in Entity FormXml ID: '{29a2cba9-27a4-4d29-a14c-b1d042bd43c9}'</comment>
   </data>
-  <data name="1:Description,Notification Message{5ebbd093-7a37-4ce1-93ca-fbdef2fa1d72}" xml:space="preserve">
-    <value>This is the form that is displayed for the CRM Mobile application.</value>
-    <comment>'Notification Message' : Description for systemform in Entity FormXml ID: '{5ebbd093-7a37-4ce1-93ca-fbdef2fa1d72}'</comment>
-  </data>
   <data name="1:Description,Notification Message{b41126af-9e37-4c8b-8ff2-41ec6b4995eb}" xml:space="preserve">
     <value>A form for this entity.</value>
     <comment>'Notification Message' : Description for systemform in Entity FormXml ID: '{b41126af-9e37-4c8b-8ff2-41ec6b4995eb}'</comment>
@@ -1436,17 +1364,9 @@
     <value>A form for this entity.</value>
     <comment>'Notification Read' : Description for systemform in Entity FormXml ID: '{6afd90d9-6b14-41b5-a336-ad1bc287fa5e}'</comment>
   </data>
-  <data name="1:Description,Notification Read{fc2d02c2-98f2-4294-8f11-8b1f6e5fc820}" xml:space="preserve">
-    <value>This is the form that is displayed for the CRM Mobile application.</value>
-    <comment>'Notification Read' : Description for systemform in Entity FormXml ID: '{fc2d02c2-98f2-4294-8f11-8b1f6e5fc820}'</comment>
-  </data>
   <data name="1:Description,Notifications Centre Config{8772740a-9fe0-4d6e-97ba-493c062dd149}" xml:space="preserve">
     <value>A form for this entity.</value>
     <comment>'Notifications Centre Config' : Description for systemform in Entity FormXml ID: '{8772740a-9fe0-4d6e-97ba-493c062dd149}'</comment>
-  </data>
-  <data name="1:Description,Notifications Centre Config{912396a4-801d-45c8-a3ca-1bcd1aa6bc86}" xml:space="preserve">
-    <value>This is the form that is displayed for the CRM Mobile application.</value>
-    <comment>'Notifications Centre Config' : Description for systemform in Entity FormXml ID: '{912396a4-801d-45c8-a3ca-1bcd1aa6bc86}'</comment>
   </data>
   <data name="1:Description,Notifications Centre Config{b32dac27-520e-43b1-957c-1930a5567854}" xml:space="preserve">
     <value>A form for this entity.</value>
@@ -2248,33 +2168,33 @@
     <value>UTC Conversion Time Zone Code</value>
     <comment>'ldv_notificationscentreconfig' : displayname for Attribute 'UTCConversionTimeZoneCode' on Entity</comment>
   </data>
-  <data name="1:label,Generic Configuration{128024ac-defd-4548-9f31-81e4c9ffa087}" xml:space="preserve">
+  <data name="1:label,Common Configuration{128024ac-defd-4548-9f31-81e4c9ffa087}" xml:space="preserve">
     <value>Owner</value>
-    <comment>'Generic Configuration' : label for cell in Entity FormXml ID: '{128024ac-defd-4548-9f31-81e4c9ffa087}'</comment>
+    <comment>'Common Configuration' : label for cell in Entity FormXml ID: '{128024ac-defd-4548-9f31-81e4c9ffa087}'</comment>
   </data>
-  <data name="1:label,Generic Configuration{19102333-ae4b-4170-a5ce-cc8b109e09ae}" xml:space="preserve">
+  <data name="1:label,Common Configuration{19102333-ae4b-4170-a5ce-cc8b109e09ae}" xml:space="preserve">
     <value>General</value>
-    <comment>'Generic Configuration' : label for section in Entity FormXml ID: '{19102333-ae4b-4170-a5ce-cc8b109e09ae}'</comment>
+    <comment>'Common Configuration' : label for section in Entity FormXml ID: '{19102333-ae4b-4170-a5ce-cc8b109e09ae}'</comment>
   </data>
-  <data name="1:label,Generic Configuration{3caa6f22-bafd-4dc4-8b6b-5ef10f2b76a7}" xml:space="preserve">
+  <data name="1:label,Common Configuration{3caa6f22-bafd-4dc4-8b6b-5ef10f2b76a7}" xml:space="preserve">
     <value>General</value>
-    <comment>'Generic Configuration' : label for tab in Entity FormXml ID: '{3caa6f22-bafd-4dc4-8b6b-5ef10f2b76a7}'</comment>
+    <comment>'Common Configuration' : label for tab in Entity FormXml ID: '{3caa6f22-bafd-4dc4-8b6b-5ef10f2b76a7}'</comment>
   </data>
-  <data name="1:label,Generic Configuration{5cc14184-82bb-1644-1c67-684a5a37a17e}" xml:space="preserve">
+  <data name="1:label,Common Configuration{5cc14184-82bb-1644-1c67-684a5a37a17e}" xml:space="preserve">
     <value>Notifications Centre Enabled</value>
-    <comment>'Generic Configuration' : label for cell in Entity FormXml ID: '{5cc14184-82bb-1644-1c67-684a5a37a17e}'</comment>
+    <comment>'Common Configuration' : label for cell in Entity FormXml ID: '{5cc14184-82bb-1644-1c67-684a5a37a17e}'</comment>
   </data>
-  <data name="1:label,Generic Configuration{7b805a0a-48b6-8540-3b6c-388409e8aaca}" xml:space="preserve">
+  <data name="1:label,Common Configuration{7b805a0a-48b6-8540-3b6c-388409e8aaca}" xml:space="preserve">
     <value>Log Level</value>
-    <comment>'Generic Configuration' : label for cell in Entity FormXml ID: '{7b805a0a-48b6-8540-3b6c-388409e8aaca}'</comment>
+    <comment>'Common Configuration' : label for cell in Entity FormXml ID: '{7b805a0a-48b6-8540-3b6c-388409e8aaca}'</comment>
   </data>
-  <data name="1:label,Generic Configuration{9cb15278-b46c-b033-c00c-80d42051e24b}" xml:space="preserve">
+  <data name="1:label,Common Configuration{9cb15278-b46c-b033-c00c-80d42051e24b}" xml:space="preserve">
     <value>Section</value>
-    <comment>'Generic Configuration' : label for section in Entity FormXml ID: '{9cb15278-b46c-b033-c00c-80d42051e24b}'</comment>
+    <comment>'Common Configuration' : label for section in Entity FormXml ID: '{9cb15278-b46c-b033-c00c-80d42051e24b}'</comment>
   </data>
-  <data name="1:label,Generic Configuration{fe91229c-94f3-4a4e-a17a-1ee95a7113f2}" xml:space="preserve">
+  <data name="1:label,Common Configuration{fe91229c-94f3-4a4e-a17a-1ee95a7113f2}" xml:space="preserve">
     <value>Name</value>
-    <comment>'Generic Configuration' : label for cell in Entity FormXml ID: '{fe91229c-94f3-4a4e-a17a-1ee95a7113f2}'</comment>
+    <comment>'Common Configuration' : label for cell in Entity FormXml ID: '{fe91229c-94f3-4a4e-a17a-1ee95a7113f2}'</comment>
   </data>
   <data name="1:label,ldv_genericconfigurationldv_genericconfiguration_ldv_isnotificationscentreenabled0" xml:space="preserve">
     <value>No</value>
@@ -2488,10 +2408,6 @@
     <value>Inactive</value>
     <comment>'ldv_notificationscentreconfig' : label for status '2' on Entity</comment>
   </data>
-  <data name="1:label,Notification Message Role{0136452f-8918-4ea3-8bbf-773466b1824a}" xml:space="preserve">
-    <value />
-    <comment>'Notification Message Role' : label for section in Entity FormXml ID: '{0136452f-8918-4ea3-8bbf-773466b1824a}'</comment>
-  </data>
   <data name="1:label,Notification Message Role{0513a8b7-8706-48b2-8fef-b1a512a611c2}" xml:space="preserve">
     <value>Created On</value>
     <comment>'Notification Message Role' : label for cell in Entity FormXml ID: '{0513a8b7-8706-48b2-8fef-b1a512a611c2}'</comment>
@@ -2511,10 +2427,6 @@
   <data name="1:label,Notification Message Role{2a2fed6b-0a8e-4c65-b337-814e4482f57a}" xml:space="preserve">
     <value />
     <comment>'Notification Message Role' : label for cell in Entity FormXml ID: '{2a2fed6b-0a8e-4c65-b337-814e4482f57a}'</comment>
-  </data>
-  <data name="1:label,Notification Message Role{2c40e4a4-959e-40f9-bd9f-f911ec1f23b9}" xml:space="preserve">
-    <value>Status</value>
-    <comment>'Notification Message Role' : label for cell in Entity FormXml ID: '{2c40e4a4-959e-40f9-bd9f-f911ec1f23b9}'</comment>
   </data>
   <data name="1:label,Notification Message Role{2e4ecb81-fc5f-4025-838c-a0075a96ff39}" xml:space="preserve">
     <value>General</value>
@@ -2536,17 +2448,9 @@
     <value>General</value>
     <comment>'Notification Message Role' : label for section in Entity FormXml ID: '{35edeb86-4764-480c-b7ef-d218f03c2ce9}'</comment>
   </data>
-  <data name="1:label,Notification Message Role{384feadf-d5a7-45ab-98fa-e5095e959e0f}" xml:space="preserve">
-    <value>Name</value>
-    <comment>'Notification Message Role' : label for cell in Entity FormXml ID: '{384feadf-d5a7-45ab-98fa-e5095e959e0f}'</comment>
-  </data>
   <data name="1:label,Notification Message Role{4722bb0c-e74a-a668-d85a-c70434576a97}" xml:space="preserve">
     <value>Role</value>
     <comment>'Notification Message Role' : label for cell in Entity FormXml ID: '{4722bb0c-e74a-a668-d85a-c70434576a97}'</comment>
-  </data>
-  <data name="1:label,Notification Message Role{52b4ffbc-6f5f-4c7a-82b6-4d17ab80562e}" xml:space="preserve">
-    <value />
-    <comment>'Notification Message Role' : label for tab in Entity FormXml ID: '{52b4ffbc-6f5f-4c7a-82b6-4d17ab80562e}'</comment>
   </data>
   <data name="1:label,Notification Message Role{54fddca2-fb03-4c53-aaac-d91f1843298f}" xml:space="preserve">
     <value>section</value>
@@ -2591,10 +2495,6 @@
   <data name="1:label,Notification Message Role{7c6bbc61-a821-48ab-926c-2381a25cb703}" xml:space="preserve">
     <value>Name</value>
     <comment>'Notification Message Role' : label for cell in Entity FormXml ID: '{7c6bbc61-a821-48ab-926c-2381a25cb703}'</comment>
-  </data>
-  <data name="1:label,Notification Message Role{801e28d1-9f6e-45fc-9218-9dc98ac7b05d}" xml:space="preserve">
-    <value>Owner</value>
-    <comment>'Notification Message Role' : label for cell in Entity FormXml ID: '{801e28d1-9f6e-45fc-9218-9dc98ac7b05d}'</comment>
   </data>
   <data name="1:label,Notification Message Role{825ad502-9b14-4b71-b873-49b748bbab06}" xml:space="preserve">
     <value>General</value>
@@ -2676,10 +2576,6 @@
     <value />
     <comment>'Notification Message Team' : label for cell in Entity FormXml ID: '{0daf7dec-3600-401e-a633-d8d50a41719b}'</comment>
   </data>
-  <data name="1:label,Notification Message Team{10b2db9c-e3a1-409f-a264-306949160544}" xml:space="preserve">
-    <value />
-    <comment>'Notification Message Team' : label for section in Entity FormXml ID: '{10b2db9c-e3a1-409f-a264-306949160544}'</comment>
-  </data>
   <data name="1:label,Notification Message Team{16ff34e0-58d3-4549-b5b1-a420a1d60df8}" xml:space="preserve">
     <value>section</value>
     <comment>'Notification Message Team' : label for section in Entity FormXml ID: '{16ff34e0-58d3-4549-b5b1-a420a1d60df8}'</comment>
@@ -2724,10 +2620,6 @@
     <value>Status Reason</value>
     <comment>'Notification Message Team' : label for cell in Entity FormXml ID: '{5c60b9d5-22aa-4e27-9d59-34b1fc03afb0}'</comment>
   </data>
-  <data name="1:label,Notification Message Team{5f52aa1a-88a0-4f72-9800-bc3b71e2915d}" xml:space="preserve">
-    <value>Name</value>
-    <comment>'Notification Message Team' : label for cell in Entity FormXml ID: '{5f52aa1a-88a0-4f72-9800-bc3b71e2915d}'</comment>
-  </data>
   <data name="1:label,Notification Message Team{64c6966b-1ad0-90e5-3dd4-971abd7be2bc}" xml:space="preserve">
     <value>Team</value>
     <comment>'Notification Message Team' : label for cell in Entity FormXml ID: '{64c6966b-1ad0-90e5-3dd4-971abd7be2bc}'</comment>
@@ -2764,10 +2656,6 @@
     <value>Header</value>
     <comment>'Notification Message Team' : label for section in Entity FormXml ID: '{b88c67f5-d94c-427d-abf1-7e97f65408f1}'</comment>
   </data>
-  <data name="1:label,Notification Message Team{b8c5f8a6-a2e6-4da3-9678-3eb36f367b05}" xml:space="preserve">
-    <value>Owner</value>
-    <comment>'Notification Message Team' : label for cell in Entity FormXml ID: '{b8c5f8a6-a2e6-4da3-9678-3eb36f367b05}'</comment>
-  </data>
   <data name="1:label,Notification Message Team{b9061d47-a622-427a-b812-d23326d69cef}" xml:space="preserve">
     <value>section</value>
     <comment>'Notification Message Team' : label for section in Entity FormXml ID: '{b9061d47-a622-427a-b812-d23326d69cef}'</comment>
@@ -2796,10 +2684,6 @@
     <value>Notification Message</value>
     <comment>'Notification Message Team' : label for cell in Entity FormXml ID: '{d50641b7-c987-66e0-d217-9db7b92d41e9}'</comment>
   </data>
-  <data name="1:label,Notification Message Team{d5fe76a6-c2b0-41ff-895f-e2ad9da91a68}" xml:space="preserve">
-    <value>Status</value>
-    <comment>'Notification Message Team' : label for cell in Entity FormXml ID: '{d5fe76a6-c2b0-41ff-895f-e2ad9da91a68}'</comment>
-  </data>
   <data name="1:label,Notification Message Team{da47e7cf-c7ec-47ca-ad25-3e6d412d8c80}" xml:space="preserve">
     <value>General</value>
     <comment>'Notification Message Team' : label for section in Entity FormXml ID: '{da47e7cf-c7ec-47ca-ad25-3e6d412d8c80}'</comment>
@@ -2811,10 +2695,6 @@
   <data name="1:label,Notification Message Team{e4640b08-b7c9-4d70-9436-fd24d48818d3}" xml:space="preserve">
     <value>Owner</value>
     <comment>'Notification Message Team' : label for cell in Entity FormXml ID: '{e4640b08-b7c9-4d70-9436-fd24d48818d3}'</comment>
-  </data>
-  <data name="1:label,Notification Message Team{e46722e4-d1f2-4414-9be8-15b905e9a84f}" xml:space="preserve">
-    <value />
-    <comment>'Notification Message Team' : label for tab in Entity FormXml ID: '{e46722e4-d1f2-4414-9be8-15b905e9a84f}'</comment>
   </data>
   <data name="1:label,Notification Message Team{ec3b4089-027b-4660-9672-af4c69fc9940}" xml:space="preserve">
     <value />
@@ -2847,10 +2727,6 @@
   <data name="1:label,Notification Message User{193dd74f-0cc0-4971-9d7c-4f94c8ec731c}" xml:space="preserve">
     <value>Status Reason</value>
     <comment>'Notification Message User' : label for cell in Entity FormXml ID: '{193dd74f-0cc0-4971-9d7c-4f94c8ec731c}'</comment>
-  </data>
-  <data name="1:label,Notification Message User{1bf5cec2-e9a7-4a51-9a09-eb7ac9df3fa5}" xml:space="preserve">
-    <value>Status</value>
-    <comment>'Notification Message User' : label for cell in Entity FormXml ID: '{1bf5cec2-e9a7-4a51-9a09-eb7ac9df3fa5}'</comment>
   </data>
   <data name="1:label,Notification Message User{2da6b1b0-ee89-4fbd-ba34-0bbe23ae353a}" xml:space="preserve">
     <value>Header</value>
@@ -2892,10 +2768,6 @@
     <value>section</value>
     <comment>'Notification Message User' : label for section in Entity FormXml ID: '{566f3c47-1c38-4931-8b92-3a46a40d5172}'</comment>
   </data>
-  <data name="1:label,Notification Message User{56fc180b-14c0-4521-b91f-3c5498a535fa}" xml:space="preserve">
-    <value />
-    <comment>'Notification Message User' : label for tab in Entity FormXml ID: '{56fc180b-14c0-4521-b91f-3c5498a535fa}'</comment>
-  </data>
   <data name="1:label,Notification Message User{61b47aa1-a750-49b2-861e-cc0d60245f33}" xml:space="preserve">
     <value>RELATED</value>
     <comment>'Notification Message User' : label for section in Entity FormXml ID: '{61b47aa1-a750-49b2-861e-cc0d60245f33}'</comment>
@@ -2919,14 +2791,6 @@
   <data name="1:label,Notification Message User{7ad7ea38-47e3-469a-ba5a-3129f47c97a5}" xml:space="preserve">
     <value>Created On</value>
     <comment>'Notification Message User' : label for cell in Entity FormXml ID: '{7ad7ea38-47e3-469a-ba5a-3129f47c97a5}'</comment>
-  </data>
-  <data name="1:label,Notification Message User{7d4d616e-b2a7-4667-9a35-4c6109b0f721}" xml:space="preserve">
-    <value>Owner</value>
-    <comment>'Notification Message User' : label for cell in Entity FormXml ID: '{7d4d616e-b2a7-4667-9a35-4c6109b0f721}'</comment>
-  </data>
-  <data name="1:label,Notification Message User{7e866fa9-f09b-4ead-af8e-0e713b868806}" xml:space="preserve">
-    <value>Name</value>
-    <comment>'Notification Message User' : label for cell in Entity FormXml ID: '{7e866fa9-f09b-4ead-af8e-0e713b868806}'</comment>
   </data>
   <data name="1:label,Notification Message User{841b3ecf-2d98-48ec-ad20-c6dc46c27503}" xml:space="preserve">
     <value>Footer</value>
@@ -3000,10 +2864,6 @@
     <value>GENERAL</value>
     <comment>'Notification Message User' : label for section in Entity FormXml ID: '{ef37e14e-19e7-4b96-bd12-76302037d1cf}'</comment>
   </data>
-  <data name="1:label,Notification Message User{f1348d4b-95e6-476d-8c28-f7f4b7650cd4}" xml:space="preserve">
-    <value />
-    <comment>'Notification Message User' : label for section in Entity FormXml ID: '{f1348d4b-95e6-476d-8c28-f7f4b7650cd4}'</comment>
-  </data>
   <data name="1:label,Notification Message{05be5bbf-8b7d-4f0a-928e-b833cd1b94fa}" xml:space="preserve">
     <value>Regarding</value>
     <comment>'Notification Message' : label for cell in Entity FormXml ID: '{05be5bbf-8b7d-4f0a-928e-b833cd1b94fa}'</comment>
@@ -3044,10 +2904,6 @@
     <value>GENERAL</value>
     <comment>'Notification Message' : label for section in Entity FormXml ID: '{193d8dfc-0129-49fc-a529-79cdb7f9a481}'</comment>
   </data>
-  <data name="1:label,Notification Message{1a12bd87-2c01-4d85-96b3-a063aac12f93}" xml:space="preserve">
-    <value>Activity Status</value>
-    <comment>'Notification Message' : label for cell in Entity FormXml ID: '{1a12bd87-2c01-4d85-96b3-a063aac12f93}'</comment>
-  </data>
   <data name="1:label,Notification Message{1e079b86-9522-4f8e-898c-fde5c57b41ae}" xml:space="preserve">
     <value>OTHER DETAILS</value>
     <comment>'Notification Message' : label for section in Entity FormXml ID: '{1e079b86-9522-4f8e-898c-fde5c57b41ae}'</comment>
@@ -3055,10 +2911,6 @@
   <data name="1:label,Notification Message{20040e31-91d8-9b8d-2bd1-173d32420cc9}" xml:space="preserve">
     <value>Teams</value>
     <comment>'Notification Message' : label for cell in Entity FormXml ID: '{20040e31-91d8-9b8d-2bd1-173d32420cc9}'</comment>
-  </data>
-  <data name="1:label,Notification Message{248bece6-a354-4235-855b-6228b636b74f}" xml:space="preserve">
-    <value />
-    <comment>'Notification Message' : label for tab in Entity FormXml ID: '{248bece6-a354-4235-855b-6228b636b74f}'</comment>
   </data>
   <data name="1:label,Notification Message{2e7c5b24-7d50-4f22-9ddd-b4fa6c14af46}" xml:space="preserve">
     <value>Activity Status</value>
@@ -3268,10 +3120,6 @@
     <value>Content Modified On</value>
     <comment>'Notification Message' : label for cell in Entity FormXml ID: '{b4d93135-365b-575b-acb7-627d3944b0b5}'</comment>
   </data>
-  <data name="1:label,Notification Message{b4f414a0-1256-47f6-8681-c6d4881e2c17}" xml:space="preserve">
-    <value>Owner</value>
-    <comment>'Notification Message' : label for cell in Entity FormXml ID: '{b4f414a0-1256-47f6-8681-c6d4881e2c17}'</comment>
-  </data>
   <data name="1:label,Notification Message{b5388270-0ba6-4cd3-bc75-98abd0dd6839}" xml:space="preserve">
     <value />
     <comment>'Notification Message' : label for tab in Entity FormXml ID: '{b5388270-0ba6-4cd3-bc75-98abd0dd6839}'</comment>
@@ -3296,10 +3144,6 @@
     <value>Global Message</value>
     <comment>'Notification Message' : label for cell in Entity FormXml ID: '{cbd2e8bc-3882-0726-01e5-d741a1d3b40b}'</comment>
   </data>
-  <data name="1:label,Notification Message{cdf835d3-1b37-4437-b6ba-1cde1fdfd451}" xml:space="preserve">
-    <value />
-    <comment>'Notification Message' : label for section in Entity FormXml ID: '{cdf835d3-1b37-4437-b6ba-1cde1fdfd451}'</comment>
-  </data>
   <data name="1:label,Notification Message{ce42b558-58ab-4dc4-afcb-1a8f71a29919}" xml:space="preserve">
     <value>Regarding</value>
     <comment>'Notification Message' : label for cell in Entity FormXml ID: '{ce42b558-58ab-4dc4-afcb-1a8f71a29919}'</comment>
@@ -3307,10 +3151,6 @@
   <data name="1:label,Notification Message{ced8a511-b551-7bad-53d4-ade3d94c3b00}" xml:space="preserve">
     <value>User</value>
     <comment>'Notification Message' : label for cell in Entity FormXml ID: '{ced8a511-b551-7bad-53d4-ade3d94c3b00}'</comment>
-  </data>
-  <data name="1:label,Notification Message{d7ca8e94-8016-49c3-b239-9c1e5a6a0d55}" xml:space="preserve">
-    <value>Title</value>
-    <comment>'Notification Message' : label for cell in Entity FormXml ID: '{d7ca8e94-8016-49c3-b239-9c1e5a6a0d55}'</comment>
   </data>
   <data name="1:label,Notification Message{daa76e2c-9f7f-43e3-81b1-902d5d726f5d}" xml:space="preserve">
     <value>Regarding</value>
@@ -3368,10 +3208,6 @@
     <value />
     <comment>'Notification Read' : label for cell in Entity FormXml ID: '{2ceb7725-73d3-4cf3-abc0-175637ee68e4}'</comment>
   </data>
-  <data name="1:label,Notification Read{396b61a0-6e53-4bca-bf72-820904ba6fc3}" xml:space="preserve">
-    <value />
-    <comment>'Notification Read' : label for tab in Entity FormXml ID: '{396b61a0-6e53-4bca-bf72-820904ba6fc3}'</comment>
-  </data>
   <data name="1:label,Notification Read{3e37ed59-0e94-4173-8492-f5a87d925a9f}" xml:space="preserve">
     <value>Name</value>
     <comment>'Notification Read' : label for cell in Entity FormXml ID: '{3e37ed59-0e94-4173-8492-f5a87d925a9f}'</comment>
@@ -3396,10 +3232,6 @@
     <value>ColorStrip</value>
     <comment>'Notification Read' : label for section in Entity FormXml ID: '{5c4bf44a-07ec-4bd4-88d1-25b7bf9e719c}'</comment>
   </data>
-  <data name="1:label,Notification Read{6271f3dd-183d-4565-9e4a-b61588b70e6e}" xml:space="preserve">
-    <value>Name</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{6271f3dd-183d-4565-9e4a-b61588b70e6e}'</comment>
-  </data>
   <data name="1:label,Notification Read{6572f4b2-5e89-4307-949c-4d7babc45d84}" xml:space="preserve">
     <value />
     <comment>'Notification Read' : label for cell in Entity FormXml ID: '{6572f4b2-5e89-4307-949c-4d7babc45d84}'</comment>
@@ -3412,10 +3244,6 @@
     <value>Name</value>
     <comment>'Notification Read' : label for cell in Entity FormXml ID: '{72a941ea-f9d8-406b-8f3a-199c48c4c50c}'</comment>
   </data>
-  <data name="1:label,Notification Read{76b8cdad-5860-478b-806d-a6edb43c389e}" xml:space="preserve">
-    <value>Status</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{76b8cdad-5860-478b-806d-a6edb43c389e}'</comment>
-  </data>
   <data name="1:label,Notification Read{7c93294c-d65b-4713-8179-d31234eeb62a}" xml:space="preserve">
     <value>General</value>
     <comment>'Notification Read' : label for tab in Entity FormXml ID: '{7c93294c-d65b-4713-8179-d31234eeb62a}'</comment>
@@ -3427,10 +3255,6 @@
   <data name="1:label,Notification Read{8c07f2e3-c356-427f-80d4-c96afa354e71}" xml:space="preserve">
     <value>Read On</value>
     <comment>'Notification Read' : label for cell in Entity FormXml ID: '{8c07f2e3-c356-427f-80d4-c96afa354e71}'</comment>
-  </data>
-  <data name="1:label,Notification Read{a31745fc-e049-4ca4-88ae-27121818590b}" xml:space="preserve">
-    <value />
-    <comment>'Notification Read' : label for section in Entity FormXml ID: '{a31745fc-e049-4ca4-88ae-27121818590b}'</comment>
   </data>
   <data name="1:label,Notification Read{ac3bea8f-016d-4c5f-a1df-9dc449302a8d}" xml:space="preserve">
     <value>General</value>
@@ -3463,10 +3287,6 @@
   <data name="1:label,Notification Read{c13c7868-47d5-4367-b308-4a12de2bc592}" xml:space="preserve">
     <value>Details</value>
     <comment>'Notification Read' : label for section in Entity FormXml ID: '{c13c7868-47d5-4367-b308-4a12de2bc592}'</comment>
-  </data>
-  <data name="1:label,Notification Read{c2f61317-698d-49ae-9714-0b5a6b4d2cd8}" xml:space="preserve">
-    <value>Owner</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{c2f61317-698d-49ae-9714-0b5a6b4d2cd8}'</comment>
   </data>
   <data name="1:label,Notification Read{c5596e0d-8d31-492f-84c6-ff0a36d0521a}" xml:space="preserve">
     <value>Conversation Tabs</value>
@@ -3548,10 +3368,6 @@
     <value>Header</value>
     <comment>'Notifications Centre Config' : label for section in Entity FormXml ID: '{57423bb1-3888-4bf7-8f38-353f1e009fa7}'</comment>
   </data>
-  <data name="1:label,Notifications Centre Config{6aa5430e-5efb-4c8c-a195-4eaf03748e20}" xml:space="preserve">
-    <value>Name</value>
-    <comment>'Notifications Centre Config' : label for cell in Entity FormXml ID: '{6aa5430e-5efb-4c8c-a195-4eaf03748e20}'</comment>
-  </data>
   <data name="1:label,Notifications Centre Config{6d7fc8c1-9389-4969-adfc-b0fec0f87e85}" xml:space="preserve">
     <value>Conversation Tabs</value>
     <comment>'Notifications Centre Config' : label for cell in Entity FormXml ID: '{6d7fc8c1-9389-4969-adfc-b0fec0f87e85}'</comment>
@@ -3564,10 +3380,6 @@
     <value>General Info</value>
     <comment>'Notifications Centre Config' : label for tab in Entity FormXml ID: '{760d9634-3447-45b0-ac48-9b624089f33d}'</comment>
   </data>
-  <data name="1:label,Notifications Centre Config{76b0645c-9e70-4d07-91b9-1e08d0b87efb}" xml:space="preserve">
-    <value>Owner</value>
-    <comment>'Notifications Centre Config' : label for cell in Entity FormXml ID: '{76b0645c-9e70-4d07-91b9-1e08d0b87efb}'</comment>
-  </data>
   <data name="1:label,Notifications Centre Config{789dac50-b1ad-4690-afbb-c00e4fab995b}" xml:space="preserve">
     <value>Owner</value>
     <comment>'Notifications Centre Config' : label for cell in Entity FormXml ID: '{789dac50-b1ad-4690-afbb-c00e4fab995b}'</comment>
@@ -3579,10 +3391,6 @@
   <data name="1:label,Notifications Centre Config{831f26e9-05f8-43e0-802a-19e94c53d0ee}" xml:space="preserve">
     <value>Status Reason</value>
     <comment>'Notifications Centre Config' : label for cell in Entity FormXml ID: '{831f26e9-05f8-43e0-802a-19e94c53d0ee}'</comment>
-  </data>
-  <data name="1:label,Notifications Centre Config{847c8888-dcd4-4732-8000-0d0a94187f0c}" xml:space="preserve">
-    <value />
-    <comment>'Notifications Centre Config' : label for tab in Entity FormXml ID: '{847c8888-dcd4-4732-8000-0d0a94187f0c}'</comment>
   </data>
   <data name="1:label,Notifications Centre Config{8f118d7e-95b0-455f-bc46-da46d54b1bb1}" xml:space="preserve">
     <value>Owner</value>
@@ -3615,10 +3423,6 @@
   <data name="1:label,Notifications Centre Config{c121e3a9-4ef3-44d5-8ded-094dd0756581}" xml:space="preserve">
     <value />
     <comment>'Notifications Centre Config' : label for cell in Entity FormXml ID: '{c121e3a9-4ef3-44d5-8ded-094dd0756581}'</comment>
-  </data>
-  <data name="1:label,Notifications Centre Config{ca176150-e802-4669-913a-c29d07118b6c}" xml:space="preserve">
-    <value />
-    <comment>'Notifications Centre Config' : label for section in Entity FormXml ID: '{ca176150-e802-4669-913a-c29d07118b6c}'</comment>
   </data>
   <data name="1:label,Notifications Centre Config{cc0ec8a0-87b5-4ce6-89e2-129244013a5e}" xml:space="preserve">
     <value />
@@ -3656,14 +3460,6 @@
     <value>Name</value>
     <comment>'Notifications Centre Config' : label for cell in Entity FormXml ID: '{edb71cd0-fd24-476a-817a-93035f86b85f}'</comment>
   </data>
-  <data name="1:label,Notifications Centre Config{fb412046-8d97-45d5-8134-fa6115501f2a}" xml:space="preserve">
-    <value>Status</value>
-    <comment>'Notifications Centre Config' : label for cell in Entity FormXml ID: '{fb412046-8d97-45d5-8134-fa6115501f2a}'</comment>
-  </data>
-  <data name="1:LocalizedCollectionName,ldv_genericconfigurationentityldv_genericconfiguration" xml:space="preserve">
-    <value>Generic Configurations</value>
-    <comment> 'ldv_genericconfiguration' : LocalizedCollectionName for Entity</comment>
-  </data>
   <data name="1:LocalizedCollectionName,ldv_notificationmessageentityldv_notificationmessage" xml:space="preserve">
     <value>Notification Messages</value>
     <comment> 'ldv_notificationmessage' : LocalizedCollectionName for Entity</comment>
@@ -3688,13 +3484,9 @@
     <value>Notifications Centre Configs</value>
     <comment> 'ldv_notificationscentreconfig' : LocalizedCollectionName for Entity</comment>
   </data>
-  <data name="1:LocalizedName,Generic Configuration{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" xml:space="preserve">
+  <data name="1:LocalizedName,Common Configuration{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" xml:space="preserve">
     <value>Notifications Centre</value>
-    <comment>'Generic Configuration' : LocalizedName for systemform in Entity FormXml ID: '{2a4c9f83-0e18-43bb-a671-7697b9221cf2}'</comment>
-  </data>
-  <data name="1:LocalizedName,ldv_genericconfigurationentityldv_genericconfiguration" xml:space="preserve">
-    <value>Generic Configuration</value>
-    <comment> 'ldv_genericconfiguration' : LocalizedName for Entity</comment>
+    <comment>'Common Configuration' : LocalizedName for systemform in Entity FormXml ID: '{2a4c9f83-0e18-43bb-a671-7697b9221cf2}'</comment>
   </data>
   <data name="1:LocalizedName,ldv_notificationmessageentityldv_notificationmessage" xml:space="preserve">
     <value>Notification Message</value>
@@ -3768,10 +3560,6 @@
     <value>Active Notification Message Roles Full</value>
     <comment>'Notification Message Role' : LocalizedName for SavedQuery on Entity QueryId: '{bad820a3-cbc1-e611-80c1-00155d5f3d01}'</comment>
   </data>
-  <data name="1:LocalizedName,Notification Message Role{da0e5abd-1662-4ebb-a32f-60a3ed855551}" xml:space="preserve">
-    <value>Information</value>
-    <comment>'Notification Message Role' : LocalizedName for systemform in Entity FormXml ID: '{da0e5abd-1662-4ebb-a32f-60a3ed855551}'</comment>
-  </data>
   <data name="1:LocalizedName,Notification Message Role{f517de39-8413-4168-a8f2-23935781c63b}" xml:space="preserve">
     <value>Information</value>
     <comment>'Notification Message Role' : LocalizedName for systemform in Entity FormXml ID: '{f517de39-8413-4168-a8f2-23935781c63b}'</comment>
@@ -3816,10 +3604,6 @@
     <value>Information</value>
     <comment>'Notification Message Team' : LocalizedName for systemform in Entity FormXml ID: '{c6280b46-b01d-4f58-8e20-c1d0f20b6720}'</comment>
   </data>
-  <data name="1:LocalizedName,Notification Message Team{ccf02312-39f2-4c0e-841b-30ecf45c7efa}" xml:space="preserve">
-    <value>Information</value>
-    <comment>'Notification Message Team' : LocalizedName for systemform in Entity FormXml ID: '{ccf02312-39f2-4c0e-841b-30ecf45c7efa}'</comment>
-  </data>
   <data name="1:LocalizedName,Notification Message Team{deec113b-3985-49d2-8638-fe9e1d7fd974}" xml:space="preserve">
     <value>Notification Message Team Advanced Find View</value>
     <comment>'Notification Message Team' : LocalizedName for SavedQuery on Entity QueryId: '{deec113b-3985-49d2-8638-fe9e1d7fd974}'</comment>
@@ -3835,10 +3619,6 @@
   <data name="1:LocalizedName,Notification Message User{076d187f-4043-48ee-9381-7b4ae24110b7}" xml:space="preserve">
     <value>Information</value>
     <comment>'Notification Message User' : LocalizedName for systemform in Entity FormXml ID: '{076d187f-4043-48ee-9381-7b4ae24110b7}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Message User{1989f23b-0feb-4a3a-98be-c3c64da62714}" xml:space="preserve">
-    <value>Information</value>
-    <comment>'Notification Message User' : LocalizedName for systemform in Entity FormXml ID: '{1989f23b-0feb-4a3a-98be-c3c64da62714}'</comment>
   </data>
   <data name="1:LocalizedName,Notification Message User{1a2508d0-56d5-4a8c-b83b-830a8700e19f}" xml:space="preserve">
     <value>Information</value>
@@ -3911,10 +3691,6 @@
   <data name="1:LocalizedName,Notification Message{5dc3c80d-c7c1-e611-80c1-00155d5f3d01}" xml:space="preserve">
     <value>My Notification Messages</value>
     <comment>'Notification Message' : LocalizedName for SavedQuery on Entity QueryId: '{5dc3c80d-c7c1-e611-80c1-00155d5f3d01}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Message{5ebbd093-7a37-4ce1-93ca-fbdef2fa1d72}" xml:space="preserve">
-    <value>Information</value>
-    <comment>'Notification Message' : LocalizedName for systemform in Entity FormXml ID: '{5ebbd093-7a37-4ce1-93ca-fbdef2fa1d72}'</comment>
   </data>
   <data name="1:LocalizedName,Notification Message{606e486e-feb3-4f98-b754-8a154561f71c}" xml:space="preserve">
     <value>Quick Create Form</value>
@@ -3992,10 +3768,6 @@
     <value>Notification Read Associated View</value>
     <comment>'Notification Read' : LocalizedName for SavedQuery on Entity QueryId: '{ed1dc419-3001-414b-82b2-776d96164d95}'</comment>
   </data>
-  <data name="1:LocalizedName,Notification Read{fc2d02c2-98f2-4294-8f11-8b1f6e5fc820}" xml:space="preserve">
-    <value>Information</value>
-    <comment>'Notification Read' : LocalizedName for systemform in Entity FormXml ID: '{fc2d02c2-98f2-4294-8f11-8b1f6e5fc820}'</comment>
-  </data>
   <data name="1:LocalizedName,Notifications Centre Config{00e1ea8a-7fca-e611-80c2-00155d5f3d01}" xml:space="preserve">
     <value>My Notifications Centre Configs</value>
     <comment>'Notifications Centre Config' : LocalizedName for SavedQuery on Entity QueryId: '{00e1ea8a-7fca-e611-80c2-00155d5f3d01}'</comment>
@@ -4024,10 +3796,6 @@
     <value>Information</value>
     <comment>'Notifications Centre Config' : LocalizedName for systemform in Entity FormXml ID: '{8772740a-9fe0-4d6e-97ba-493c062dd149}'</comment>
   </data>
-  <data name="1:LocalizedName,Notifications Centre Config{912396a4-801d-45c8-a3ca-1bcd1aa6bc86}" xml:space="preserve">
-    <value>Information</value>
-    <comment>'Notifications Centre Config' : LocalizedName for systemform in Entity FormXml ID: '{912396a4-801d-45c8-a3ca-1bcd1aa6bc86}'</comment>
-  </data>
   <data name="1:LocalizedName,Notifications Centre Config{b32dac27-520e-43b1-957c-1930a5567854}" xml:space="preserve">
     <value>Information</value>
     <comment>'Notifications Centre Config' : LocalizedName for systemform in Entity FormXml ID: '{b32dac27-520e-43b1-957c-1930a5567854}'</comment>
@@ -4044,25 +3812,25 @@
     <value>Notifications Centre Config Lookup View</value>
     <comment>'Notifications Centre Config' : LocalizedName for SavedQuery on Entity QueryId: '{f7964ee0-4c37-4713-9f54-f3eea6964f23}'</comment>
   </data>
-  <data name="1:Title,Generic ConfigurationInfo{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" xml:space="preserve">
+  <data name="1:Title,Common ConfigurationInfo{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" xml:space="preserve">
     <value>Common</value>
-    <comment>'Generic Configuration' : Title for NavBarArea in Entity FormXml ID: 'Info'</comment>
+    <comment>'Common Configuration' : Title for NavBarArea in Entity FormXml ID: 'Info'</comment>
   </data>
-  <data name="1:Title,Generic ConfigurationMarketing{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" xml:space="preserve">
+  <data name="1:Title,Common ConfigurationMarketing{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" xml:space="preserve">
     <value>Marketing</value>
-    <comment>'Generic Configuration' : Title for NavBarArea in Entity FormXml ID: 'Marketing'</comment>
+    <comment>'Common Configuration' : Title for NavBarArea in Entity FormXml ID: 'Marketing'</comment>
   </data>
-  <data name="1:Title,Generic ConfigurationProcessCenter{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" xml:space="preserve">
+  <data name="1:Title,Common ConfigurationProcessCenter{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" xml:space="preserve">
     <value>Process Sessions</value>
-    <comment>'Generic Configuration' : Title for NavBarArea in Entity FormXml ID: 'ProcessCenter'</comment>
+    <comment>'Common Configuration' : Title for NavBarArea in Entity FormXml ID: 'ProcessCenter'</comment>
   </data>
-  <data name="1:Title,Generic ConfigurationSales{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" xml:space="preserve">
+  <data name="1:Title,Common ConfigurationSales{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" xml:space="preserve">
     <value>Sales</value>
-    <comment>'Generic Configuration' : Title for NavBarArea in Entity FormXml ID: 'Sales'</comment>
+    <comment>'Common Configuration' : Title for NavBarArea in Entity FormXml ID: 'Sales'</comment>
   </data>
-  <data name="1:Title,Generic ConfigurationService{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" xml:space="preserve">
+  <data name="1:Title,Common ConfigurationService{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" xml:space="preserve">
     <value>Service</value>
-    <comment>'Generic Configuration' : Title for NavBarArea in Entity FormXml ID: 'Service'</comment>
+    <comment>'Common Configuration' : Title for NavBarArea in Entity FormXml ID: 'Service'</comment>
   </data>
   <data name="1:Title,Notification Message RoleInfo{861fbc8a-65de-48aa-b13b-4a6eea251d64}" xml:space="preserve">
     <value>Common</value>
@@ -4231,6 +3999,38 @@
   <data name="1:Title,Notifications Centre ConfigService{b32dac27-520e-43b1-957c-1930a5567854}" xml:space="preserve">
     <value>Service</value>
     <comment>'Notifications Centre Config' : Title for NavBarArea in Entity FormXml ID: 'Service'</comment>
+  </data>
+  <data name="29:Description,{defbf7f3-b9ca-e611-80c3-00155d5f3d01}" xml:space="preserve">
+    <value>Click to add description</value>
+    <comment>'Defaults' : Description for Workflow</comment>
+  </data>
+  <data name="29:LocalizedName,{8e7d48c5-6737-4e5e-943d-23b793d685e2}" xml:space="preserve">
+    <value>[Generic] [NotifyCentre] [Action] Get Messages</value>
+    <comment>'[Generic] [NotifyCentre] [Action] Get Messages' : LocalizedName for Workflow</comment>
+  </data>
+  <data name="29:LocalizedName,{9492423a-b274-46a6-8919-86a33eeb271c}" xml:space="preserve">
+    <value>[Generic] [NotifyCentre] [Action] Set Message Read</value>
+    <comment>'[Generic] [NotifyCentre] [Action] Set Message Read' : LocalizedName for Workflow</comment>
+  </data>
+  <data name="29:LocalizedName,{defbf7f3-b9ca-e611-80c3-00155d5f3d01}" xml:space="preserve">
+    <value>Defaults</value>
+    <comment>'Defaults' : LocalizedName for Workflow</comment>
+  </data>
+  <data name="50:Title,ldv.ApplicationRibbon.BasicHome.NC.Button.LabelText" xml:space="preserve">
+    <value>Notifications Centre</value>
+    <comment>Title for Ribbon LocLabel 'ldv.ApplicationRibbon.BasicHome.NC.Button.LabelText'</comment>
+  </data>
+  <data name="50:Title,ldv.ApplicationRibbon.Dashboards.NC.Button.LabelText" xml:space="preserve">
+    <value>Notifications Centre</value>
+    <comment>Title for Ribbon LocLabel 'ldv.ApplicationRibbon.Dashboards.NC.Button.LabelText'</comment>
+  </data>
+  <data name="50:Title,ldv.ApplicationRibbon.EntityForms.NC.Button.LabelText" xml:space="preserve">
+    <value>Notifications Centre</value>
+    <comment>Title for Ribbon LocLabel 'ldv.ApplicationRibbon.EntityForms.NC.Button.LabelText'</comment>
+  </data>
+  <data name="50:Title,ldv.ApplicationRibbon.EntityViews.NC.Button.LabelText" xml:space="preserve">
+    <value>Notifications Centre</value>
+    <comment>Title for Ribbon LocLabel 'ldv.ApplicationRibbon.EntityViews.NC.Button.LabelText'</comment>
   </data>
   <data name="9:Description,ldv_notificationsource" xml:space="preserve">
     <value />

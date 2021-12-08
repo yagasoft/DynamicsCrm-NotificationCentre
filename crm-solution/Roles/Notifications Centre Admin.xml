@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Role id="{608ceb20-83ca-e611-80c2-00155d5f3d01}" name="Notifications Centre Admin">
+<Role id="{608ceb20-83ca-e611-80c2-00155d5f3d01}" name="Notifications Centre Admin" isinherited="0">
   <IsCustomizable>1</IsCustomizable>
   <RolePrivileges>
     <RolePrivilege name="prvAppendExpiredProcess" level="Global" />

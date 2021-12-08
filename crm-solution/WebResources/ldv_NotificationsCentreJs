@@ -105,6 +105,11 @@ function InitRefreshInterval()
 	}
 }
 
+function NcIsNew()
+{
+    return !!$('.nc-new').length;
+}
+
 function CreatePalette()
 {
 	try
@@ -452,7 +457,7 @@ var NcMenu = function()
 					'</div>' +
 					'</div>')
 				.css({
-						top: pos.top + 62 + 'px',
+						top: pos.top + (NcIsNew() ? 29 : 62) + 'px',
 						left: pos.left - 2 + 'px'
 					});
 			$('body').append(ncFrame);
@@ -479,7 +484,7 @@ var NcMenu = function()
 						{
 							try
 							{
-								if (element.scrollTop() + element.innerHeight() >= element[0].scrollHeight)
+                                if (element.scrollTop() + element.innerHeight() + 0.5 >= element[0].scrollHeight)
 								{
 									showNextBatch();
 								}
@@ -551,7 +556,8 @@ var NcMenu = function()
 					if (!$(event.target).closest('#ncFrame').length
 						&& !$(event.target).closest('#ncIcon').length)
 					{
-						for (var i = 0; i < iframes.length; i++)
+						// TODO
+						for (var i = 1000000; i < iframes.length; i++)
 						{
 							var contentWindow = iframes[i].contentWindow;
 
@@ -703,7 +709,7 @@ var NcMenu = function()
 							{
 								pagingInfo.PagingCookie = data.NewCookie;
 
-								var results = JSON.parse(data.Messages);
+                                var results = JSON.parse((data.Messages).replace(/\\"/g, '\"'));
 								var newMessages = [];
 
 								for (var i = 0; i < results.length; i++)
@@ -922,7 +928,7 @@ function GetUnreadMessages(callback)
 				{
 					try
 					{
-						var results = JSON.parse(data.Messages);
+                        var results = JSON.parse((data.Messages).replace(/\\"/g, '\"'));
 						var unread = $.map(results,
 							function(e)
 							{
@@ -993,7 +999,7 @@ function GetMessage(id, callback)
 			{
 				try
 				{
-					var message = JSON.parse(data.Messages)[0];
+                    var message = JSON.parse((data.Messages).replace(/\\"/g, '\"'))[0];
 					
 					if (message)
 					{
@@ -1079,7 +1085,7 @@ function BuildMessageElement(message, width, parentFrameJq, suffix)
 
 		var titleElement = $('<div style="position:relative;">' +
 			(sourceImage ? '<img class="ncSourceIcon" src="' + NcSource[message.source] + '" />' : '') +
-			'<div style="width:' + (width - 45) + 'px;" class="ncMessageTitle ncEllipsis">' +
+			'<div style="width:' + (width - 45) + `px;" class="ncMessageTitle${NcIsNew() ? '' : '-old'} ncEllipsis">` +
 			message.title +
 			'</div>' +
 			'</div>');
@@ -1150,7 +1156,7 @@ function BuildMessageElement(message, width, parentFrameJq, suffix)
 			titleElement.append(readAnchorElement);
 		}
 
-		var bodyElement = $('<div class="ncEllipsis">' +
+		var bodyElement = $(`<div class="${NcIsNew() ? 'nc-message-body ' : ''}ncEllipsis">` +
 			(IsHtml(message.message)
 				 ? '(Message is in HTML format; hover to view)'
 				 : message.message) +
@@ -1355,7 +1361,7 @@ function SetMessageRead(readAnchorElement, messageElement, messageid)
 
 function GetValueFromLocalStorage(key)
 {
-	return JSON.parse(localStorage.getItem(key));
+    return JSON.parse((localStorage.getItem(key)).replace(/\\"/g, '\"'));
 }
 
 function StoreValueInLocalStorage(key, value)

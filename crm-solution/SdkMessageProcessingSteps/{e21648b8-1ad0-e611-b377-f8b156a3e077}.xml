@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Yagasoft.NotificationCentre.Plugins.ClearReadOnModify: Update of ldv_notificationmessage" SdkMessageProcessingStepId="{e21648b8-1ad0-e611-b377-f8b156a3e077}">
+  <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+  <PluginTypeName>Yagasoft.NotificationCentre.Plugins.ClearReadOnModify, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5</PluginTypeName>
+  <PluginTypeId>cd26146e-5158-ec11-9af3-000d3a4c87c6</PluginTypeId>
+  <PrimaryEntity>ldv_notificationmessage</PrimaryEntity>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <FilteringAttributes>ldv_regardingid,description,subject,regardingobjectid,statecode</FilteringAttributes>
+  <InvocationSource>1</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages>
+    <SdkMessageProcessingStepImage Name="image">
+      <SdkMessageProcessingStepImageId>{60e17cbe-1ad0-e611-b377-f8b156a3e077}</SdkMessageProcessingStepImageId>
+      <Attributes></Attributes>
+      <EntityAlias>image</EntityAlias>
+      <ImageType>0</ImageType>
+      <MessagePropertyName>Target</MessagePropertyName>
+      <IsCustomizable>1</IsCustomizable>
+    </SdkMessageProcessingStepImage>
+  </SdkMessageProcessingStepImages>
+</SdkMessageProcessingStep>

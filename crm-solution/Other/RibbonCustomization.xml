@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <CustomAction Id="ys.ldv.ApplicationRibbon.{!EntityLogicalName}.EntityForms.NC.Button.CustomAction" Location="Mscrm.Form.{!EntityLogicalName}.MainTab.Save.Controls._children" Sequence="15">
+      <CommandUIDefinition>
+        <Button Command="ldv.ApplicationRibbon.NC.Command" Id="ldv.ApplicationRibbon.{!EntityLogicalName}.EntityForms.NC.Button" LabelText="$LocLabels:ldv.ApplicationRibbon.EntityForms.NC.Button.LabelText" Sequence="15" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="ys.ldv.ApplicationRibbon.{!EntityLogicalName}.EntityViews.NC.Button.CustomAction" Location="Mscrm.HomepageGrid.{!EntityLogicalName}.MainTab.Management.Controls._children" Sequence="5">
+      <CommandUIDefinition>
+        <Button Command="ldv.ApplicationRibbon.NC.Command" Id="ldv.ApplicationRibbon.{!EntityLogicalName}.EntityViews.NC.Button" LabelText="$LocLabels:ldv.ApplicationRibbon.EntityViews.NC.Button.LabelText" Sequence="5" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="ys.ldv.ApplicationRibbon.BasicHome.NC.Button.CustomAction" Location="Mscrm.BasicHomeTab.New.Controls._children" Sequence="5">
+      <CommandUIDefinition>
+        <Button Command="ldv.ApplicationRibbon.NC.Command" Id="ldv.ApplicationRibbon.BasicHome.NC.Button" LabelText="$LocLabels:ldv.ApplicationRibbon.BasicHome.NC.Button.LabelText" Sequence="5" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="ys.ldv.ApplicationRibbon.Dashboards.NC.Button.CustomAction" Location="Mscrm.DashboardTab.Management.Controls._children" Sequence="5">
+      <CommandUIDefinition>
+        <Button Command="ldv.ApplicationRibbon.NC.Command" Id="ldv.ApplicationRibbon.Dashboards.NC.Button" LabelText="$LocLabels:ldv.ApplicationRibbon.Dashboards.NC.Button.LabelText" Sequence="5" TemplateAlias="o1" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="ldv.ApplicationRibbon.NC.Command">
+      <EnableRules>
+        <EnableRule Id="ldv.ApplicationRibbon.NC.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions />
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules>
+      <EnableRule Id="ldv.ApplicationRibbon.NC.EnableRule">
+        <CustomRule FunctionName="InitNotificationsMenu" Library="$webresource:ldv_NotificationsCentreRibbonJs" Default="false" InvertResult="false" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="ldv.ApplicationRibbon.BasicHome.NC.Button.LabelText">
+      <Titles>
+        <Title description="Notifications Centre" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ldv.ApplicationRibbon.Dashboards.NC.Button.LabelText">
+      <Titles>
+        <Title description="Notifications Centre" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ldv.ApplicationRibbon.EntityForms.NC.Button.LabelText">
+      <Titles>
+        <Title description="Notifications Centre" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="ldv.ApplicationRibbon.EntityViews.NC.Button.LabelText">
+      <Titles>
+        <Title description="Notifications Centre" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

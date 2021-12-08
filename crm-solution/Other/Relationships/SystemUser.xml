@@ -3,7 +3,7 @@
   <EntityRelationship Name="ldv_notificationmessage_systemuser_createdby">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>8.1.1.2</IntroducedVersion>
+    <IntroducedVersion>3.1.1.1</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>ldv_notificationmessage</ReferencingEntityName>
     <ReferencedEntityName>SystemUser</ReferencedEntityName>
@@ -12,6 +12,7 @@
     <CascadeReparent>NoCascade</CascadeReparent>
     <CascadeShare>NoCascade</CascadeShare>
     <CascadeUnshare>NoCascade</CascadeUnshare>
+    <CascadeRollupView>NoCascade</CascadeRollupView>
     <ReferencingAttributeName>CreatedBy</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
@@ -22,7 +23,7 @@
   <EntityRelationship Name="ldv_notificationmessage_systemuser_modifiedby">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>8.1.1.2</IntroducedVersion>
+    <IntroducedVersion>3.1.1.1</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>ldv_notificationmessage</ReferencingEntityName>
     <ReferencedEntityName>SystemUser</ReferencedEntityName>
@@ -31,6 +32,7 @@
     <CascadeReparent>NoCascade</CascadeReparent>
     <CascadeShare>NoCascade</CascadeShare>
     <CascadeUnshare>NoCascade</CascadeUnshare>
+    <CascadeRollupView>NoCascade</CascadeRollupView>
     <ReferencingAttributeName>ModifiedBy</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>
@@ -41,7 +43,7 @@
   <EntityRelationship Name="ldv_notificationmessage_systemuser_owninguser">
     <EntityRelationshipType>OneToMany</EntityRelationshipType>
     <IsCustomizable>1</IsCustomizable>
-    <IntroducedVersion>8.1.1.2</IntroducedVersion>
+    <IntroducedVersion>3.1.1.1</IntroducedVersion>
     <IsHierarchical>0</IsHierarchical>
     <ReferencingEntityName>ldv_notificationmessage</ReferencingEntityName>
     <ReferencedEntityName>SystemUser</ReferencedEntityName>
@@ -50,6 +52,7 @@
     <CascadeReparent>NoCascade</CascadeReparent>
     <CascadeShare>NoCascade</CascadeShare>
     <CascadeUnshare>NoCascade</CascadeUnshare>
+    <CascadeRollupView>NoCascade</CascadeRollupView>
     <ReferencingAttributeName>OwningUser</ReferencingAttributeName>
     <RelationshipDescription>
       <Descriptions>

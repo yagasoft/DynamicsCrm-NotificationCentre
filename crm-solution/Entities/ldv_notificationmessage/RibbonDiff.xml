@@ -56,7 +56,7 @@
         <DisplayRule Id="Mscrm.PrimaryEntityHasStatecode" />
       </DisplayRules>
       <Actions>
-        <JavaScriptFunction FunctionName="Mscrm.CommandBarActions.activate" Library="/_static/_common/scripts/CommandBarActions.js">
+        <JavaScriptFunction FunctionName="XrmCore.Commands.Activate.activatePrimaryRecord" Library="$webresource:Main_system_library.js">
           <CrmParameter Value="FirstPrimaryItemId" />
           <CrmParameter Value="PrimaryEntityTypeName" />
         </JavaScriptFunction>
