@@ -2,12 +2,11 @@
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yagasoft/DynamicsCrm-NotificationCentre?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-### Version: 4.1.1.1
 ---
 
 A CRM solution that injects a button into CRM's navigation bar, which shows notifications in near real-time from within CRM.
 
-### Features
+## Features
 
   + Easy access to messages, anywhere in CRM
   + Near real-time notifications
@@ -17,7 +16,7 @@ A CRM solution that injects a button into CRM's navigation bar, which shows noti
   + Messages can be shown to users, teams, security role, or global
   + Out-of-the-box plugins to show notifications for new tasks and emails targeted at current user
 
-### Guide
+## Guide
 
   + Install
   + Enable the Notifications Centre (NC) functionality in the Common Configuration entity (switch to NC Form after first save)
@@ -25,7 +24,7 @@ A CRM solution that injects a button into CRM's navigation bar, which shows noti
   + Assign the users the NC User/Admin security role
   + Refresh
 
-### Install
+## Install
 
   + Import solution found at [Dynamics365-YsCommonSolution](https://github.com/yagasoft/Dynamics365-YsCommonSolution).
   + Import NC solutions from this repository
@@ -37,13 +36,9 @@ A CRM solution that injects a button into CRM's navigation bar, which shows noti
 ![File](https://github.com/yagasoft/DynamicsCrm-NotificationCentre/raw/master/imgs/nc-menu.png)
 
 ## Changes
-
-#### _v4.1.1.1 (2021-12-08)_
-+ Fixed: proper v9 compatibility
-#### _v3.1.1.1 (2019-02-28)_
-+ Changed: moved to a new namespace
-#### _v2.1.1.1 (2018-09-11)_
++ Check Releases page for the full history
+#### _v1.1.1.1 (2016-12-01)_
 + Initial release
 
 ---
-**Copyright &copy; by Ahmed Elsawalhy ([Yagasoft](http://yagasoft.com))** -- _GPL v3 Licence_
+**Copyright &copy; by Ahmed Elsawalhy ([Yagasoft](https://yagasoft.com))** -- _GPL v3 Licence_

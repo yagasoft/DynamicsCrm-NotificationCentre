@@ -1,16 +1,16 @@
 ﻿#region Imports
 
 using System;
-using Yagasoft.Libraries.Common;
 using Microsoft.Xrm.Sdk;
+using Yagasoft.Libraries.Common;
 
 #endregion
 
 namespace Yagasoft.NotificationCentre.Plugins
 {
 	/// <summary>
-	///     This plugin ... .<br />
-	///     Version: 0.0.1
+	///     Convert the lookup of user, team, and role into a record in the respective grid.<br />
+	///     Version: 1.1.1
 	/// </summary>
 	public class RelateSingleTarget : IPlugin
 	{
@@ -23,50 +23,53 @@ namespace Yagasoft.NotificationCentre.Plugins
 	internal class RelateSingleTargetLogic : PluginLogic<RelateSingleTarget>
 	{
 		public RelateSingleTargetLogic() : base(null, PluginStage.PostOperation, NotificationMessage.EntityLogicalName)
-		{}
+		{ }
 
 		protected override void ExecuteLogic()
 		{
 			// get the triggering record
-			var target = (Entity) context.InputParameters["Target"];
-			var message = target.ToEntity<NotificationMessage>();
+			var target = Target.ToEntity<NotificationMessage>();
 
-			if (message.Role != null)
+			if (target.Role != null)
 			{
-				service.Create(new NotificationMessageRole
-							   {
-								   NotificationMessage = target.Id,
-								   Role = message.Role
-							   });
+				Service.Create(
+					new NotificationMessageRole
+					{
+						NotificationMessage = target.Id,
+						Role = target.Role
+					});
 			}
 
-			if (message.Team != null)
+			if (target.Team != null)
 			{
-				service.Create(new NotificationMessageTeam
-							   {
-								   NotificationMessage = target.Id,
-								   Team = message.Team
-							   });
+				Service.Create(
+					new NotificationMessageTeam
+					{
+						NotificationMessage = target.Id,
+						Team = target.Team
+					});
 			}
 
-			if (message.User != null)
+			if (target.User != null)
 			{
-				service.Create(new NotificationMessageUser
-							   {
-								   NotificationMessage = target.Id,
-								   User = message.User
-							   });
+				Service.Create(
+					new NotificationMessageUser
+					{
+						NotificationMessage = target.Id,
+						User = target.User
+					});
 			}
 
-			if (message.Role != null || message.Team != null || message.User != null)
+			if (target.Role != null || target.Team != null || target.User != null)
 			{
-				service.Update(new NotificationMessage
-							   {
-								   Id = target.Id,
-								   [NotificationMessage.Fields.Role] = null,
-								   [NotificationMessage.Fields.Team] = null,
-								   [NotificationMessage.Fields.User] = null
-							   });
+				Service.Update(
+					new NotificationMessage
+					{
+						Id = target.Id,
+						Role = null,
+						Team = null,
+						User = null
+					});
 			}
 		}
 	}

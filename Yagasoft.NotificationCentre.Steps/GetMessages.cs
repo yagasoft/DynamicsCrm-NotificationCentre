@@ -5,18 +5,18 @@ using System.Activities;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security;
-using Yagasoft.Libraries.Common;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
 using Microsoft.Xrm.Sdk.Workflow;
+using Yagasoft.Libraries.Common;
 
 #endregion
 
 namespace Yagasoft.NotificationCentre.Steps
 {
 	/// <summary>
-	///     This custom workflow step ... .<br />
-	///     Version: 0.0.1
+	///     Get the list of messages for the given user.<br />
+	///     Version: 1.1.1
 	/// </summary>
 	public class GetMessages : CodeActivity
 	{
@@ -35,21 +35,12 @@ namespace Yagasoft.NotificationCentre.Steps
 		[Input("Page")]
 		public InArgument<int> PageArg { get; set; }
 
-		[Input("Latest Menu Open Date")]
-		public InArgument<string> LatestMenuOpenDateArg { get; set; }
-
 		[Output("Messages")]
 		public OutArgument<string> MessagesArg { get; set; }
 
 		[Input("Cookie")]
 		[Output("New Cookie")]
 		public InOutArgument<string> CookieArg { get; set; }
-
-		[Input("Load Read")]
-		public InArgument<bool> IsLoadReadArg { get; set; }
-
-		[Output("Unread End")]
-		public OutArgument<bool> IsUnreadEndArg { get; set; }
 
 		[Output("Read End")]
 		public OutArgument<bool> IsReadEndArg { get; set; }
@@ -62,60 +53,45 @@ namespace Yagasoft.NotificationCentre.Steps
 		}
 	}
 
-	[Log]
 	internal class GetMessagesLogic : StepLogic<GetMessages>
 	{
-		[NoLog]
 		protected override void ExecuteLogic()
 		{
-			var messageId = executionContext.GetValue(codeActivity.MessageIdArg);
-			var isLoadRead = executionContext.GetValue(codeActivity.IsLoadReadArg);
+			var messageId = ExecutionContext.GetValue(codeActivity.MessageIdArg);
 
-			var result = RetrieveMessages(messageId, isLoadRead);
+			var result = RetrieveMessages(messageId);
 			var messagesString = ParseMessages(result);
 
-			executionContext.SetValue(codeActivity.MessagesArg, messagesString);
-			executionContext.SetValue(codeActivity.IsUnreadEndArg, isLoadRead || !result.MoreRecords);
-			executionContext.SetValue(codeActivity.IsReadEndArg, !isLoadRead || !result.MoreRecords);
-			executionContext.SetValue(codeActivity.CookieArg, result.PagingCookie ?? "");
+			ExecutionContext.SetValue(codeActivity.MessagesArg, messagesString);
+			ExecutionContext.SetValue(codeActivity.IsReadEndArg, !result.MoreRecords);
+			ExecutionContext.SetValue(codeActivity.CookieArg, result.PagingCookie ?? "");
 		}
 
-		private EntityCollection RetrieveMessages(string messageId, bool isLoadRead)
+		private EntityCollection RetrieveMessages(string messageId)
 		{
 			EntityCollection result;
+
 			if (messageId == null)
 			{
-				var user = executionContext.GetValue(codeActivity.UserRefArg);
+				var user = ExecutionContext.GetValue(codeActivity.UserRefArg);
 
 				if (user == null)
 				{
 					throw new ArgumentNullException("User", "Must pass either a user or message ID to the 'GetMessages' custom step.");
 				}
 
-				var latestMenuOpenDate = executionContext.GetValue(codeActivity.LatestMenuOpenDateArg);
-
-				var count = executionContext.GetValue(codeActivity.CountArg);
+				var count = ExecutionContext.GetValue(codeActivity.CountArg);
 				count = count <= 0 ? 10 : count;
-				var page = executionContext.GetValue(codeActivity.PageArg);
-				var isTop = false;
-
-				if (page <= 0)
-				{
-					isTop = true;
-				}
-				else
-				{
-					page = page <= 0 ? 1 : page;
-				}
-
-				var cookie = page <= 1 ? null : executionContext.GetValue(codeActivity.CookieArg);
+				var page = ExecutionContext.GetValue(codeActivity.PageArg);
+				page = page <= 0 ? 1 : page;
+				var cookie = page <= 1 ? null : ExecutionContext.GetValue(codeActivity.CookieArg);
 
 				var fetchXml =
-					"<fetch " + (isTop ? "top='" + count + "'" : ("count='" + count + "'" + " page='" + page + "'")) +
-						(string.IsNullOrEmpty(cookie) || isTop
+					"<fetch " + "count='" + count + "'" + " page='" + page + "'" +
+						(string.IsNullOrEmpty(cookie)
 							? ""
 							: " paging-cookie='" + SecurityElement.Escape(cookie) + "'") +
-						" distinct='true' no-lock='true'>" +
+						" no-lock='true'>" +
 						"  <entity name='ldv_notificationmessage' >" +
 						"    <attribute name='activityid' />" +
 						"    <attribute name='subject' />" +
@@ -127,27 +103,12 @@ namespace Yagasoft.NotificationCentre.Steps
 						"    <attribute name='ldv_notificationsource' />" +
 						"    <filter type='and' >" +
 						"      <filter type='or' >" +
+						"        <condition attribute='ldv_isglobalmessage' operator='eq' value='1' />" +
 						"        <condition entityname='roleUser' attribute='systemuserid' operator='eq' value='" + user.Id + "' />" +
 						"        <condition entityname='teamUser' attribute='systemuserid' operator='eq' value='" + user.Id + "' />" +
 						"        <condition entityname='userMessage' attribute='ldv_userid' operator='eq' value='" + user.Id + "' />" +
-						"        <condition attribute='ldv_isglobalmessage' operator='eq' value='1' />" +
 						"      </filter>" +
 						"      <condition attribute='statuscode' operator='eq' value='1' />" +
-						(isLoadRead
-							? "      <condition entityname='readUser' attribute='ldv_userid' operator='eq' value='" + user.Id + "' />"
-							: "      <condition entityname='readUser' attribute='ldv_userid' operator='null' />") +
-						(string.IsNullOrEmpty(latestMenuOpenDate)
-							? ""
-							: "      <filter type='or' >" +
-								"      <condition attribute='ldv_contentmodifiedon' operator='gt'"
-								+ " value='" + latestMenuOpenDate + "' />" +
-								"      <condition entityname='roleMessage' attribute='modifiedon' operator='gt'"
-								+ " value='" + latestMenuOpenDate + "' />" +
-								"      <condition entityname='teamMessage' attribute='modifiedon' operator='gt'"
-								+ " value='" + latestMenuOpenDate + "' />" +
-								"      <condition entityname='userMessage' attribute='modifiedon' operator='gt'"
-								+ " value='" + latestMenuOpenDate + "' />" +
-								"      </filter>") +
 						"    </filter>" +
 						"    <order attribute='modifiedon' descending='true' />" +
 						"    <link-entity name='ldv_notificationmessagerole' from='ldv_notificationmessageid' to='activityid'" +
@@ -166,25 +127,18 @@ namespace Yagasoft.NotificationCentre.Steps
 						"    </link-entity>" +
 						"    <link-entity name='ldv_notificationmessageuser' from='ldv_notificationmessageid' to='activityid'" +
 						"        link-type='outer' alias='userMessage' />" +
-						"    <link-entity name='ldv_notificationread' from='ldv_notificationmessageid' to='activityid'" +
-						"        link-type='outer' alias='readUser' >" +
-						"      <attribute name='ldv_userid' alias='userReadId' />" +
-						"      <filter >" +
-						"        <condition attribute='ldv_userid' operator='eq' value='" + user.Id + "' />" +
-						"      </filter>" +
-						"    </link-entity>" +
 						"  </entity>" +
 						"</fetch>";
 
 				var query = new FetchExpression(fetchXml);
-				result = service.RetrieveMultiple(query);
+				result = Service.RetrieveMultiple(query);
 			}
 			else
 			{
 				result = new EntityCollection(
 					new List<Entity>
 					{
-						service.Retrieve(NotificationMessage.EntityLogicalName, Guid.Parse(messageId),
+						Service.Retrieve(NotificationMessage.EntityLogicalName, Guid.Parse(messageId),
 							new ColumnSet(NotificationMessage.Fields.ActivityId, NotificationMessage.Fields.Title,
 							NotificationMessage.Fields.Message, NotificationMessage.Fields.LastUpdated,
 							NotificationMessage.Fields.Regarding, NotificationMessage.Fields.RegardingTypeCode,
@@ -200,50 +154,49 @@ namespace Yagasoft.NotificationCentre.Steps
 		private string ParseMessages(EntityCollection result)
 		{
 			var messages =
-				result.Entities
-					.Select(e =>
-							{
-								var regarding = e.GetAttributeValue<EntityReference>("regardingobjectid");
-								var regardingId = regarding?.Id.ToString() ?? e.GetAttributeValue<string>("ldv_regardingid");
+				result.Entities.Select(
+					e =>
+					{
+						var regarding = e.GetAttributeValue<EntityReference>("regardingobjectid");
+						var regardingId = regarding?.Id.ToString() ?? e.GetAttributeValue<string>("ldv_regardingid");
 
-								var serialisedRegarding = regarding == null
-									? (string.IsNullOrEmpty(regardingId)
-										? null
-										: SerialiserHelpers.SerialiseSimpleJson(
-											new Dictionary<string, string>
-											{
-												["id"] = regardingId,
-												["typecode"] = e.GetAttributeValue<int>("ldv_regardingtypecode").ToString(),
-												["name"] = e.GetAttributeValue<string>("subject")
-											}, true))
-									: SerialiserHelpers.SerialiseSimpleJson(
-										new Dictionary<string, string>
-										{
-											["id"] = regardingId,
-											["typecode"] = e.GetAttributeValue<int>("ldv_regardingtypecode").ToString(),
-											["name"] = regarding.Name
-										}, true);
-
-								var serialisedMessage = SerialiserHelpers.SerialiseSimpleJson(
+						var serialisedRegarding = regarding == null
+							? (string.IsNullOrEmpty(regardingId)
+								? null
+								: SerialiserHelpers.SerialiseSimpleJson(
 									new Dictionary<string, string>
 									{
-										["id"] = e.GetAttributeValue<Guid>("activityid").ToString(),
-										["title"] = e.GetAttributeValue<string>("subject"),
-										["message"] = e.GetAttributeValue<string>("description"),
-										["modifiedon"] = e.GetAttributeValue<DateTime>("modifiedon").ToString("yyyy-MM-ddTHH:mm:ssZ"),
-										["modifiedonString"] = e.GetAttributeValue<DateTime>("modifiedon").ToString(),
-										["source"] = (e.GetAttributeValue<OptionSetValue>("ldv_notificationsource")?.Value ?? 1).ToString(),
-										["isRead"] = (e.GetAttributeValue<AliasedValue>("userReadId") != null).ToString().ToLower()
-									}, true);
-
-								if (serialisedRegarding != null)
+										["id"] = regardingId,
+										["typecode"] = e.GetAttributeValue<int>("ldv_regardingtypecode").ToString(),
+										["name"] = e.GetAttributeValue<string>("subject")
+									}, true))
+							: SerialiserHelpers.SerialiseSimpleJson(
+								new Dictionary<string, string>
 								{
-									serialisedMessage = serialisedMessage
-										.Insert(serialisedMessage.Length - 1, ",\"regarding\":" + serialisedRegarding);
-								}
+									["id"] = regardingId,
+									["typecode"] = e.GetAttributeValue<int>("ldv_regardingtypecode").ToString(),
+									["name"] = regarding.Name
+								}, true);
 
-								return serialisedMessage;
-							}).ToArray();
+						var serialisedMessage = SerialiserHelpers.SerialiseSimpleJson(
+							new Dictionary<string, string>
+							{
+								["id"] = e.GetAttributeValue<Guid>("activityid").ToString(),
+								["title"] = e.GetAttributeValue<string>("subject"),
+								["message"] = e.GetAttributeValue<string>("description"),
+								["modifiedon"] = e.GetAttributeValue<DateTime>("modifiedon").ToString("yyyy-MM-ddTHH:mm:ssZ"),
+								["modifiedonString"] = e.GetAttributeValue<DateTime>("modifiedon").ToString(),
+								["source"] = (e.GetAttributeValue<OptionSetValue>("ldv_notificationsource")?.Value ?? 1).ToString()
+							}, true);
+
+						if (serialisedRegarding != null)
+						{
+							serialisedMessage = serialisedMessage
+								.Insert(serialisedMessage.Length - 1, ",\"regarding\":" + serialisedRegarding);
+						}
+
+						return serialisedMessage;
+					}).ToArray();
 
 			var messagesString = "[";
 

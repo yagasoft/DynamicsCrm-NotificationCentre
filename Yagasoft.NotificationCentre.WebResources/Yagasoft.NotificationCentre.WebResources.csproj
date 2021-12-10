@@ -72,12 +72,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CSS\ldv_NotificationsCentre.css" />
-    <Content Include="CSS\ldv_NotificationsCentreLibs.css" />
     <Content Include="JavaScript\ldv_NotificationsCentreConfig.js" />
     <Content Include="JavaScript\ldv_NotificationsCentreForm.js" />
     <Content Include="JavaScript\ldv_NotificationsCentreLibs.js" />
-    <Content Include="JavaScript\ldv_NotificationsCentreInitTrigger.js" />
-    <Content Include="JavaScript\ldv_NotificationsCentre.js" />
     <Content Include="JavaScript\ldv_NotificationsCentreFormRibbon.js" />
     <Content Include="JavaScript\ldv_NotificationsCentreRibbon.js" />
     <Content Include="packages.config" />

@@ -1,14 +1,7 @@
 ﻿#region Imports
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Crm.Sdk.Messages;
 using Microsoft.Xrm.Sdk;
-using Microsoft.Xrm.Sdk.Client;
-using Microsoft.Xrm.Sdk.Messages;
-using Microsoft.Xrm.Sdk.Metadata.Query;
-using Microsoft.Xrm.Sdk.Query;
 using Yagasoft.Libraries.Common;
 
 #endregion
@@ -16,8 +9,8 @@ using Yagasoft.Libraries.Common;
 namespace Yagasoft.NotificationCentre.Plugins
 {
 	/// <summary>
-	///     This plugin ... .<br />
-	///     Version: 0.0.1
+	///     Sets the entity type code to be used on the UI URL for the record.<br />
+	///     Version: 1.1.1
 	/// </summary>
 	public class SetTypeCode : IPlugin
 	{
@@ -30,19 +23,18 @@ namespace Yagasoft.NotificationCentre.Plugins
 	internal class SetTypeCodeLogic : PluginLogic<SetTypeCode>
 	{
 		public SetTypeCodeLogic() : base(null, PluginStage.PreOperation, NotificationMessage.EntityLogicalName)
-		{}
+		{ }
 
 		protected override void ExecuteLogic()
 		{
 			// get the triggering record
-			var target = (Entity) context.InputParameters["Target"];
-			var message = target.ToEntity<NotificationMessage>();
+			var target = Target.ToEntity<NotificationMessage>();
 
-			if (message.Regarding != null)
+			if (target.Regarding != null)
 			{
-				target[NotificationMessage.Fields.RegardingTypeCode] = MetadataHelpers
-					.GetEntityAttribute<int>(service, message.Regarding.LogicalName,
-						MetadataHelpers.EntityAttribute.ObjectTypeCode, context.OrganizationId.ToString());
+				target.RegardingTypeCode = MetadataHelpers
+					.GetEntityAttribute<int>(Service, target.Regarding.LogicalName,
+						MetadataHelpers.EntityAttribute.ObjectTypeCode, Context.OrganizationId);
 			}
 		}
 	}

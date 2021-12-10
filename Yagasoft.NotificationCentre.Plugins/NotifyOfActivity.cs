@@ -12,7 +12,7 @@ namespace Yagasoft.NotificationCentre.Plugins
 {
 	/// <summary>
 	///     Creates a notification message for users if an email or task was received for them.<br />
-	///     Version: 0.0.1
+	///     Version: 1.1.1
 	/// </summary>
 	public class NotifyOfActivity : IPlugin
 	{
@@ -30,11 +30,11 @@ namespace Yagasoft.NotificationCentre.Plugins
 		protected override void ExecuteLogic()
 		{
 			// get the triggering record
-			var target = (Entity)context.InputParameters["Target"];
+			var target = Target;
 			NotificationMessage message = null;
 
-			var isEnabled =
-				CrmHelpers.GetGenericConfig(service, context.OrganizationId.ToString()).ToEntity<GenericConfiguration>()?
+			var isEnabled = CrmHelpers
+				.GetGenericConfig(Service, Context.OrganizationId).ToEntity<CommonConfiguration>()?
 					.NotificationsCentreEnabled == true;
 
 			if (!isEnabled)
@@ -45,7 +45,8 @@ namespace Yagasoft.NotificationCentre.Plugins
 			switch (target.LogicalName)
 			{
 				case Email.EntityLogicalName:
-					var body = target.GetAttributeValue<string>(Email.Fields.Description);
+					var email = target.ToEntity<Email>();
+					var body = email.Description;
 
 					// no message
 					if (string.IsNullOrEmpty(body))
@@ -66,8 +67,8 @@ namespace Yagasoft.NotificationCentre.Plugins
 						return;
 					}
 
-					var users = target.GetAttributeValue<EntityCollection>(Email.Fields.To).Entities
-						.Select(e => e.ToEntity<ActivityParty>().Party)
+					var users = email.To
+						.Select(e => e.Party)
 						.Where(a => a.LogicalName == User.EntityLogicalName)
 						.Select(a =>
 							new NotificationMessageUser
@@ -84,33 +85,33 @@ namespace Yagasoft.NotificationCentre.Plugins
 					message =
 						new NotificationMessage
 						{
-							Title = target.GetAttributeValue<string>(Email.Fields.Subject),
+							Title = email.Subject,
 							Message = body,
 							RegardingTypeCode = Email.EntityTypeCode,
 							RegardingID = target.Id.ToString(),
-							NotificationMessageUsersOfNotificationMessage = users
+							MessageUsers = users,
+							NotificationSource = GlobalEnums.NotificationSource.Email
 						};
-
-					message.NotificationSource = NotificationMessage.NotificationSourceEnum.Email;
 
 					break;
 
 				case Task.EntityLogicalName:
+					var task = target.ToEntity<Task>();
 					message =
 						new NotificationMessage
 						{
-							Title = target.GetAttributeValue<string>(Task.Fields.Subject),
-							Message = target.GetAttributeValue<string>(Task.Fields.Description),
+							Title = task.Subject,
+							Message = task.Description,
 							RegardingTypeCode = Task.EntityTypeCode,
-							RegardingID = target.Id.ToString(),
+							RegardingID = target.Id.ToString()
 						};
 
-					var owner = target.GetAttributeValue<EntityReference>(Email.Fields.Owner);
+					var owner = task.Owner;
 
 					switch (owner.LogicalName)
 					{
 						case User.EntityLogicalName:
-							message.NotificationMessageUsersOfNotificationMessage =
+							message.MessageUsers =
 								new[]
 								{
 									new NotificationMessageUser
@@ -121,7 +122,7 @@ namespace Yagasoft.NotificationCentre.Plugins
 							break;
 
 						case Team.EntityLogicalName:
-							message.NotificationMessageTeamsOfNotificationMessage =
+							message.MessageTeams =
 								new[]
 								{
 									new NotificationMessageTeam
@@ -132,7 +133,7 @@ namespace Yagasoft.NotificationCentre.Plugins
 							break;
 					}
 
-					message.NotificationSource = NotificationMessage.NotificationSourceEnum.Task;
+					message.NotificationSource = GlobalEnums.NotificationSource.Task;
 
 					break;
 			}
@@ -140,7 +141,7 @@ namespace Yagasoft.NotificationCentre.Plugins
 			if (message != null)
 			{
 				message.StatusReason = NotificationMessage.StatusReasonEnum.Open;
-				service.Create(message);
+				Service.Create(message);
 			}
 		}
 	}

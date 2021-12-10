@@ -441,10 +441,11 @@ Thumbs.db
 # Secrets
 nuget-access-key.txt
 *.snk
-*.dat
+#*.dat
+WebResLink.dat
 
 # Tests
-/LinkDev.Tests.EnhancedOrgService
+
 
 # Tools
 *.exe
@@ -454,3 +455,11 @@ nuget-access-key.txt
 
 # Logs
 log.csv
+
+# tools
+.ys
+CrmSchema-Connection.dat
+PluginRegExt-Connection.dat
+
+#Resharper
+*.DotSettings
