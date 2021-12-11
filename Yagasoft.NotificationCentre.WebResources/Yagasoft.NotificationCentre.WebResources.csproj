@@ -77,6 +77,7 @@
     <Content Include="JavaScript\ldv_NotificationsCentreLibs.js" />
     <Content Include="JavaScript\ldv_NotificationsCentreFormRibbon.js" />
     <Content Include="JavaScript\ldv_NotificationsCentreRibbon.js" />
+    <Content Include="JavaScript\ys_NotificationsCentreCore.js" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
