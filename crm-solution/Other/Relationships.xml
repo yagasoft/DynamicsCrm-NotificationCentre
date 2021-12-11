@@ -8,7 +8,6 @@
   <EntityRelationship Name="business_unit_ldv_notificationmessagerole" />
   <EntityRelationship Name="business_unit_ldv_notificationmessageteam" />
   <EntityRelationship Name="business_unit_ldv_notificationmessageuser" />
-  <EntityRelationship Name="business_unit_ldv_notificationread" />
   <EntityRelationship Name="business_unit_ldv_notificationscentreconfig" />
   <EntityRelationship Name="campaign_ldv_notificationmessages" />
   <EntityRelationship Name="campaignactivity_ldv_notificationmessages" />
@@ -24,7 +23,6 @@
   <EntityRelationship Name="ldv_ldv_notificationmessage_ldv_notificationmessagerole_NotificationMessageId" />
   <EntityRelationship Name="ldv_ldv_notificationmessage_ldv_notificationmessageteam_NotificationMessageId" />
   <EntityRelationship Name="ldv_ldv_notificationmessage_ldv_notificationmessageuser_NotificationMessageId" />
-  <EntityRelationship Name="ldv_ldv_notificationmessage_ldv_notificationread_NotificationMessageId" />
   <EntityRelationship Name="ldv_notificationmessage_businessunit_owningbusinessunit" />
   <EntityRelationship Name="ldv_notificationmessage_mailbox_sendermailboxid" />
   <EntityRelationship Name="ldv_notificationmessage_owner_ownerid" />
@@ -40,7 +38,6 @@
   <EntityRelationship Name="ldv_roleconfiguration_ldv_notificationmessages" />
   <EntityRelationship Name="ldv_systemuser_ldv_notificationmessage_UserId" />
   <EntityRelationship Name="ldv_systemuser_ldv_notificationmessageuser_UserId" />
-  <EntityRelationship Name="ldv_systemuser_ldv_notificationread_UserId" />
   <EntityRelationship Name="ldv_team_ldv_notificationmessage_TeamId" />
   <EntityRelationship Name="ldv_team_ldv_notificationmessageteam_TeamId" />
   <EntityRelationship Name="lead_ldv_notificationmessages" />
@@ -50,8 +47,6 @@
   <EntityRelationship Name="lk_ldv_notificationmessageteam_modifiedby" />
   <EntityRelationship Name="lk_ldv_notificationmessageuser_createdby" />
   <EntityRelationship Name="lk_ldv_notificationmessageuser_modifiedby" />
-  <EntityRelationship Name="lk_ldv_notificationread_createdby" />
-  <EntityRelationship Name="lk_ldv_notificationread_modifiedby" />
   <EntityRelationship Name="lk_ldv_notificationscentreconfig_createdby" />
   <EntityRelationship Name="lk_ldv_notificationscentreconfig_modifiedby" />
   <EntityRelationship Name="msdyn_playbookinstance_ldv_notificationmessages" />
@@ -60,7 +55,6 @@
   <EntityRelationship Name="owner_ldv_notificationmessagerole" />
   <EntityRelationship Name="owner_ldv_notificationmessageteam" />
   <EntityRelationship Name="owner_ldv_notificationmessageuser" />
-  <EntityRelationship Name="owner_ldv_notificationread" />
   <EntityRelationship Name="owner_ldv_notificationscentreconfig" />
   <EntityRelationship Name="quote_ldv_notificationmessages" />
   <EntityRelationship Name="salesorder_ldv_notificationmessages" />
@@ -68,11 +62,9 @@
   <EntityRelationship Name="team_ldv_notificationmessagerole" />
   <EntityRelationship Name="team_ldv_notificationmessageteam" />
   <EntityRelationship Name="team_ldv_notificationmessageuser" />
-  <EntityRelationship Name="team_ldv_notificationread" />
   <EntityRelationship Name="team_ldv_notificationscentreconfig" />
   <EntityRelationship Name="user_ldv_notificationmessagerole" />
   <EntityRelationship Name="user_ldv_notificationmessageteam" />
   <EntityRelationship Name="user_ldv_notificationmessageuser" />
-  <EntityRelationship Name="user_ldv_notificationread" />
   <EntityRelationship Name="user_ldv_notificationscentreconfig" />
 </EntityRelationships>

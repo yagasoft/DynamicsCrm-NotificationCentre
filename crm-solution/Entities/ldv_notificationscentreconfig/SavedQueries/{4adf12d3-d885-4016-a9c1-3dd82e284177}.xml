@@ -14,11 +14,10 @@
           <cell name="ldv_isdefault" width="75" />
           <cell name="ldv_countperpage" width="100" />
           <cell name="ldv_refreshinterval" width="125" />
-          <cell name="ldv_counterlimit" width="100" />
           <cell name="ldv_ispopupenabled" width="100" />
           <cell name="ldv_popuptimeout" width="100" />
           <cell name="ownerid" width="150" />
-          <cell name="createdon" width="125" />
+          <cell name="createdon" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
         </row>
       </grid>
     </layoutxml>
@@ -38,7 +37,6 @@
           <attribute name="ldv_ispopupenabled" />
           <attribute name="ownerid" />
           <attribute name="ldv_isdefault" />
-          <attribute name="ldv_counterlimit" />
           <attribute name="ldv_countperpage" />
           <attribute name="ldv_notificationscentreconfigid" />
         </entity>

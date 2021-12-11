@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SdkMessageProcessingStep Name="Yagasoft.NotificationCentre.Plugins.NotifyOfActivity: Create of email" SdkMessageProcessingStepId="{21784f20-a9c7-e611-b372-f8b156a3e077}">
+<SdkMessageProcessingStep Name="Yagasoft.NotificationCentre.Plugins.NotifyOfActivity: Create of email: PostOp Async at 9999" SdkMessageProcessingStepId="{21784f20-a9c7-e611-b372-f8b156a3e077}">
   <SdkMessageId>9ebdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
-  <PluginTypeName>Yagasoft.NotificationCentre.Plugins.NotifyOfActivity, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5</PluginTypeName>
-  <PluginTypeId>ce26146e-5158-ec11-9af3-000d3a4c87c6</PluginTypeId>
+  <PluginTypeName>Yagasoft.NotificationCentre.Plugins.NotifyOfActivity, Yagasoft.NotificationCentre.Plugins, Version=1.1.1.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5</PluginTypeName>
+  <PluginTypeId>391edd8b-6a23-4713-a48b-5de434eb0650</PluginTypeId>
   <PrimaryEntity>email</PrimaryEntity>
   <AsyncAutoDelete>1</AsyncAutoDelete>
   <FilteringAttributes></FilteringAttributes>

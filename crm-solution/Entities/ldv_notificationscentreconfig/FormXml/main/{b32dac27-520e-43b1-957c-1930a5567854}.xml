@@ -12,7 +12,7 @@
             <label description="General" languagecode="1033" />
           </labels>
           <columns>
-            <column width="50%">
+            <column width="100%">
               <sections>
                 <section showlabel="true" showbar="true" IsUserDefined="0" id="{b302ec7b-9744-463b-9a3a-f6f1b5cebe14}" name="{b302ec7b-9744-463b-9a3a-f6f1b5cebe14}" columns="1" locklevel="0" labelwidth="150" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
@@ -45,6 +45,17 @@
                     </row>
                   </rows>
                 </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{04cbccb8-a443-b6b2-9809-34856ee5153a}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Parameters" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
                 <section name="{ed7a8581-e9e1-4b9d-b891-aa08961654ee}_section_3" showlabel="true" showbar="true" locklevel="0" id="{b7e18e18-4955-a96e-13cb-d8d3baa8de57}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="150" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
                     <label description="Retrieve Count" languagecode="1033" />
@@ -60,10 +71,6 @@
                     </row>
                   </rows>
                 </section>
-              </sections>
-            </column>
-            <column width="50%">
-              <sections>
                 <section name="{ed7a8581-e9e1-4b9d-b891-aa08961654ee}_section_4" showlabel="true" showbar="true" locklevel="0" id="{7e29185b-683e-15cc-65e8-85de8beb4c17}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="150" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
                     <label description="Counter" languagecode="1033" />
@@ -77,16 +84,12 @@
                         <control id="ldv_refreshinterval" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="ldv_refreshinterval" disabled="false" />
                       </cell>
                     </row>
-                    <row>
-                      <cell id="{e9e0d2b7-c935-81a6-726b-72cd69448ba5}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Counter Limit" languagecode="1033" />
-                        </labels>
-                        <control id="ldv_counterlimit" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="ldv_counterlimit" disabled="false" />
-                      </cell>
-                    </row>
                   </rows>
                 </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
                 <section name="{ed7a8581-e9e1-4b9d-b891-aa08961654ee}_section_5" showlabel="true" showbar="true" locklevel="0" id="{d6437e69-5236-de70-e8d6-e832c8d8cdc5}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="150" celllabelalignment="Left" celllabelposition="Left">
                   <labels>
                     <label description="Popup" languagecode="1033" />

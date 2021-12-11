@@ -27,6 +27,14 @@
                         <control id="ldv_isnotificationscentreenabled" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="ldv_isnotificationscentreenabled" disabled="false" uniqueid="{1b007a4c-6124-5bb8-a7ad-dc46b7acdd21}" />
                       </cell>
                     </row>
+                    <row>
+                      <cell id="{5bcb1ee2-ac44-492a-9ac4-b5b0be330491}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Notifications Centre Mode" languagecode="1033" />
+                        </labels>
+                        <control id="ys_notificationscentremodevalue" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="ys_notificationscentremodevalue" disabled="false" />
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>

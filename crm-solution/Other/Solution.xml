@@ -8,7 +8,7 @@
     <Descriptions>
       <Description description="Refer to Yagasoft.com (Ahmed Elsawalhy) for support." languagecode="1033" />
     </Descriptions>
-    <Version>4.1.1.1</Version>
+    <Version>5.1.2.1</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>yagasoft</UniqueName>
@@ -85,16 +85,15 @@
       <RootComponent type="1" schemaName="ldv_notificationmessagerole" behavior="0" />
       <RootComponent type="1" schemaName="ldv_notificationmessageteam" behavior="0" />
       <RootComponent type="1" schemaName="ldv_notificationmessageuser" behavior="0" />
-      <RootComponent type="1" schemaName="ldv_notificationread" behavior="0" />
       <RootComponent type="1" schemaName="ldv_notificationscentreconfig" behavior="0" />
       <RootComponent type="9" schemaName="ldv_notificationsource" behavior="0" />
       <RootComponent type="20" id="{608ceb20-83ca-e611-80c2-00155d5f3d01}" behavior="0" />
       <RootComponent type="20" id="{8b88ac33-83ca-e611-80c2-00155d5f3d01}" behavior="0" />
       <RootComponent type="29" id="{8e7d48c5-6737-4e5e-943d-23b793d685e2}" behavior="0" />
-      <RootComponent type="29" id="{9492423a-b274-46a6-8919-86a33eeb271c}" behavior="0" />
       <RootComponent type="50" schemaName=":RibbonDiffXml" behavior="0" />
       <RootComponent type="60" id="{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" behavior="0" />
       <RootComponent type="60" id="{606e486e-feb3-4f98-b754-8a154561f71c}" behavior="0" />
+      <RootComponent type="60" id="{b32dac27-520e-43b1-957c-1930a5567854}" behavior="0" />
       <RootComponent type="60" id="{b41126af-9e37-4c8b-8ff2-41ec6b4995eb}" behavior="0" />
       <RootComponent type="61" schemaName="ldv_GlobeGlowPng52" behavior="0" />
       <RootComponent type="61" schemaName="ldv_GlobePng52" behavior="0" />
@@ -102,23 +101,20 @@
       <RootComponent type="61" schemaName="ldv_NotificationsCentreCss" behavior="0" />
       <RootComponent type="61" schemaName="ldv_NotificationsCentreFormJs" behavior="0" />
       <RootComponent type="61" schemaName="ldv_NotificationsCentreFormRibbonJs" behavior="0" />
-      <RootComponent type="61" schemaName="ldv_NotificationsCentreInitTriggerJs" behavior="0" />
-      <RootComponent type="61" schemaName="ldv_NotificationsCentreJs" behavior="0" />
-      <RootComponent type="61" schemaName="ldv_NotificationsCentreLibsCss" behavior="0" />
       <RootComponent type="61" schemaName="ldv_NotificationsCentreLibsJs" behavior="0" />
       <RootComponent type="61" schemaName="ldv_NotificationsCentreRibbonJs" behavior="0" />
-      <RootComponent type="91" id="{57ee0b13-a9c7-e611-b372-f8b156a3e077}" schemaName="Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" behavior="0" />
-      <RootComponent type="91" id="{e4822480-2cd0-e611-b377-f8b156a3e077}" schemaName="Yagasoft.NotificationCentre.Steps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" behavior="0" />
+      <RootComponent type="61" schemaName="ys_NotificationsCentreCore" behavior="0" />
+      <RootComponent type="62" behavior="0" />
+      <RootComponent type="91" id="{1ee9f14b-949b-4486-8e6c-845a7b43a6d8}" schemaName="Yagasoft.NotificationCentre.Plugins, Version=1.1.1.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" behavior="0" />
+      <RootComponent type="91" id="{4c9a1f41-3432-43f9-845d-f8333c1069bc}" schemaName="Yagasoft.NotificationCentre.Steps, Version=1.1.1.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" behavior="0" />
       <RootComponent type="92" id="{035cd77e-acc7-e611-b372-f8b156a3e077}" behavior="0" />
       <RootComponent type="92" id="{21784f20-a9c7-e611-b372-f8b156a3e077}" behavior="0" />
       <RootComponent type="92" id="{2d85988d-acc7-e611-b372-f8b156a3e077}" behavior="0" />
       <RootComponent type="92" id="{32842c1f-4ecf-e611-b377-f8b156a3e077}" behavior="0" />
       <RootComponent type="92" id="{32909e59-3bc8-e611-b372-f8b156a3e077}" behavior="0" />
       <RootComponent type="92" id="{3cc48727-a9c7-e611-b372-f8b156a3e077}" behavior="0" />
-      <RootComponent type="92" id="{a4fb43d7-0667-e711-80ca-00155d5f3d01}" behavior="0" />
       <RootComponent type="92" id="{c42dc995-3bc8-e611-b372-f8b156a3e077}" behavior="0" />
-      <RootComponent type="92" id="{e21648b8-1ad0-e611-b377-f8b156a3e077}" behavior="0" />
-      <RootComponent type="92" id="{ebde8a1a-0767-e711-80ca-00155d5f3d01}" behavior="0" />
+      <RootComponent type="92" id="{e8f1d939-075a-ec11-9af5-000d3a4c87c6}" behavior="0" />
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
@@ -143,63 +139,167 @@
       </MissingDependency>
       <MissingDependency>
         <Required key="0" type="1" schemaName="ldv_genericconfiguration" displayName="Common Configuration" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="7" type="60" displayName="Notifications Centre" parentDisplayName="Common Configuration" id="{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="8" type="2" schemaName="ldv_loglevel" displayName="Log Level" parentSchemaName="ldv_genericconfiguration" parentDisplayName="Common Configuration" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="7" type="60" displayName="Notifications Centre" parentDisplayName="Common Configuration" id="{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="9" type="2" schemaName="ldv_name" displayName="Name" parentSchemaName="ldv_genericconfiguration" parentDisplayName="Common Configuration" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="7" type="60" displayName="Notifications Centre" parentDisplayName="Common Configuration" id="{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="10" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="ldv_genericconfiguration" parentDisplayName="Common Configuration" solution="Active" />
-        <Dependent key="7" type="60" displayName="Notifications Centre" parentDisplayName="Common Configuration" id="{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="11" type="61" schemaName="ldv_CommonGenericSchemaJs" displayName="ldv_CommonGenericSchemaJs" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="12" type="60" displayName="Quick Create Form" parentDisplayName="Notification Message" id="{606e486e-feb3-4f98-b754-8a154561f71c}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="13" type="61" schemaName="ldv_CommonGenericJs" displayName="ldv_CommonGenericJs" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="12" type="60" displayName="Quick Create Form" parentDisplayName="Notification Message" id="{606e486e-feb3-4f98-b754-8a154561f71c}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="13" type="61" schemaName="ldv_CommonGenericJs" displayName="ldv_CommonGenericJs" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="14" type="60" displayName="Information" parentDisplayName="Notifications Centre Config" id="{b32dac27-520e-43b1-957c-1930a5567854}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="11" type="61" schemaName="ldv_CommonGenericSchemaJs" displayName="ldv_CommonGenericSchemaJs" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="14" type="60" displayName="Information" parentDisplayName="Notifications Centre Config" id="{b32dac27-520e-43b1-957c-1930a5567854}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="13" type="61" schemaName="ldv_CommonGenericJs" displayName="ldv_CommonGenericJs" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="15" type="60" displayName="Information" parentDisplayName="Notification Message" id="{b41126af-9e37-4c8b-8ff2-41ec6b4995eb}" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required key="11" type="61" schemaName="ldv_CommonGenericSchemaJs" displayName="ldv_CommonGenericSchemaJs" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="15" type="60" displayName="Information" parentDisplayName="Notification Message" id="{b41126af-9e37-4c8b-8ff2-41ec6b4995eb}" />
+        <Dependent key="7" type="2" schemaName="ys_notificationscentremodevalue" displayName="Notifications Centre Mode" parentSchemaName="ldv_genericconfiguration" parentDisplayName="Common Configuration" />
       </MissingDependency>
       <MissingDependency>
         <Required key="0" type="1" schemaName="ldv_genericconfiguration" displayName="Common Configuration" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="16" type="2" schemaName="ldv_isnotificationscentreenabled" displayName="Notifications Centre Enabled" parentSchemaName="ldv_genericconfiguration" parentDisplayName="Common Configuration" />
+        <Dependent key="8" type="2" schemaName="ldv_isnotificationscentreenabled" displayName="Notifications Centre Enabled" parentSchemaName="ldv_genericconfiguration" parentDisplayName="Common Configuration" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="17" type="61" schemaName="ldv_QueuePng32" displayName="ldv_QueuePng32" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="18" type="50" schemaName="ldv_notificationmessage:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+        <Required key="0" type="1" schemaName="ldv_genericconfiguration" displayName="Common Configuration" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="9" type="60" displayName="Notifications Centre" parentDisplayName="Common Configuration" id="{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="19" type="61" schemaName="ldv_QueuePng16" displayName="ldv_QueuePng16" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="18" type="50" schemaName="ldv_notificationmessage:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+        <Required key="10" type="2" schemaName="ldv_loglevel" displayName="Log Level" parentSchemaName="ldv_genericconfiguration" parentDisplayName="Common Configuration" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="9" type="60" displayName="Notifications Centre" parentDisplayName="Common Configuration" id="{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="20" type="61" schemaName="ldv_DraftPng32" displayName="ldv_DraftPng32" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="18" type="50" schemaName="ldv_notificationmessage:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+        <Required key="11" type="2" schemaName="ldv_name" displayName="Name" parentSchemaName="ldv_genericconfiguration" parentDisplayName="Common Configuration" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="9" type="60" displayName="Notifications Centre" parentDisplayName="Common Configuration" id="{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" />
       </MissingDependency>
       <MissingDependency>
-        <Required key="21" type="61" schemaName="ldv_DraftPng16" displayName="ldv_DraftPng16" solution="YSCommonSolution (3.2.1.1)" />
-        <Dependent key="18" type="50" schemaName="ldv_notificationmessage:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+        <Required key="12" type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="ldv_genericconfiguration" parentDisplayName="Common Configuration" solution="Active" />
+        <Dependent key="9" type="60" displayName="Notifications Centre" parentDisplayName="Common Configuration" id="{2a4c9f83-0e18-43bb-a671-7697b9221cf2}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="61" schemaName="ldv_CommonGenericJs" displayName="ldv_CommonGenericJs" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="14" type="60" displayName="Information" parentDisplayName="Notification Message" id="{b41126af-9e37-4c8b-8ff2-41ec6b4995eb}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="61" schemaName="ldv_CommonGenericSchemaJs" displayName="ldv_CommonGenericSchemaJs" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="14" type="60" displayName="Information" parentDisplayName="Notification Message" id="{b41126af-9e37-4c8b-8ff2-41ec6b4995eb}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="61" schemaName="ldv_CommonGenericSchemaJs" displayName="ldv_CommonGenericSchemaJs" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="16" type="60" displayName="Quick Create Form" parentDisplayName="Notification Message" id="{606e486e-feb3-4f98-b754-8a154561f71c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="61" schemaName="ldv_CommonGenericJs" displayName="ldv_CommonGenericJs" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="16" type="60" displayName="Quick Create Form" parentDisplayName="Notification Message" id="{606e486e-feb3-4f98-b754-8a154561f71c}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="13" type="61" schemaName="ldv_CommonGenericJs" displayName="ldv_CommonGenericJs" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="17" type="60" displayName="Information" parentDisplayName="Notifications Centre Config" id="{b32dac27-520e-43b1-957c-1930a5567854}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="15" type="61" schemaName="ldv_CommonGenericSchemaJs" displayName="ldv_CommonGenericSchemaJs" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="17" type="60" displayName="Information" parentDisplayName="Notifications Centre Config" id="{b32dac27-520e-43b1-957c-1930a5567854}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="0" type="1" schemaName="ldv_genericconfiguration" displayName="Common Configuration" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="19" type="1" schemaName="msdyn_upgraderun" displayName="Upgrade Run" solution="SolutionUpgradeInfrastructure (2.6.0.0)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="20" type="1" schemaName="invoice" displayName="Invoice" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="21" type="1" schemaName="contract" displayName="Contract" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="22" type="1" schemaName="opportunity" displayName="Opportunity" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="23" type="1" schemaName="salesorder" displayName="Order" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="24" type="1" schemaName="msdyn_postruleconfig" displayName="Post Rule Configuration" solution="ActivityFeedsCore (9.0.0.0003)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="25" type="1" schemaName="lead" displayName="Lead" solution="msdynce_LeadManagement (9.0.4.0066)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="26" type="1" schemaName="bulkoperation" displayName="Quick Campaign" solution="msdynce_Marketing (9.0.4.37)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="27" type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="28" type="1" schemaName="campaign" displayName="Campaign" solution="msdynce_Marketing (9.0.4.37)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="29" type="1" schemaName="list" displayName="Marketing List" solution="msdynce_Marketing (9.0.4.37)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="30" type="1" schemaName="service" displayName="Service" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="31" type="1" schemaName="quote" displayName="Quote" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="32" type="1" schemaName="ldv_customjobengine" displayName="Custom Job Engine" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="33" type="1" schemaName="incident" displayName="Case" solution="msdynce_Service (9.0.5.56)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="34" type="1" schemaName="salesliterature" displayName="Sales Literature" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="35" type="1" schemaName="msdyn_solutionhistory" displayName="Solution History" solution="SolutionHistoryAPIs (9.1.0.14)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="36" type="1" schemaName="ldv_customjob" displayName="Custom Job" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="37" type="1" schemaName="competitor" displayName="Competitor" solution="msdynce_Sales (9.0.4.0076)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="38" type="1" schemaName="ys_keyvalue" displayName="Key-Value" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="39" type="1" schemaName="msdyn_postconfig" displayName="Post Configuration" solution="ActivityFeedsCore (9.0.0.0003)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="40" type="1" schemaName="ldv_log" displayName="Log" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="41" type="61" schemaName="msdyn_/Images/Wall_16.png" displayName="msdyn_/Images/Wall_16.png" solution="ActivityFeedsCore (9.0.0.0003)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="42" type="61" schemaName="msdyn_/PersonalWall.htm" displayName="msdyn_/PersonalWall.htm" solution="ActivityFeedsCore (9.0.0.0003)" />
+        <Dependent key="18" type="62" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="43" type="61" schemaName="ldv_DraftPng32" displayName="ldv_DraftPng32" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="44" type="50" schemaName="ldv_notificationmessage:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="45" type="61" schemaName="ldv_DraftPng16" displayName="ldv_DraftPng16" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="44" type="50" schemaName="ldv_notificationmessage:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="46" type="61" schemaName="ldv_QueuePng32" displayName="ldv_QueuePng32" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="44" type="50" schemaName="ldv_notificationmessage:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required key="47" type="61" schemaName="ldv_QueuePng16" displayName="ldv_QueuePng16" solution="YSCommonSolution (3.2.1.1)" />
+        <Dependent key="44" type="50" schemaName="ldv_notificationmessage:RibbonDiffXml" parentSchemaName="ribboncustomization" parentDisplayName="Application Ribbons" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

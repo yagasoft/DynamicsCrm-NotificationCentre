@@ -38,24 +38,6 @@
         <mxsw:ArgumentEntityAttribute Value="" />
       </x:Property.Attributes>
     </x:Property>
-    <x:Property Name="LatestMenuOpenDate" Type="InArgument(x:String)">
-      <x:Property.Attributes>
-        <mxsw:ArgumentRequiredAttribute Value="False" />
-        <mxsw:ArgumentTargetAttribute Value="False" />
-        <mxsw:ArgumentDescriptionAttribute Value="LatestMenuOpenDate" />
-        <mxsw:ArgumentDirectionAttribute Value="Input" />
-        <mxsw:ArgumentEntityAttribute Value="" />
-      </x:Property.Attributes>
-    </x:Property>
-    <x:Property Name="IsLoadRead" Type="InArgument(x:Boolean)">
-      <x:Property.Attributes>
-        <mxsw:ArgumentRequiredAttribute Value="False" />
-        <mxsw:ArgumentTargetAttribute Value="False" />
-        <mxsw:ArgumentDescriptionAttribute Value="New Argument" />
-        <mxsw:ArgumentDirectionAttribute Value="Input" />
-        <mxsw:ArgumentEntityAttribute Value="" />
-      </x:Property.Attributes>
-    </x:Property>
     <x:Property Name="Cookie" Type="InArgument(x:String)">
       <x:Property.Attributes>
         <mxsw:ArgumentRequiredAttribute Value="False" />
@@ -83,15 +65,6 @@
         <mxsw:ArgumentEntityAttribute Value="" />
       </x:Property.Attributes>
     </x:Property>
-    <x:Property Name="IsUnreadEnd" Type="OutArgument(x:Boolean)">
-      <x:Property.Attributes>
-        <mxsw:ArgumentRequiredAttribute Value="False" />
-        <mxsw:ArgumentTargetAttribute Value="False" />
-        <mxsw:ArgumentDescriptionAttribute Value="New Argument" />
-        <mxsw:ArgumentDirectionAttribute Value="Output" />
-        <mxsw:ArgumentEntityAttribute Value="" />
-      </x:Property.Attributes>
-    </x:Property>
     <x:Property Name="IsReadEnd" Type="OutArgument(x:Boolean)">
       <x:Property.Attributes>
         <mxsw:ArgumentRequiredAttribute Value="False" />
@@ -101,6 +74,15 @@
         <mxsw:ArgumentEntityAttribute Value="" />
       </x:Property.Attributes>
     </x:Property>
+    <x:Property Name="Target" Type="InArgument(mxs:EntityReference)">
+      <x:Property.Attributes>
+        <mxsw:ArgumentRequiredAttribute Value="True" />
+        <mxsw:ArgumentTargetAttribute Value="True" />
+        <mxsw:ArgumentDescriptionAttribute Value="Target Argument" />
+        <mxsw:ArgumentDirectionAttribute Value="Input" />
+        <mxsw:ArgumentEntityAttribute Value="none" />
+      </x:Property.Attributes>
+    </x:Property>
   </x:Members>
   <this:XrmWorkflow8e7d48c567374e5e943d23b793d685e2.InputEntities>
     <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
@@ -108,12 +90,14 @@
   <this:XrmWorkflow8e7d48c567374e5e943d23b793d685e2.CreatedEntities>
     <InArgument x:TypeArguments="scg:IDictionary(x:String, mxs:Entity)" />
   </this:XrmWorkflow8e7d48c567374e5e943d23b793d685e2.CreatedEntities>
+  <this:XrmWorkflow8e7d48c567374e5e943d23b793d685e2.Target>
+    <InArgument x:TypeArguments="mxs:EntityReference" />
+  </this:XrmWorkflow8e7d48c567374e5e943d23b793d685e2.Target>
   <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
   <mxswa:Workflow>
     <mxswa:Workflow.Variables>
       <Variable x:TypeArguments="x:String" Default="[Nothing]" Name="CustomActivityStep6MessagesArg_localParameter" />
       <Variable x:TypeArguments="x:String" Default="[Nothing]" Name="CustomActivityStep6CookieArg_localParameter" />
-      <Variable x:TypeArguments="x:Boolean" Default="False" Name="CustomActivityStep6IsUnreadEndArg_localParameter" />
       <Variable x:TypeArguments="x:Boolean" Default="False" Name="CustomActivityStep6IsReadEndArg_localParameter" />
     </mxswa:Workflow.Variables>
     <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.Composite, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="CustomActivityStep6">
@@ -136,13 +120,6 @@
           <Variable x:TypeArguments="x:Object" Name="CustomActivityStep6_11" />
           <Variable x:TypeArguments="x:Object" Name="CustomActivityStep6_12" />
           <Variable x:TypeArguments="x:Object" Name="CustomActivityStep6_11_converted" />
-          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep6_13" />
-          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep6_14" />
-          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep6_13_converted" />
-          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep6_15" />
-          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep6_16" />
-          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep6_17" />
-          <Variable x:TypeArguments="x:Object" Name="CustomActivityStep6_15_converted" />
         </sco:Collection>
         <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
           <mxswa:GetEntityProperty Attribute="systemuserid" Entity="[InputEntities(&quot;User#systemuser&quot;)]" EntityName="systemuser" Value="[CustomActivityStep6_2]">
@@ -281,7 +258,7 @@
           <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
             <mxswa:ActivityReference.Arguments>
               <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CustomOperationArguments</InArgument>
-              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { LatestMenuOpenDate }]</InArgument>
+              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Cookie }]</InArgument>
               <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
                 <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
               </InArgument>
@@ -307,93 +284,22 @@
               <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep6_11_converted]</OutArgument>
             </mxswa:ActivityReference.Arguments>
           </mxswa:ActivityReference>
-          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
-            <mxswa:ActivityReference.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CustomOperationArguments</InArgument>
-              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Cookie }]</InArgument>
-              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
-                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
-              </InArgument>
-              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep6_14]</OutArgument>
-            </mxswa:ActivityReference.Arguments>
-          </mxswa:ActivityReference>
-          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
-            <mxswa:ActivityReference.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
-              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CustomActivityStep6_14 }]</InArgument>
-              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
-                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
-              </InArgument>
-              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep6_13]</OutArgument>
-            </mxswa:ActivityReference.Arguments>
-          </mxswa:ActivityReference>
-          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConvertCrmXrmTypes, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConvertCrmXrmTypes">
-            <mxswa:ActivityReference.Arguments>
-              <InArgument x:TypeArguments="x:Object" x:Key="Value">[CustomActivityStep6_13]</InArgument>
-              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
-                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:String" />
-              </InArgument>
-              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep6_13_converted]</OutArgument>
-            </mxswa:ActivityReference.Arguments>
-          </mxswa:ActivityReference>
-          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
-            <mxswa:ActivityReference.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CustomOperationArguments</InArgument>
-              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { IsLoadRead }]</InArgument>
-              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
-                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
-              </InArgument>
-              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep6_16]</OutArgument>
-            </mxswa:ActivityReference.Arguments>
-          </mxswa:ActivityReference>
-          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
-            <mxswa:ActivityReference.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">CreateCrmType</InArgument>
-              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { Microsoft.Xrm.Sdk.Workflow.WorkflowPropertyType.Boolean, "False" }]</InArgument>
-              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
-                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
-              </InArgument>
-              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep6_17]</OutArgument>
-            </mxswa:ActivityReference.Arguments>
-          </mxswa:ActivityReference>
-          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
-            <mxswa:ActivityReference.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
-              <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CustomActivityStep6_16, CustomActivityStep6_17 }]</InArgument>
-              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
-                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
-              </InArgument>
-              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep6_15]</OutArgument>
-            </mxswa:ActivityReference.Arguments>
-          </mxswa:ActivityReference>
-          <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.ConvertCrmXrmTypes, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="ConvertCrmXrmTypes">
-            <mxswa:ActivityReference.Arguments>
-              <InArgument x:TypeArguments="x:Object" x:Key="Value">[CustomActivityStep6_15]</InArgument>
-              <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
-                <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
-              </InArgument>
-              <OutArgument x:TypeArguments="x:Object" x:Key="Result">[CustomActivityStep6_15_converted]</OutArgument>
-            </mxswa:ActivityReference.Arguments>
-          </mxswa:ActivityReference>
           <Assign>
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[CustomActivityStep6CookieArg_localParameter]</OutArgument>
             </Assign.To>
             <Assign.Value>
-              <InArgument x:TypeArguments="x:String">[DirectCast(CustomActivityStep6_13_converted, System.String)]</InArgument>
+              <InArgument x:TypeArguments="x:String">[DirectCast(CustomActivityStep6_11_converted, System.String)]</InArgument>
             </Assign.Value>
           </Assign>
-          <mxswa:ActivityReference AssemblyQualifiedName="Yagasoft.NotificationCentre.Steps.GetMessages, Yagasoft.NotificationCentre.Steps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" DisplayName="CustomActivityStep6">
+          <mxswa:ActivityReference AssemblyQualifiedName="Yagasoft.NotificationCentre.Steps.GetMessages, Yagasoft.NotificationCentre.Steps, Version=1.1.1.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5" DisplayName="CustomActivityStep6">
             <mxswa:ActivityReference.Arguments>
               <InArgument x:TypeArguments="mxs:EntityReference" x:Key="UserRefArg">[DirectCast(CustomActivityStep6_1_converted, Microsoft.Xrm.Sdk.EntityReference)]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="MessageIdArg">[DirectCast(CustomActivityStep6_3_converted, System.String)]</InArgument>
               <InArgument x:TypeArguments="x:Int32" x:Key="CountArg">[DirectCast(CustomActivityStep6_5_converted, System.Int32)]</InArgument>
               <InArgument x:TypeArguments="x:Int32" x:Key="PageArg">[DirectCast(CustomActivityStep6_8_converted, System.Int32)]</InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="LatestMenuOpenDateArg">[DirectCast(CustomActivityStep6_11_converted, System.String)]</InArgument>
               <InOutArgument x:TypeArguments="x:String" x:Key="CookieArg">[CustomActivityStep6CookieArg_localParameter]</InOutArgument>
-              <InArgument x:TypeArguments="x:Boolean" x:Key="IsLoadReadArg">[DirectCast(CustomActivityStep6_15_converted, System.Boolean)]</InArgument>
               <OutArgument x:TypeArguments="x:String" x:Key="MessagesArg">[CustomActivityStep6MessagesArg_localParameter]</OutArgument>
-              <OutArgument x:TypeArguments="x:Boolean" x:Key="IsUnreadEndArg">[CustomActivityStep6IsUnreadEndArg_localParameter]</OutArgument>
               <OutArgument x:TypeArguments="x:Boolean" x:Key="IsReadEndArg">[CustomActivityStep6IsReadEndArg_localParameter]</OutArgument>
             </mxswa:ActivityReference.Arguments>
           </mxswa:ActivityReference>
@@ -433,23 +339,6 @@
         </mxswa:ActivityReference.Arguments>
       </mxswa:ActivityReference>
       <Assign x:TypeArguments="x:String" To="[NewCookie]" Value="[AssignOutputArgumentStep3_1.ToString()]" />
-    </Sequence>
-    <Sequence DisplayName="AssignOutputArgumentStep8: Set IsUnreadEnd argument">
-      <Sequence.Variables>
-        <Variable x:TypeArguments="x:Object" Name="AssignOutputArgumentStep8_1" />
-        <Variable x:TypeArguments="x:String" Default="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="TypeName" />
-      </Sequence.Variables>
-      <mxswa:ActivityReference AssemblyQualifiedName="Microsoft.Crm.Workflow.Activities.EvaluateExpression, Microsoft.Crm.Workflow, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" DisplayName="EvaluateExpression">
-        <mxswa:ActivityReference.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="ExpressionOperator">SelectFirstNonNull</InArgument>
-          <InArgument x:TypeArguments="s:Object[]" x:Key="Parameters">[New Object() { CustomActivityStep6IsUnreadEndArg_localParameter }]</InArgument>
-          <InArgument x:TypeArguments="s:Type" x:Key="TargetType">
-            <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Boolean" />
-          </InArgument>
-          <OutArgument x:TypeArguments="x:Object" x:Key="Result">[AssignOutputArgumentStep8_1]</OutArgument>
-        </mxswa:ActivityReference.Arguments>
-      </mxswa:ActivityReference>
-      <Assign x:TypeArguments="x:Boolean" To="[IsUnreadEnd]" Value="[CBool(AssignOutputArgumentStep8_1)]" />
     </Sequence>
     <Sequence DisplayName="AssignOutputArgumentStep7: Set IsReadEnd argument">
       <Sequence.Variables>

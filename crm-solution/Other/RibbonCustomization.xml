@@ -39,7 +39,14 @@
     <DisplayRules />
     <EnableRules>
       <EnableRule Id="ldv.ApplicationRibbon.NC.EnableRule">
-        <CustomRule FunctionName="InitNotificationsMenu" Library="$webresource:ldv_NotificationsCentreRibbonJs" Default="false" InvertResult="false" />
+        <OrRule>
+          <Or>
+            <CustomRule FunctionName="isNaN" Library="$webresource:ldv_CommonGenericJs" Default="false" InvertResult="true" />
+          </Or>
+          <Or>
+            <CustomRule FunctionName="InitNotificationsMenu" Library="$webresource:ldv_NotificationsCentreRibbonJs" Default="false" InvertResult="false" />
+          </Or>
+        </OrRule>
       </EnableRule>
     </EnableRules>
   </RuleDefinitions>

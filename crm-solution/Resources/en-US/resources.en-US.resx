@@ -144,10 +144,6 @@
     <value />
     <comment>ldv_notificationmessageuser CustomLabel for EntityRelationship 'ldv_ldv_notificationmessage_ldv_notificationmessageuser_NotificationMessageId'</comment>
   </data>
-  <data name="10:CustomLabel,ldv_ldv_notificationmessage_ldv_notificationread_NotificationMessageId" xml:space="preserve">
-    <value />
-    <comment>ldv_notificationread CustomLabel for EntityRelationship 'ldv_ldv_notificationmessage_ldv_notificationread_NotificationMessageId'</comment>
-  </data>
   <data name="10:CustomLabel,ldv_role_ldv_notificationmessagerole_RoleId" xml:space="preserve">
     <value />
     <comment>ldv_notificationmessagerole CustomLabel for EntityRelationship 'ldv_role_ldv_notificationmessagerole_RoleId'</comment>
@@ -163,10 +159,6 @@
   <data name="10:CustomLabel,ldv_systemuser_ldv_notificationmessage_UserId" xml:space="preserve">
     <value />
     <comment>ldv_notificationmessage CustomLabel for EntityRelationship 'ldv_systemuser_ldv_notificationmessage_UserId'</comment>
-  </data>
-  <data name="10:CustomLabel,ldv_systemuser_ldv_notificationread_UserId" xml:space="preserve">
-    <value />
-    <comment>ldv_notificationread CustomLabel for EntityRelationship 'ldv_systemuser_ldv_notificationread_UserId'</comment>
   </data>
   <data name="10:CustomLabel,ldv_team_ldv_notificationmessageteam_TeamId" xml:space="preserve">
     <value />
@@ -207,10 +199,6 @@
   <data name="10:Description,business_unit_ldv_notificationmessageuser" xml:space="preserve">
     <value>Unique identifier for the business unit that owns the record</value>
     <comment>ldv_notificationmessageuser Description for EntityRelationship 'business_unit_ldv_notificationmessageuser'</comment>
-  </data>
-  <data name="10:Description,business_unit_ldv_notificationread" xml:space="preserve">
-    <value>Unique identifier for the business unit that owns the record</value>
-    <comment>ldv_notificationread Description for EntityRelationship 'business_unit_ldv_notificationread'</comment>
   </data>
   <data name="10:Description,business_unit_ldv_notificationscentreconfig" xml:space="preserve">
     <value>Unique identifier for the business unit that owns the record</value>
@@ -272,10 +260,6 @@
     <value />
     <comment>ldv_notificationmessageuser Description for EntityRelationship 'ldv_ldv_notificationmessage_ldv_notificationmessageuser_NotificationMessageId'</comment>
   </data>
-  <data name="10:Description,ldv_ldv_notificationmessage_ldv_notificationread_NotificationMessageId" xml:space="preserve">
-    <value />
-    <comment>ldv_notificationread Description for EntityRelationship 'ldv_ldv_notificationmessage_ldv_notificationread_NotificationMessageId'</comment>
-  </data>
   <data name="10:Description,ldv_notificationmessage_businessunit_owningbusinessunit" xml:space="preserve">
     <value>Unique identifier of the business unit that owns the activity.</value>
     <comment>ldv_notificationmessage Description for EntityRelationship 'ldv_notificationmessage_businessunit_owningbusinessunit'</comment>
@@ -336,10 +320,6 @@
     <value />
     <comment>ldv_notificationmessage Description for EntityRelationship 'ldv_systemuser_ldv_notificationmessage_UserId'</comment>
   </data>
-  <data name="10:Description,ldv_systemuser_ldv_notificationread_UserId" xml:space="preserve">
-    <value />
-    <comment>ldv_notificationread Description for EntityRelationship 'ldv_systemuser_ldv_notificationread_UserId'</comment>
-  </data>
   <data name="10:Description,ldv_team_ldv_notificationmessageteam_TeamId" xml:space="preserve">
     <value />
     <comment>ldv_notificationmessageteam Description for EntityRelationship 'ldv_team_ldv_notificationmessageteam_TeamId'</comment>
@@ -376,14 +356,6 @@
     <value>Unique identifier of the user who modified the record.</value>
     <comment>ldv_notificationmessageuser Description for EntityRelationship 'lk_ldv_notificationmessageuser_modifiedby'</comment>
   </data>
-  <data name="10:Description,lk_ldv_notificationread_createdby" xml:space="preserve">
-    <value>Unique identifier of the user who created the record.</value>
-    <comment>ldv_notificationread Description for EntityRelationship 'lk_ldv_notificationread_createdby'</comment>
-  </data>
-  <data name="10:Description,lk_ldv_notificationread_modifiedby" xml:space="preserve">
-    <value>Unique identifier of the user who modified the record.</value>
-    <comment>ldv_notificationread Description for EntityRelationship 'lk_ldv_notificationread_modifiedby'</comment>
-  </data>
   <data name="10:Description,lk_ldv_notificationscentreconfig_createdby" xml:space="preserve">
     <value>Unique identifier of the user who created the record.</value>
     <comment>ldv_notificationscentreconfig Description for EntityRelationship 'lk_ldv_notificationscentreconfig_createdby'</comment>
@@ -416,10 +388,6 @@
     <value>Owner Id</value>
     <comment>ldv_notificationmessageuser Description for EntityRelationship 'owner_ldv_notificationmessageuser'</comment>
   </data>
-  <data name="10:Description,owner_ldv_notificationread" xml:space="preserve">
-    <value>Owner Id</value>
-    <comment>ldv_notificationread Description for EntityRelationship 'owner_ldv_notificationread'</comment>
-  </data>
   <data name="10:Description,owner_ldv_notificationscentreconfig" xml:space="preserve">
     <value>Owner Id</value>
     <comment>ldv_notificationscentreconfig Description for EntityRelationship 'owner_ldv_notificationscentreconfig'</comment>
@@ -448,10 +416,6 @@
     <value>Unique identifier for the team that owns the record.</value>
     <comment>ldv_notificationmessageuser Description for EntityRelationship 'team_ldv_notificationmessageuser'</comment>
   </data>
-  <data name="10:Description,team_ldv_notificationread" xml:space="preserve">
-    <value>Unique identifier for the team that owns the record.</value>
-    <comment>ldv_notificationread Description for EntityRelationship 'team_ldv_notificationread'</comment>
-  </data>
   <data name="10:Description,team_ldv_notificationscentreconfig" xml:space="preserve">
     <value>Unique identifier for the team that owns the record.</value>
     <comment>ldv_notificationscentreconfig Description for EntityRelationship 'team_ldv_notificationscentreconfig'</comment>
@@ -467,10 +431,6 @@
   <data name="10:Description,user_ldv_notificationmessageuser" xml:space="preserve">
     <value>Unique identifier for the user that owns the record.</value>
     <comment>ldv_notificationmessageuser Description for EntityRelationship 'user_ldv_notificationmessageuser'</comment>
-  </data>
-  <data name="10:Description,user_ldv_notificationread" xml:space="preserve">
-    <value>Unique identifier for the user that owns the record.</value>
-    <comment>ldv_notificationread Description for EntityRelationship 'user_ldv_notificationread'</comment>
   </data>
   <data name="10:Description,user_ldv_notificationscentreconfig" xml:space="preserve">
     <value>Unique identifier for the user that owns the record.</value>
@@ -495,6 +455,14 @@
   <data name="1:Description,ldv_genericconfigurationldv_IsNotificationsCentreEnabled" xml:space="preserve">
     <value />
     <comment>'ldv_genericconfiguration' : Description for Attribute 'ldv_IsNotificationsCentreEnabled' on Entity</comment>
+  </data>
+  <data name="1:Description,ldv_genericconfigurationys_ldv_genericconfiguration_ys_notificationscentremodevalue" xml:space="preserve">
+    <value>How messages are defined. Dynamic: a query is defined in the Message entity, each entry returned is a message. Static: a message text is defined and displayed to the users.</value>
+    <comment>'ldv_genericconfiguration' : Description for OptionSet 'ys_ldv_genericconfiguration_ys_notificationscentremodevalue' on Entity</comment>
+  </data>
+  <data name="1:Description,ldv_genericconfigurationys_NotificationsCentreModeValue" xml:space="preserve">
+    <value>How messages are defined. Dynamic: a query is defined in the Message entity, each entry returned is a message. Static: a message text is defined and displayed to the users.</value>
+    <comment>'ldv_genericconfiguration' : Description for Attribute 'ys_NotificationsCentreModeValue' on Entity</comment>
   </data>
   <data name="1:Description,ldv_notificationmessageActivityAdditionalParams" xml:space="preserve">
     <value>Additional information provided by the external application as JSON. For internal use only.</value>
@@ -603,10 +571,6 @@
   <data name="1:Description,ldv_notificationmessageLastOnHoldTime" xml:space="preserve">
     <value>Contains the date and time stamp of the last on hold time.</value>
     <comment>'ldv_notificationmessage' : Description for Attribute 'LastOnHoldTime' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationmessageldv_ContentModifiedOn" xml:space="preserve">
-    <value />
-    <comment>'ldv_notificationmessage' : Description for Attribute 'ldv_ContentModifiedOn' on Entity</comment>
   </data>
   <data name="1:Description,ldv_notificationmessageldv_IsGlobalMessage" xml:space="preserve">
     <value />
@@ -1096,98 +1060,6 @@
     <value>Time zone code that was in use when the record was created.</value>
     <comment>'ldv_notificationmessage' : Description for Attribute 'UTCConversionTimeZoneCode' on Entity</comment>
   </data>
-  <data name="1:Description,ldv_notificationreadCreatedBy" xml:space="preserve">
-    <value>Unique identifier of the user who created the record.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'CreatedBy' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadCreatedOn" xml:space="preserve">
-    <value>Date and time when the record was created.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'CreatedOn' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadCreatedOnBehalfBy" xml:space="preserve">
-    <value>Unique identifier of the delegate user who created the record.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'CreatedOnBehalfBy' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadentityldv_notificationread" xml:space="preserve">
-    <value />
-    <comment> 'ldv_notificationread' : Description for Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadImportSequenceNumber" xml:space="preserve">
-    <value>Sequence number of the import that created this record.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'ImportSequenceNumber' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadldv_name" xml:space="preserve">
-    <value>The name of the custom entity.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'ldv_name' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadldv_NotificationMessageId" xml:space="preserve">
-    <value />
-    <comment>'ldv_notificationread' : Description for Attribute 'ldv_NotificationMessageId' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadldv_notificationreadId" xml:space="preserve">
-    <value>Unique identifier for entity instances</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'ldv_notificationreadId' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadldv_notificationread_statecode" xml:space="preserve">
-    <value>Status of the Notification Read</value>
-    <comment>'ldv_notificationread' : Description for OptionSet 'ldv_notificationread_statecode' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadldv_notificationread_statuscode" xml:space="preserve">
-    <value>Reason for the status of the Notification Read</value>
-    <comment>'ldv_notificationread' : Description for OptionSet 'ldv_notificationread_statuscode' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadldv_UserId" xml:space="preserve">
-    <value />
-    <comment>'ldv_notificationread' : Description for Attribute 'ldv_UserId' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadModifiedBy" xml:space="preserve">
-    <value>Unique identifier of the user who modified the record.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'ModifiedBy' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadModifiedOn" xml:space="preserve">
-    <value>Date and time when the record was modified.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'ModifiedOn' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadModifiedOnBehalfBy" xml:space="preserve">
-    <value>Unique identifier of the delegate user who modified the record.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'ModifiedOnBehalfBy' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadOverriddenCreatedOn" xml:space="preserve">
-    <value>Date and time that the record was migrated.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'OverriddenCreatedOn' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadOwnerId" xml:space="preserve">
-    <value>Owner Id</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'OwnerId' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadOwningBusinessUnit" xml:space="preserve">
-    <value>Unique identifier for the business unit that owns the record</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'OwningBusinessUnit' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadOwningTeam" xml:space="preserve">
-    <value>Unique identifier for the team that owns the record.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'OwningTeam' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadOwningUser" xml:space="preserve">
-    <value>Unique identifier for the user that owns the record.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'OwningUser' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadstatecode" xml:space="preserve">
-    <value>Status of the Notification Read</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'statecode' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadstatuscode" xml:space="preserve">
-    <value>Reason for the status of the Notification Read</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'statuscode' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadTimeZoneRuleVersionNumber" xml:space="preserve">
-    <value>For internal use only.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'TimeZoneRuleVersionNumber' on Entity</comment>
-  </data>
-  <data name="1:Description,ldv_notificationreadUTCConversionTimeZoneCode" xml:space="preserve">
-    <value>Time zone code that was in use when the record was created.</value>
-    <comment>'ldv_notificationread' : Description for Attribute 'UTCConversionTimeZoneCode' on Entity</comment>
-  </data>
   <data name="1:Description,ldv_notificationscentreconfigCreatedBy" xml:space="preserve">
     <value>Unique identifier of the user who created the record.</value>
     <comment>'ldv_notificationscentreconfig' : Description for Attribute 'CreatedBy' on Entity</comment>
@@ -1208,20 +1080,16 @@
     <value>Sequence number of the import that created this record.</value>
     <comment>'ldv_notificationscentreconfig' : Description for Attribute 'ImportSequenceNumber' on Entity</comment>
   </data>
-  <data name="1:Description,ldv_notificationscentreconfigldv_CounterLimit" xml:space="preserve">
-    <value />
-    <comment>'ldv_notificationscentreconfig' : Description for Attribute 'ldv_CounterLimit' on Entity</comment>
-  </data>
   <data name="1:Description,ldv_notificationscentreconfigldv_CountPerPage" xml:space="preserve">
-    <value />
+    <value>How many messages to retrieve per page or for the counter. Default: 10.</value>
     <comment>'ldv_notificationscentreconfig' : Description for Attribute 'ldv_CountPerPage' on Entity</comment>
   </data>
   <data name="1:Description,ldv_notificationscentreconfigldv_IsDefault" xml:space="preserve">
-    <value />
+    <value>Values from this profile are used if set as default and no profile values are found for the user.</value>
     <comment>'ldv_notificationscentreconfig' : Description for Attribute 'ldv_IsDefault' on Entity</comment>
   </data>
   <data name="1:Description,ldv_notificationscentreconfigldv_IsPopupEnabled" xml:space="preserve">
-    <value />
+    <value>Shows a toast message (lower right of the screen) if a new message has been received.</value>
     <comment>'ldv_notificationscentreconfig' : Description for Attribute 'ldv_IsPopupEnabled' on Entity</comment>
   </data>
   <data name="1:Description,ldv_notificationscentreconfigldv_name" xml:space="preserve">
@@ -1249,7 +1117,7 @@
     <comment>'ldv_notificationscentreconfig' : Description for OptionSet 'ldv_notificationscentreconfig_statuscode' on Entity</comment>
   </data>
   <data name="1:Description,ldv_notificationscentreconfigldv_PopupTimeout" xml:space="preserve">
-    <value>In seconds.</value>
+    <value>In seconds. Default: 5. Hovering over the message resets the timer.</value>
     <comment>'ldv_notificationscentreconfig' : Description for Attribute 'ldv_PopupTimeout' on Entity</comment>
   </data>
   <data name="1:Description,ldv_notificationscentreconfigldv_RefreshInterval" xml:space="preserve">
@@ -1304,6 +1172,26 @@
     <value>Time zone code that was in use when the record was created.</value>
     <comment>'ldv_notificationscentreconfig' : Description for Attribute 'UTCConversionTimeZoneCode' on Entity</comment>
   </data>
+  <data name="1:Description,ldv_notificationscentreconfigys_IsAutoGenerated" xml:space="preserve">
+    <value />
+    <comment>'ldv_notificationscentreconfig' : Description for Attribute 'ys_IsAutoGenerated' on Entity</comment>
+  </data>
+  <data name="1:Description,ldv_notificationscentreconfigys_LatestMenuOpenDate" xml:space="preserve">
+    <value />
+    <comment>'ldv_notificationscentreconfig' : Description for Attribute 'ys_LatestMenuOpenDate' on Entity</comment>
+  </data>
+  <data name="1:Description,ldv_notificationscentreconfigys_ldv_notificationscentreconfig_ys_isautogenerated" xml:space="preserve">
+    <value />
+    <comment>'ldv_notificationscentreconfig' : Description for OptionSet 'ys_ldv_notificationscentreconfig_ys_isautogenerated' on Entity</comment>
+  </data>
+  <data name="1:Description,ldv_notificationscentreconfigys_ReadMessagesCache" xml:space="preserve">
+    <value />
+    <comment>'ldv_notificationscentreconfig' : Description for Attribute 'ys_ReadMessagesCache' on Entity</comment>
+  </data>
+  <data name="1:Description,ldv_notificationscentreconfigys_UnreadThresholdDate" xml:space="preserve">
+    <value />
+    <comment>'ldv_notificationscentreconfig' : Description for Attribute 'ys_UnreadThresholdDate' on Entity</comment>
+  </data>
   <data name="1:Description,Notification Message Role{4a2419f0-44c2-49ff-a14e-e03f88ff7440}" xml:space="preserve">
     <value>A card form for this entity.</value>
     <comment>'Notification Message Role' : Description for systemform in Entity FormXml ID: '{4a2419f0-44c2-49ff-a14e-e03f88ff7440}'</comment>
@@ -1352,18 +1240,6 @@
     <value>A form for this entity.</value>
     <comment>'Notification Message' : Description for systemform in Entity FormXml ID: '{b41126af-9e37-4c8b-8ff2-41ec6b4995eb}'</comment>
   </data>
-  <data name="1:Description,Notification Read{4ddefe97-4bd8-488f-b4c3-c38994158fab}" xml:space="preserve">
-    <value>A card form for this entity.</value>
-    <comment>'Notification Read' : Description for systemform in Entity FormXml ID: '{4ddefe97-4bd8-488f-b4c3-c38994158fab}'</comment>
-  </data>
-  <data name="1:Description,Notification Read{5bf5fbcd-0446-4a39-a870-d7b88f3d5215}" xml:space="preserve">
-    <value>A form for this entity.</value>
-    <comment>'Notification Read' : Description for systemform in Entity FormXml ID: '{5bf5fbcd-0446-4a39-a870-d7b88f3d5215}'</comment>
-  </data>
-  <data name="1:Description,Notification Read{6afd90d9-6b14-41b5-a336-ad1bc287fa5e}" xml:space="preserve">
-    <value>A form for this entity.</value>
-    <comment>'Notification Read' : Description for systemform in Entity FormXml ID: '{6afd90d9-6b14-41b5-a336-ad1bc287fa5e}'</comment>
-  </data>
   <data name="1:Description,Notifications Centre Config{8772740a-9fe0-4d6e-97ba-493c062dd149}" xml:space="preserve">
     <value>A form for this entity.</value>
     <comment>'Notifications Centre Config' : Description for systemform in Entity FormXml ID: '{8772740a-9fe0-4d6e-97ba-493c062dd149}'</comment>
@@ -1383,6 +1259,14 @@
   <data name="1:displayname,ldv_genericconfigurationldv_IsNotificationsCentreEnabled" xml:space="preserve">
     <value>Notifications Centre Enabled</value>
     <comment>'ldv_genericconfiguration' : displayname for Attribute 'ldv_IsNotificationsCentreEnabled' on Entity</comment>
+  </data>
+  <data name="1:displayname,ldv_genericconfigurationys_ldv_genericconfiguration_ys_notificationscentremodevalue" xml:space="preserve">
+    <value>Notifications Centre Mode</value>
+    <comment>'ldv_genericconfiguration' : displayname for OptionSet 'ys_ldv_genericconfiguration_ys_notificationscentremodevalue' on Entity</comment>
+  </data>
+  <data name="1:displayname,ldv_genericconfigurationys_NotificationsCentreModeValue" xml:space="preserve">
+    <value>Notifications Centre Mode</value>
+    <comment>'ldv_genericconfiguration' : displayname for Attribute 'ys_NotificationsCentreModeValue' on Entity</comment>
   </data>
   <data name="1:displayname,ldv_notificationmessageActivityAdditionalParams" xml:space="preserve">
     <value>Activity Additional Parameters</value>
@@ -1487,10 +1371,6 @@
   <data name="1:displayname,ldv_notificationmessageLastOnHoldTime" xml:space="preserve">
     <value>Last On Hold Time</value>
     <comment>'ldv_notificationmessage' : displayname for Attribute 'LastOnHoldTime' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationmessageldv_ContentModifiedOn" xml:space="preserve">
-    <value>Content Modified On</value>
-    <comment>'ldv_notificationmessage' : displayname for Attribute 'ldv_ContentModifiedOn' on Entity</comment>
   </data>
   <data name="1:displayname,ldv_notificationmessageldv_IsGlobalMessage" xml:space="preserve">
     <value>Global Message</value>
@@ -1968,94 +1848,6 @@
     <value>UTC Conversion Time Zone Code</value>
     <comment>'ldv_notificationmessage' : displayname for Attribute 'UTCConversionTimeZoneCode' on Entity</comment>
   </data>
-  <data name="1:displayname,ldv_notificationreadCreatedBy" xml:space="preserve">
-    <value>Created By</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'CreatedBy' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadCreatedOn" xml:space="preserve">
-    <value>Read On</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'CreatedOn' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadCreatedOnBehalfBy" xml:space="preserve">
-    <value>Created By (Delegate)</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'CreatedOnBehalfBy' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadImportSequenceNumber" xml:space="preserve">
-    <value>Import Sequence Number</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'ImportSequenceNumber' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadldv_name" xml:space="preserve">
-    <value>Name</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'ldv_name' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadldv_NotificationMessageId" xml:space="preserve">
-    <value>Notification Message</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'ldv_NotificationMessageId' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadldv_notificationreadId" xml:space="preserve">
-    <value>Notification Read</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'ldv_notificationreadId' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadldv_notificationread_statecode" xml:space="preserve">
-    <value>Status</value>
-    <comment>'ldv_notificationread' : displayname for OptionSet 'ldv_notificationread_statecode' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadldv_notificationread_statuscode" xml:space="preserve">
-    <value>Status Reason</value>
-    <comment>'ldv_notificationread' : displayname for OptionSet 'ldv_notificationread_statuscode' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadldv_UserId" xml:space="preserve">
-    <value>User</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'ldv_UserId' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadModifiedBy" xml:space="preserve">
-    <value>Modified By</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'ModifiedBy' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadModifiedOn" xml:space="preserve">
-    <value>Modified On</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'ModifiedOn' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadModifiedOnBehalfBy" xml:space="preserve">
-    <value>Modified By (Delegate)</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'ModifiedOnBehalfBy' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadOverriddenCreatedOn" xml:space="preserve">
-    <value>Record Created On</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'OverriddenCreatedOn' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadOwnerId" xml:space="preserve">
-    <value>Owner</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'OwnerId' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadOwningBusinessUnit" xml:space="preserve">
-    <value>Owning Business Unit</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'OwningBusinessUnit' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadOwningTeam" xml:space="preserve">
-    <value>Owning Team</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'OwningTeam' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadOwningUser" xml:space="preserve">
-    <value>Owning User</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'OwningUser' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadstatecode" xml:space="preserve">
-    <value>Status</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'statecode' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadstatuscode" xml:space="preserve">
-    <value>Status Reason</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'statuscode' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadTimeZoneRuleVersionNumber" xml:space="preserve">
-    <value>Time Zone Rule Version Number</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'TimeZoneRuleVersionNumber' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationreadUTCConversionTimeZoneCode" xml:space="preserve">
-    <value>UTC Conversion Time Zone Code</value>
-    <comment>'ldv_notificationread' : displayname for Attribute 'UTCConversionTimeZoneCode' on Entity</comment>
-  </data>
   <data name="1:displayname,ldv_notificationscentreconfigCreatedBy" xml:space="preserve">
     <value>Created By</value>
     <comment>'ldv_notificationscentreconfig' : displayname for Attribute 'CreatedBy' on Entity</comment>
@@ -2071,10 +1863,6 @@
   <data name="1:displayname,ldv_notificationscentreconfigImportSequenceNumber" xml:space="preserve">
     <value>Import Sequence Number</value>
     <comment>'ldv_notificationscentreconfig' : displayname for Attribute 'ImportSequenceNumber' on Entity</comment>
-  </data>
-  <data name="1:displayname,ldv_notificationscentreconfigldv_CounterLimit" xml:space="preserve">
-    <value>Counter Limit</value>
-    <comment>'ldv_notificationscentreconfig' : displayname for Attribute 'ldv_CounterLimit' on Entity</comment>
   </data>
   <data name="1:displayname,ldv_notificationscentreconfigldv_CountPerPage" xml:space="preserve">
     <value>Count Per Page</value>
@@ -2168,6 +1956,26 @@
     <value>UTC Conversion Time Zone Code</value>
     <comment>'ldv_notificationscentreconfig' : displayname for Attribute 'UTCConversionTimeZoneCode' on Entity</comment>
   </data>
+  <data name="1:displayname,ldv_notificationscentreconfigys_IsAutoGenerated" xml:space="preserve">
+    <value>Auto Generated</value>
+    <comment>'ldv_notificationscentreconfig' : displayname for Attribute 'ys_IsAutoGenerated' on Entity</comment>
+  </data>
+  <data name="1:displayname,ldv_notificationscentreconfigys_LatestMenuOpenDate" xml:space="preserve">
+    <value>Latest Menu Open Date</value>
+    <comment>'ldv_notificationscentreconfig' : displayname for Attribute 'ys_LatestMenuOpenDate' on Entity</comment>
+  </data>
+  <data name="1:displayname,ldv_notificationscentreconfigys_ldv_notificationscentreconfig_ys_isautogenerated" xml:space="preserve">
+    <value>Auto Generated</value>
+    <comment>'ldv_notificationscentreconfig' : displayname for OptionSet 'ys_ldv_notificationscentreconfig_ys_isautogenerated' on Entity</comment>
+  </data>
+  <data name="1:displayname,ldv_notificationscentreconfigys_ReadMessagesCache" xml:space="preserve">
+    <value>Read Messages Cache</value>
+    <comment>'ldv_notificationscentreconfig' : displayname for Attribute 'ys_ReadMessagesCache' on Entity</comment>
+  </data>
+  <data name="1:displayname,ldv_notificationscentreconfigys_UnreadThresholdDate" xml:space="preserve">
+    <value>Unread Threshold Date</value>
+    <comment>'ldv_notificationscentreconfig' : displayname for Attribute 'ys_UnreadThresholdDate' on Entity</comment>
+  </data>
   <data name="1:label,Common Configuration{128024ac-defd-4548-9f31-81e4c9ffa087}" xml:space="preserve">
     <value>Owner</value>
     <comment>'Common Configuration' : label for cell in Entity FormXml ID: '{128024ac-defd-4548-9f31-81e4c9ffa087}'</comment>
@@ -2179,6 +1987,10 @@
   <data name="1:label,Common Configuration{3caa6f22-bafd-4dc4-8b6b-5ef10f2b76a7}" xml:space="preserve">
     <value>General</value>
     <comment>'Common Configuration' : label for tab in Entity FormXml ID: '{3caa6f22-bafd-4dc4-8b6b-5ef10f2b76a7}'</comment>
+  </data>
+  <data name="1:label,Common Configuration{5bcb1ee2-ac44-492a-9ac4-b5b0be330491}" xml:space="preserve">
+    <value>Notifications Centre Mode</value>
+    <comment>'Common Configuration' : label for cell in Entity FormXml ID: '{5bcb1ee2-ac44-492a-9ac4-b5b0be330491}'</comment>
   </data>
   <data name="1:label,Common Configuration{5cc14184-82bb-1644-1c67-684a5a37a17e}" xml:space="preserve">
     <value>Notifications Centre Enabled</value>
@@ -2203,6 +2015,18 @@
   <data name="1:label,ldv_genericconfigurationldv_genericconfiguration_ldv_isnotificationscentreenabled1" xml:space="preserve">
     <value>Yes</value>
     <comment>'ldv_genericconfiguration' : label for option '1' on Entity</comment>
+  </data>
+  <data name="1:label,ldv_genericconfigurationys_ldv_genericconfiguration_ys_notificationscentremodevalue717860000" xml:space="preserve">
+    <value>Dynamic</value>
+    <comment>'ldv_genericconfiguration' : label for option '717860000' on Entity</comment>
+  </data>
+  <data name="1:label,ldv_genericconfigurationys_ldv_genericconfiguration_ys_notificationscentremodevalue717860001" xml:space="preserve">
+    <value>Static</value>
+    <comment>'ldv_genericconfiguration' : label for option '717860001' on Entity</comment>
+  </data>
+  <data name="1:label,ldv_genericconfigurationys_ldv_genericconfiguration_ys_notificationscentremodevalue717860002" xml:space="preserve">
+    <value>Both</value>
+    <comment>'ldv_genericconfiguration' : label for option '717860002' on Entity</comment>
   </data>
   <data name="1:label,ldv_notificationmessageldv_notificationmessage_instancetypecode0" xml:space="preserve">
     <value>Not Recurring</value>
@@ -2360,22 +2184,6 @@
     <value>Inactive</value>
     <comment>'ldv_notificationmessageuser' : label for status '2' on Entity</comment>
   </data>
-  <data name="1:label,ldv_notificationreadldv_notificationread_statecode0" xml:space="preserve">
-    <value>Active</value>
-    <comment>'ldv_notificationread' : label for state '0' on Entity</comment>
-  </data>
-  <data name="1:label,ldv_notificationreadldv_notificationread_statecode1" xml:space="preserve">
-    <value>Inactive</value>
-    <comment>'ldv_notificationread' : label for state '1' on Entity</comment>
-  </data>
-  <data name="1:label,ldv_notificationreadldv_notificationread_statuscode1" xml:space="preserve">
-    <value>Active</value>
-    <comment>'ldv_notificationread' : label for status '1' on Entity</comment>
-  </data>
-  <data name="1:label,ldv_notificationreadldv_notificationread_statuscode2" xml:space="preserve">
-    <value>Inactive</value>
-    <comment>'ldv_notificationread' : label for status '2' on Entity</comment>
-  </data>
   <data name="1:label,ldv_notificationscentreconfigldv_notificationscentreconfig_ldv_isdefault0" xml:space="preserve">
     <value>No</value>
     <comment>'ldv_notificationscentreconfig' : label for option '0' on Entity</comment>
@@ -2407,6 +2215,14 @@
   <data name="1:label,ldv_notificationscentreconfigldv_notificationscentreconfig_statuscode2" xml:space="preserve">
     <value>Inactive</value>
     <comment>'ldv_notificationscentreconfig' : label for status '2' on Entity</comment>
+  </data>
+  <data name="1:label,ldv_notificationscentreconfigys_ldv_notificationscentreconfig_ys_isautogenerated0" xml:space="preserve">
+    <value>No</value>
+    <comment>'ldv_notificationscentreconfig' : label for option '0' on Entity</comment>
+  </data>
+  <data name="1:label,ldv_notificationscentreconfigys_ldv_notificationscentreconfig_ys_isautogenerated1" xml:space="preserve">
+    <value>Yes</value>
+    <comment>'ldv_notificationscentreconfig' : label for option '1' on Entity</comment>
   </data>
   <data name="1:label,Notification Message Role{0513a8b7-8706-48b2-8fef-b1a512a611c2}" xml:space="preserve">
     <value>Created On</value>
@@ -2932,10 +2748,6 @@
     <value>Section</value>
     <comment>'Notification Message' : label for section in Entity FormXml ID: '{40c3b12c-1109-d668-46b0-9482d3a90165}'</comment>
   </data>
-  <data name="1:label,Notification Message{41cd5029-b234-a0e4-5cbb-903180aa77bb}" xml:space="preserve">
-    <value>Section</value>
-    <comment>'Notification Message' : label for section in Entity FormXml ID: '{41cd5029-b234-a0e4-5cbb-903180aa77bb}'</comment>
-  </data>
   <data name="1:label,Notification Message{46dd8daa-b30e-46ec-80ed-c7bf629f57e3}" xml:space="preserve">
     <value>Footer</value>
     <comment>'Notification Message' : label for section in Entity FormXml ID: '{46dd8daa-b30e-46ec-80ed-c7bf629f57e3}'</comment>
@@ -3080,10 +2892,6 @@
     <value>Activity Status</value>
     <comment>'Notification Message' : label for cell in Entity FormXml ID: '{a51b9266-dad8-4d34-b55d-6295134a1c56}'</comment>
   </data>
-  <data name="1:label,Notification Message{a7965be1-da85-6803-b3a6-cd06c11910ee}" xml:space="preserve">
-    <value>Notification Reads</value>
-    <comment>'Notification Message' : label for cell in Entity FormXml ID: '{a7965be1-da85-6803-b3a6-cd06c11910ee}'</comment>
-  </data>
   <data name="1:label,Notification Message{a8707b9f-2c6f-4d5d-be07-3a61fca78dab}" xml:space="preserve">
     <value>Owner</value>
     <comment>'Notification Message' : label for cell in Entity FormXml ID: '{a8707b9f-2c6f-4d5d-be07-3a61fca78dab}'</comment>
@@ -3115,10 +2923,6 @@
   <data name="1:label,Notification Message{b4a7e1e2-d3a8-d2a7-79e7-418c45800c02}" xml:space="preserve">
     <value>Team</value>
     <comment>'Notification Message' : label for cell in Entity FormXml ID: '{b4a7e1e2-d3a8-d2a7-79e7-418c45800c02}'</comment>
-  </data>
-  <data name="1:label,Notification Message{b4d93135-365b-575b-acb7-627d3944b0b5}" xml:space="preserve">
-    <value>Content Modified On</value>
-    <comment>'Notification Message' : label for cell in Entity FormXml ID: '{b4d93135-365b-575b-acb7-627d3944b0b5}'</comment>
   </data>
   <data name="1:label,Notification Message{b5388270-0ba6-4cd3-bc75-98abd0dd6839}" xml:space="preserve">
     <value />
@@ -3168,10 +2972,6 @@
     <value>Priority</value>
     <comment>'Notification Message' : label for cell in Entity FormXml ID: '{e32e39e5-77b9-432a-838f-15e11e2316c4}'</comment>
   </data>
-  <data name="1:label,Notification Message{e3a08a4d-2b84-14bc-2713-605d108da487}" xml:space="preserve">
-    <value>Reports</value>
-    <comment>'Notification Message' : label for tab in Entity FormXml ID: '{e3a08a4d-2b84-14bc-2713-605d108da487}'</comment>
-  </data>
   <data name="1:label,Notification Message{e9bc0709-8265-4464-6478-93cd2497429e}" xml:space="preserve">
     <value>Last Updated</value>
     <comment>'Notification Message' : label for cell in Entity FormXml ID: '{e9bc0709-8265-4464-6478-93cd2497429e}'</comment>
@@ -3188,129 +2988,9 @@
     <value>General</value>
     <comment>'Notification Message' : label for section in Entity FormXml ID: '{fe2df276-f207-4c86-944b-0c08bbbc0b8c}'</comment>
   </data>
-  <data name="1:label,Notification Read{08f53a86-5511-4ddd-9aed-694465bc85e4}" xml:space="preserve">
-    <value>Owner</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{08f53a86-5511-4ddd-9aed-694465bc85e4}'</comment>
-  </data>
-  <data name="1:label,Notification Read{0b73a69e-c693-453d-b840-37e2547ab642}" xml:space="preserve">
-    <value>General Info</value>
-    <comment>'Notification Read' : label for tab in Entity FormXml ID: '{0b73a69e-c693-453d-b840-37e2547ab642}'</comment>
-  </data>
-  <data name="1:label,Notification Read{0d4c6122-57c8-3d39-930c-e21d47cd8ce0}" xml:space="preserve">
-    <value>Read On</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{0d4c6122-57c8-3d39-930c-e21d47cd8ce0}'</comment>
-  </data>
-  <data name="1:label,Notification Read{2b8fcfa4-00c2-4164-a9b2-1731e0fa86ed}" xml:space="preserve">
-    <value>Owner</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{2b8fcfa4-00c2-4164-a9b2-1731e0fa86ed}'</comment>
-  </data>
-  <data name="1:label,Notification Read{2ceb7725-73d3-4cf3-abc0-175637ee68e4}" xml:space="preserve">
-    <value />
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{2ceb7725-73d3-4cf3-abc0-175637ee68e4}'</comment>
-  </data>
-  <data name="1:label,Notification Read{3e37ed59-0e94-4173-8492-f5a87d925a9f}" xml:space="preserve">
-    <value>Name</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{3e37ed59-0e94-4173-8492-f5a87d925a9f}'</comment>
-  </data>
-  <data name="1:label,Notification Read{41634921-67ab-4c49-a709-b0d764908658}" xml:space="preserve">
-    <value>Footer</value>
-    <comment>'Notification Read' : label for section in Entity FormXml ID: '{41634921-67ab-4c49-a709-b0d764908658}'</comment>
-  </data>
-  <data name="1:label,Notification Read{564627d3-2210-2695-860b-6aac353e3dd7}" xml:space="preserve">
-    <value>Notification Message</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{564627d3-2210-2695-860b-6aac353e3dd7}'</comment>
-  </data>
-  <data name="1:label,Notification Read{56ead141-f2ef-464f-be32-f0b39eb4cf32}" xml:space="preserve">
-    <value>GENERAL</value>
-    <comment>'Notification Read' : label for section in Entity FormXml ID: '{56ead141-f2ef-464f-be32-f0b39eb4cf32}'</comment>
-  </data>
-  <data name="1:label,Notification Read{59060732-580d-4af5-9657-945994a12789}" xml:space="preserve">
-    <value>Header</value>
-    <comment>'Notification Read' : label for section in Entity FormXml ID: '{59060732-580d-4af5-9657-945994a12789}'</comment>
-  </data>
-  <data name="1:label,Notification Read{5c4bf44a-07ec-4bd4-88d1-25b7bf9e719c}" xml:space="preserve">
-    <value>ColorStrip</value>
-    <comment>'Notification Read' : label for section in Entity FormXml ID: '{5c4bf44a-07ec-4bd4-88d1-25b7bf9e719c}'</comment>
-  </data>
-  <data name="1:label,Notification Read{6572f4b2-5e89-4307-949c-4d7babc45d84}" xml:space="preserve">
-    <value />
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{6572f4b2-5e89-4307-949c-4d7babc45d84}'</comment>
-  </data>
-  <data name="1:label,Notification Read{69bc8248-1c7b-482c-8d04-265b365b8f4c}" xml:space="preserve">
-    <value>Owner</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{69bc8248-1c7b-482c-8d04-265b365b8f4c}'</comment>
-  </data>
-  <data name="1:label,Notification Read{72a941ea-f9d8-406b-8f3a-199c48c4c50c}" xml:space="preserve">
-    <value>Name</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{72a941ea-f9d8-406b-8f3a-199c48c4c50c}'</comment>
-  </data>
-  <data name="1:label,Notification Read{7c93294c-d65b-4713-8179-d31234eeb62a}" xml:space="preserve">
-    <value>General</value>
-    <comment>'Notification Read' : label for tab in Entity FormXml ID: '{7c93294c-d65b-4713-8179-d31234eeb62a}'</comment>
-  </data>
-  <data name="1:label,Notification Read{8796fc7d-a833-4ad6-943f-46dd6250f107}" xml:space="preserve">
-    <value>Status Reason</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{8796fc7d-a833-4ad6-943f-46dd6250f107}'</comment>
-  </data>
-  <data name="1:label,Notification Read{8c07f2e3-c356-427f-80d4-c96afa354e71}" xml:space="preserve">
-    <value>Read On</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{8c07f2e3-c356-427f-80d4-c96afa354e71}'</comment>
-  </data>
-  <data name="1:label,Notification Read{ac3bea8f-016d-4c5f-a1df-9dc449302a8d}" xml:space="preserve">
-    <value>General</value>
-    <comment>'Notification Read' : label for section in Entity FormXml ID: '{ac3bea8f-016d-4c5f-a1df-9dc449302a8d}'</comment>
-  </data>
-  <data name="1:label,Notification Read{b2df0353-f2bd-4ffd-bad7-54fff374e838}" xml:space="preserve">
-    <value />
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{b2df0353-f2bd-4ffd-bad7-54fff374e838}'</comment>
-  </data>
-  <data name="1:label,Notification Read{b322ef08-9492-405f-8c17-fea88691aea8}" xml:space="preserve">
-    <value />
-    <comment>'Notification Read' : label for tab in Entity FormXml ID: '{b322ef08-9492-405f-8c17-fea88691aea8}'</comment>
-  </data>
-  <data name="1:label,Notification Read{bedc74f7-db23-442e-aa68-b7956b56083a}" xml:space="preserve">
-    <value>Name</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{bedc74f7-db23-442e-aa68-b7956b56083a}'</comment>
-  </data>
-  <data name="1:label,Notification Read{beed1486-97bb-441f-b7ab-2050d78aad8c}" xml:space="preserve">
-    <value>RELATED</value>
-    <comment>'Notification Read' : label for section in Entity FormXml ID: '{beed1486-97bb-441f-b7ab-2050d78aad8c}'</comment>
-  </data>
-  <data name="1:label,Notification Read{befa3ce0-f526-4c2c-9c1d-9daafeecc40e}" xml:space="preserve">
-    <value />
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{befa3ce0-f526-4c2c-9c1d-9daafeecc40e}'</comment>
-  </data>
-  <data name="1:label,Notification Read{bfb334ba-e512-46a6-b6c5-d4f67ee1f5fb}" xml:space="preserve">
-    <value />
-    <comment>'Notification Read' : label for tab in Entity FormXml ID: '{bfb334ba-e512-46a6-b6c5-d4f67ee1f5fb}'</comment>
-  </data>
-  <data name="1:label,Notification Read{c13c7868-47d5-4367-b308-4a12de2bc592}" xml:space="preserve">
-    <value>Details</value>
-    <comment>'Notification Read' : label for section in Entity FormXml ID: '{c13c7868-47d5-4367-b308-4a12de2bc592}'</comment>
-  </data>
-  <data name="1:label,Notification Read{c5596e0d-8d31-492f-84c6-ff0a36d0521a}" xml:space="preserve">
-    <value>Conversation Tabs</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{c5596e0d-8d31-492f-84c6-ff0a36d0521a}'</comment>
-  </data>
-  <data name="1:label,Notification Read{e6abf4d8-57b4-4d8c-99a5-2bcb6b1cf981}" xml:space="preserve">
-    <value>TIMELINE</value>
-    <comment>'Notification Read' : label for section in Entity FormXml ID: '{e6abf4d8-57b4-4d8c-99a5-2bcb6b1cf981}'</comment>
-  </data>
-  <data name="1:label,Notification Read{e91a1fbe-d8e9-4cee-a0fd-454644a44794}" xml:space="preserve">
-    <value>Owner</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{e91a1fbe-d8e9-4cee-a0fd-454644a44794}'</comment>
-  </data>
-  <data name="1:label,Notification Read{ead74d3e-c83c-5bc1-4761-52083bd1a9c9}" xml:space="preserve">
-    <value>User</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{ead74d3e-c83c-5bc1-4761-52083bd1a9c9}'</comment>
-  </data>
-  <data name="1:label,Notification Read{f13721f9-08d6-4aef-8ed7-3897c4a999fa}" xml:space="preserve">
-    <value>Name</value>
-    <comment>'Notification Read' : label for cell in Entity FormXml ID: '{f13721f9-08d6-4aef-8ed7-3897c4a999fa}'</comment>
-  </data>
-  <data name="1:label,Notification Read{f3eedd2f-867b-42b4-bac2-f4be94323c01}" xml:space="preserve">
-    <value>General</value>
-    <comment>'Notification Read' : label for section in Entity FormXml ID: '{f3eedd2f-867b-42b4-bac2-f4be94323c01}'</comment>
+  <data name="1:label,Notifications Centre Config{04cbccb8-a443-b6b2-9809-34856ee5153a}" xml:space="preserve">
+    <value>Parameters</value>
+    <comment>'Notifications Centre Config' : label for tab in Entity FormXml ID: '{04cbccb8-a443-b6b2-9809-34856ee5153a}'</comment>
   </data>
   <data name="1:label,Notifications Centre Config{050c65ce-e388-5116-b856-076dbb9768d9}" xml:space="preserve">
     <value>Default</value>
@@ -3448,10 +3128,6 @@
     <value>Owner</value>
     <comment>'Notifications Centre Config' : label for cell in Entity FormXml ID: '{ddbe3ac1-0d61-44f1-a253-d14353d21111}'</comment>
   </data>
-  <data name="1:label,Notifications Centre Config{e9e0d2b7-c935-81a6-726b-72cd69448ba5}" xml:space="preserve">
-    <value>Counter Limit</value>
-    <comment>'Notifications Centre Config' : label for cell in Entity FormXml ID: '{e9e0d2b7-c935-81a6-726b-72cd69448ba5}'</comment>
-  </data>
   <data name="1:label,Notifications Centre Config{ed7a8581-e9e1-4b9d-b891-aa08961654ee}" xml:space="preserve">
     <value>General</value>
     <comment>'Notifications Centre Config' : label for tab in Entity FormXml ID: '{ed7a8581-e9e1-4b9d-b891-aa08961654ee}'</comment>
@@ -3476,10 +3152,6 @@
     <value>Notification Message Users</value>
     <comment> 'ldv_notificationmessageuser' : LocalizedCollectionName for Entity</comment>
   </data>
-  <data name="1:LocalizedCollectionName,ldv_notificationreadentityldv_notificationread" xml:space="preserve">
-    <value>Notification Reads</value>
-    <comment> 'ldv_notificationread' : LocalizedCollectionName for Entity</comment>
-  </data>
   <data name="1:LocalizedCollectionName,ldv_notificationscentreconfigentityldv_notificationscentreconfig" xml:space="preserve">
     <value>Notifications Centre Configs</value>
     <comment> 'ldv_notificationscentreconfig' : LocalizedCollectionName for Entity</comment>
@@ -3503,10 +3175,6 @@
   <data name="1:LocalizedName,ldv_notificationmessageuserentityldv_notificationmessageuser" xml:space="preserve">
     <value>Notification Message User</value>
     <comment> 'ldv_notificationmessageuser' : LocalizedName for Entity</comment>
-  </data>
-  <data name="1:LocalizedName,ldv_notificationreadentityldv_notificationread" xml:space="preserve">
-    <value>Notification Read</value>
-    <comment> 'ldv_notificationread' : LocalizedName for Entity</comment>
   </data>
   <data name="1:LocalizedName,ldv_notificationscentreconfigentityldv_notificationscentreconfig" xml:space="preserve">
     <value>Notifications Centre Config</value>
@@ -3720,54 +3388,6 @@
     <value>My Open Notification Messages</value>
     <comment>'Notification Message' : LocalizedName for SavedQuery on Entity QueryId: '{d5194508-1e44-454f-8aa4-06721a57a284}'</comment>
   </data>
-  <data name="1:LocalizedName,Notification Read{05d8f50f-20a5-46fe-ad5d-e15f80f16473}" xml:space="preserve">
-    <value>Active Notification Reads</value>
-    <comment>'Notification Read' : LocalizedName for SavedQuery on Entity QueryId: '{05d8f50f-20a5-46fe-ad5d-e15f80f16473}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Read{2ee3e1ad-efc1-e611-80c1-00155d5f3d01}" xml:space="preserve">
-    <value>My Notification Reads</value>
-    <comment>'Notification Read' : LocalizedName for SavedQuery on Entity QueryId: '{2ee3e1ad-efc1-e611-80c1-00155d5f3d01}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Read{4ddefe97-4bd8-488f-b4c3-c38994158fab}" xml:space="preserve">
-    <value>Information</value>
-    <comment>'Notification Read' : LocalizedName for systemform in Entity FormXml ID: '{4ddefe97-4bd8-488f-b4c3-c38994158fab}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Read{55a3a401-0d61-4953-b45a-1d0e5bcf24a5}" xml:space="preserve">
-    <value>Quick Find Active Notification Reads</value>
-    <comment>'Notification Read' : LocalizedName for SavedQuery on Entity QueryId: '{55a3a401-0d61-4953-b45a-1d0e5bcf24a5}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Read{58144b16-f0c1-e611-80c1-00155d5f3d01}" xml:space="preserve">
-    <value>Active Notification Reads Full</value>
-    <comment>'Notification Read' : LocalizedName for SavedQuery on Entity QueryId: '{58144b16-f0c1-e611-80c1-00155d5f3d01}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Read{5bf5fbcd-0446-4a39-a870-d7b88f3d5215}" xml:space="preserve">
-    <value>Information</value>
-    <comment>'Notification Read' : LocalizedName for systemform in Entity FormXml ID: '{5bf5fbcd-0446-4a39-a870-d7b88f3d5215}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Read{63d0f8ea-3eeb-47cc-8b67-454fe8d53ba6}" xml:space="preserve">
-    <value>Inactive Notification Reads</value>
-    <comment>'Notification Read' : LocalizedName for SavedQuery on Entity QueryId: '{63d0f8ea-3eeb-47cc-8b67-454fe8d53ba6}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Read{6afd90d9-6b14-41b5-a336-ad1bc287fa5e}" xml:space="preserve">
-    <value>Information</value>
-    <comment>'Notification Read' : LocalizedName for systemform in Entity FormXml ID: '{6afd90d9-6b14-41b5-a336-ad1bc287fa5e}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Read{aca6a711-ea0e-4f96-a966-0cfbad56abd5}" xml:space="preserve">
-    <value>Notification Read Advanced Find View</value>
-    <comment>'Notification Read' : LocalizedName for SavedQuery on Entity QueryId: '{aca6a711-ea0e-4f96-a966-0cfbad56abd5}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Read{bec11ab5-d684-4405-b23c-9567c4603e9e}" xml:space="preserve">
-    <value>Notification Read Lookup View</value>
-    <comment>'Notification Read' : LocalizedName for SavedQuery on Entity QueryId: '{bec11ab5-d684-4405-b23c-9567c4603e9e}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Read{e4d69fbc-6eb2-4618-8030-320001a71d64}" xml:space="preserve">
-    <value>Information</value>
-    <comment>'Notification Read' : LocalizedName for systemform in Entity FormXml ID: '{e4d69fbc-6eb2-4618-8030-320001a71d64}'</comment>
-  </data>
-  <data name="1:LocalizedName,Notification Read{ed1dc419-3001-414b-82b2-776d96164d95}" xml:space="preserve">
-    <value>Notification Read Associated View</value>
-    <comment>'Notification Read' : LocalizedName for SavedQuery on Entity QueryId: '{ed1dc419-3001-414b-82b2-776d96164d95}'</comment>
-  </data>
   <data name="1:LocalizedName,Notifications Centre Config{00e1ea8a-7fca-e611-80c2-00155d5f3d01}" xml:space="preserve">
     <value>My Notifications Centre Configs</value>
     <comment>'Notifications Centre Config' : LocalizedName for SavedQuery on Entity QueryId: '{00e1ea8a-7fca-e611-80c2-00155d5f3d01}'</comment>
@@ -3960,26 +3580,6 @@
     <value>Service</value>
     <comment>'Notification Message' : Title for NavBarArea in Entity FormXml ID: 'Service'</comment>
   </data>
-  <data name="1:Title,Notification ReadInfo{6afd90d9-6b14-41b5-a336-ad1bc287fa5e}" xml:space="preserve">
-    <value>Common</value>
-    <comment>'Notification Read' : Title for NavBarArea in Entity FormXml ID: 'Info'</comment>
-  </data>
-  <data name="1:Title,Notification ReadMarketing{6afd90d9-6b14-41b5-a336-ad1bc287fa5e}" xml:space="preserve">
-    <value>Marketing</value>
-    <comment>'Notification Read' : Title for NavBarArea in Entity FormXml ID: 'Marketing'</comment>
-  </data>
-  <data name="1:Title,Notification ReadProcessCenter{6afd90d9-6b14-41b5-a336-ad1bc287fa5e}" xml:space="preserve">
-    <value>Process Sessions</value>
-    <comment>'Notification Read' : Title for NavBarArea in Entity FormXml ID: 'ProcessCenter'</comment>
-  </data>
-  <data name="1:Title,Notification ReadSales{6afd90d9-6b14-41b5-a336-ad1bc287fa5e}" xml:space="preserve">
-    <value>Sales</value>
-    <comment>'Notification Read' : Title for NavBarArea in Entity FormXml ID: 'Sales'</comment>
-  </data>
-  <data name="1:Title,Notification ReadService{6afd90d9-6b14-41b5-a336-ad1bc287fa5e}" xml:space="preserve">
-    <value>Service</value>
-    <comment>'Notification Read' : Title for NavBarArea in Entity FormXml ID: 'Service'</comment>
-  </data>
   <data name="1:Title,Notifications Centre ConfigInfo{b32dac27-520e-43b1-957c-1930a5567854}" xml:space="preserve">
     <value>Common</value>
     <comment>'Notifications Centre Config' : Title for NavBarArea in Entity FormXml ID: 'Info'</comment>
@@ -4000,21 +3600,9 @@
     <value>Service</value>
     <comment>'Notifications Centre Config' : Title for NavBarArea in Entity FormXml ID: 'Service'</comment>
   </data>
-  <data name="29:Description,{defbf7f3-b9ca-e611-80c3-00155d5f3d01}" xml:space="preserve">
-    <value>Click to add description</value>
-    <comment>'Defaults' : Description for Workflow</comment>
-  </data>
   <data name="29:LocalizedName,{8e7d48c5-6737-4e5e-943d-23b793d685e2}" xml:space="preserve">
     <value>[Generic] [NotifyCentre] [Action] Get Messages</value>
     <comment>'[Generic] [NotifyCentre] [Action] Get Messages' : LocalizedName for Workflow</comment>
-  </data>
-  <data name="29:LocalizedName,{9492423a-b274-46a6-8919-86a33eeb271c}" xml:space="preserve">
-    <value>[Generic] [NotifyCentre] [Action] Set Message Read</value>
-    <comment>'[Generic] [NotifyCentre] [Action] Set Message Read' : LocalizedName for Workflow</comment>
-  </data>
-  <data name="29:LocalizedName,{defbf7f3-b9ca-e611-80c3-00155d5f3d01}" xml:space="preserve">
-    <value>Defaults</value>
-    <comment>'Defaults' : LocalizedName for Workflow</comment>
   </data>
   <data name="50:Title,ldv.ApplicationRibbon.BasicHome.NC.Button.LabelText" xml:space="preserve">
     <value>Notifications Centre</value>
@@ -4031,6 +3619,18 @@
   <data name="50:Title,ldv.ApplicationRibbon.EntityViews.NC.Button.LabelText" xml:space="preserve">
     <value>Notifications Centre</value>
     <comment>Title for Ribbon LocLabel 'ldv.ApplicationRibbon.EntityViews.NC.Button.LabelText'</comment>
+  </data>
+  <data name="62:Title,HLPLearningPath" xml:space="preserve">
+    <value>Learning Path</value>
+    <comment>Title for Area 'HLP' Group 'LearningPath'</comment>
+  </data>
+  <data name="62:Title,HLPnav_learning_path" xml:space="preserve">
+    <value>Content Library</value>
+    <comment>Title for Area 'HLP' SubArea 'nav_learning_path'</comment>
+  </data>
+  <data name="62:Title,SettingsUpgradeLogs_Group" xml:space="preserve">
+    <value>Upgrade Logs</value>
+    <comment>Title for Area 'Settings' Group 'UpgradeLogs_Group'</comment>
   </data>
   <data name="9:Description,ldv_notificationsource" xml:space="preserve">
     <value />

@@ -6,7 +6,6 @@
     <RolePrivilege name="prvAppendldv_notificationmessagerole" level="Global" />
     <RolePrivilege name="prvAppendldv_notificationmessageteam" level="Global" />
     <RolePrivilege name="prvAppendldv_notificationmessageuser" level="Global" />
-    <RolePrivilege name="prvAppendldv_notificationread" level="Global" />
     <RolePrivilege name="prvAppendldv_notificationscentreconfig" level="Global" />
     <RolePrivilege name="prvAppendLeadToOpportunitySalesProcess" level="Global" />
     <RolePrivilege name="prvAppendNewProcess" level="Global" />
@@ -16,7 +15,6 @@
     <RolePrivilege name="prvAppendToldv_notificationmessagerole" level="Global" />
     <RolePrivilege name="prvAppendToldv_notificationmessageteam" level="Global" />
     <RolePrivilege name="prvAppendToldv_notificationmessageuser" level="Global" />
-    <RolePrivilege name="prvAppendToldv_notificationread" level="Global" />
     <RolePrivilege name="prvAppendToldv_notificationscentreconfig" level="Global" />
     <RolePrivilege name="prvAppendToLeadToOpportunitySalesProcess" level="Global" />
     <RolePrivilege name="prvAppendToNewProcess" level="Global" />
@@ -30,13 +28,11 @@
     <RolePrivilege name="prvAssignldv_notificationmessagerole" level="Global" />
     <RolePrivilege name="prvAssignldv_notificationmessageteam" level="Global" />
     <RolePrivilege name="prvAssignldv_notificationmessageuser" level="Global" />
-    <RolePrivilege name="prvAssignldv_notificationread" level="Global" />
     <RolePrivilege name="prvAssignldv_notificationscentreconfig" level="Global" />
     <RolePrivilege name="prvCreateExpiredProcess" level="Global" />
     <RolePrivilege name="prvCreateldv_notificationmessagerole" level="Global" />
     <RolePrivilege name="prvCreateldv_notificationmessageteam" level="Global" />
     <RolePrivilege name="prvCreateldv_notificationmessageuser" level="Global" />
-    <RolePrivilege name="prvCreateldv_notificationread" level="Global" />
     <RolePrivilege name="prvCreateldv_notificationscentreconfig" level="Global" />
     <RolePrivilege name="prvCreateLeadToOpportunitySalesProcess" level="Global" />
     <RolePrivilege name="prvCreateNewProcess" level="Global" />
@@ -48,7 +44,6 @@
     <RolePrivilege name="prvDeleteldv_notificationmessagerole" level="Global" />
     <RolePrivilege name="prvDeleteldv_notificationmessageteam" level="Global" />
     <RolePrivilege name="prvDeleteldv_notificationmessageuser" level="Global" />
-    <RolePrivilege name="prvDeleteldv_notificationread" level="Global" />
     <RolePrivilege name="prvDeleteldv_notificationscentreconfig" level="Global" />
     <RolePrivilege name="prvDeleteLeadToOpportunitySalesProcess" level="Global" />
     <RolePrivilege name="prvDeleteNewProcess" level="Global" />
@@ -59,7 +54,6 @@
     <RolePrivilege name="prvReadldv_notificationmessagerole" level="Global" />
     <RolePrivilege name="prvReadldv_notificationmessageteam" level="Global" />
     <RolePrivilege name="prvReadldv_notificationmessageuser" level="Global" />
-    <RolePrivilege name="prvReadldv_notificationread" level="Global" />
     <RolePrivilege name="prvReadldv_notificationscentreconfig" level="Global" />
     <RolePrivilege name="prvReadLeadToOpportunitySalesProcess" level="Global" />
     <RolePrivilege name="prvReadNewProcess" level="Global" />
@@ -79,13 +73,11 @@
     <RolePrivilege name="prvShareldv_notificationmessagerole" level="Global" />
     <RolePrivilege name="prvShareldv_notificationmessageteam" level="Global" />
     <RolePrivilege name="prvShareldv_notificationmessageuser" level="Global" />
-    <RolePrivilege name="prvShareldv_notificationread" level="Global" />
     <RolePrivilege name="prvShareldv_notificationscentreconfig" level="Global" />
     <RolePrivilege name="prvWriteExpiredProcess" level="Global" />
     <RolePrivilege name="prvWriteldv_notificationmessagerole" level="Global" />
     <RolePrivilege name="prvWriteldv_notificationmessageteam" level="Global" />
     <RolePrivilege name="prvWriteldv_notificationmessageuser" level="Global" />
-    <RolePrivilege name="prvWriteldv_notificationread" level="Global" />
     <RolePrivilege name="prvWriteldv_notificationscentreconfig" level="Global" />
     <RolePrivilege name="prvWriteLeadToOpportunitySalesProcess" level="Global" />
     <RolePrivilege name="prvWriteNewProcess" level="Global" />

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SdkMessageProcessingStep Name="Yagasoft.NotificationCentre.Plugins.SetClosedStatus: Update of ldv_notificationmessage" SdkMessageProcessingStepId="{32842c1f-4ecf-e611-b377-f8b156a3e077}">
+<SdkMessageProcessingStep Name="Yagasoft.NotificationCentre.Plugins.SetClosedStatus: Update of ldv_notificationmessage: PreOp Sync at 1" SdkMessageProcessingStepId="{32842c1f-4ecf-e611-b377-f8b156a3e077}">
   <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
-  <PluginTypeName>Yagasoft.NotificationCentre.Plugins.SetClosedStatus, Yagasoft.NotificationCentre.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5</PluginTypeName>
-  <PluginTypeId>d026146e-5158-ec11-9af3-000d3a4c87c6</PluginTypeId>
+  <PluginTypeName>Yagasoft.NotificationCentre.Plugins.SetClosedStatus, Yagasoft.NotificationCentre.Plugins, Version=1.1.1.0, Culture=neutral, PublicKeyToken=96f110ab5b32e2f5</PluginTypeName>
+  <PluginTypeId>0aa805c4-a9ae-45f3-8e48-214bd3b066bd</PluginTypeId>
   <PrimaryEntity>ldv_notificationmessage</PrimaryEntity>
   <AsyncAutoDelete>0</AsyncAutoDelete>
   <FilteringAttributes>statecode,statuscode</FilteringAttributes>

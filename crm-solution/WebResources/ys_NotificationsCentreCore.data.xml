@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource>
+  <WebResourceId>{6f6d32b1-1f5a-ec11-9af5-000d3a4c87c6}</WebResourceId>
+  <Name>ys_NotificationsCentreCore</Name>
+  <DisplayName>Notifications Centre Core</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>4.1.1.1</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"/&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/ys_NotificationsCentreCore6F6D32B1-1F5A-EC11-9AF5-000D3A4C87C6</FileName>
+</WebResource>

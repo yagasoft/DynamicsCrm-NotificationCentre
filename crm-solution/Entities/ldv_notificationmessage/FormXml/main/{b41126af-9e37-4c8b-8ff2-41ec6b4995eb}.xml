@@ -60,14 +60,6 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{b4d93135-365b-575b-acb7-627d3944b0b5}" showlabel="true" locklevel="0">
-                        <labels>
-                          <label description="Content Modified On" languagecode="1033" />
-                        </labels>
-                        <control id="ldv_contentmodifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="ldv_contentmodifiedon" disabled="true" uniqueid="{5186e1ca-4218-0d11-c17b-bbb14a19b83b}" />
-                      </cell>
-                    </row>
-                    <row>
                       <cell id="{529f7228-2aaa-4eb3-966f-b075c6a56900}">
                         <labels>
                           <label description="Owner" languagecode="1033" />
@@ -280,52 +272,6 @@
                             <EnableQuickFind>true</EnableQuickFind>
                             <EnableViewPicker>false</EnableViewPicker>
                             <ViewIds>{63621DA5-A754-4CC7-A00E-BB9AB699F062}</ViewIds>
-                            <EnableJumpBar>false</EnableJumpBar>
-                            <ChartGridMode>Grid</ChartGridMode>
-                            <VisualizationId />
-                            <IsUserChart>false</IsUserChart>
-                            <EnableChartPicker>false</EnableChartPicker>
-                            <RecordsPerPage>250</RecordsPerPage>
-                          </parameters>
-                        </control>
-                      </cell>
-                    </row>
-                    <row />
-                    <row />
-                    <row height="auto" />
-                  </rows>
-                </section>
-              </sections>
-            </column>
-          </columns>
-        </tab>
-        <tab name="ReportsTab" id="{e3a08a4d-2b84-14bc-2713-605d108da487}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
-          <labels>
-            <label description="Reports" languagecode="1033" />
-          </labels>
-          <columns>
-            <column width="100%">
-              <sections>
-                <section name="tab_7_section_1" showlabel="false" showbar="false" locklevel="0" id="{41cd5029-b234-a0e4-5cbb-903180aa77bb}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" height="auto">
-                  <labels>
-                    <label description="Section" languagecode="1033" />
-                  </labels>
-                  <rows>
-                    <row>
-                      <cell id="{a7965be1-da85-6803-b3a6-cd06c11910ee}" showlabel="true" colspan="1" auto="true" rowspan="4">
-                        <labels>
-                          <label description="Notification Reads" languagecode="1033" />
-                        </labels>
-                        <control id="ReadsGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{de025de6-4044-7d14-0e5c-3bd50de6b1a0}">
-                          <parameters>
-                            <ViewId>{05D8F50F-20A5-46FE-AD5D-E15F80F16473}</ViewId>
-                            <IsUserView>false</IsUserView>
-                            <RelationshipName>ldv_ldv_notificationmessage_ldv_notificationread_NotificationMessageId</RelationshipName>
-                            <TargetEntityType>ldv_notificationread</TargetEntityType>
-                            <AutoExpand>Auto</AutoExpand>
-                            <EnableQuickFind>true</EnableQuickFind>
-                            <EnableViewPicker>false</EnableViewPicker>
-                            <ViewIds>{05D8F50F-20A5-46FE-AD5D-E15F80F16473}</ViewIds>
                             <EnableJumpBar>false</EnableJumpBar>
                             <ChartGridMode>Grid</ChartGridMode>
                             <VisualizationId />
