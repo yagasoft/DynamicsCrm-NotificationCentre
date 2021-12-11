@@ -9,8 +9,9 @@ var NcColours = window.NcColours;
 
 var NcSliderLastCheckList = window.NcSliderLastCheckList || [];
 var NcUnreadCount = window.NcUnreadCount || 0;
-var NcLatestMinUnreadDate;
-var NcLatestMenuOpenDate;
+var NcPopupUnreadThreshold = null;
+var NcLatestMenuOpenDate = null;
+var NcUnreadThreshold = null;
 
 var NcSource =
 {
@@ -267,7 +268,8 @@ function RegisterNcIconClick()
 			{
 				NcMenu().OpenMenu(this);
 				NcLatestMenuOpenDate = new Date();
-				CheckUnread();
+				ResetCounter();
+				NcSaveCache();
 			}
 			catch (e)
 			{
@@ -334,15 +336,17 @@ async function CheckUnread(isPopup, callback)
 {
 	try
 	{
-		const readPromise = await NcUpdateReadMessages();
+		const cachePromise = await NcUpdateCache();
 
 		GetMessagesQuick(async function(messages)
 		{
 			try
 			{
-				await readPromise;
+				await cachePromise;
+				
 				const unreadMessages = messages.filter(e => !NcReadMessages.includes(e.id)
-					&& (!NcLatestMenuOpenDate || new Date(e.date) > NcLatestMenuOpenDate));
+					&& (!NcLatestMenuOpenDate || new Date(e.date) > NcLatestMenuOpenDate)
+					&& (!NcUnreadThreshold || new Date(e.date) > NcUnreadThreshold));
 
 				NcUnreadCount = unreadMessages.length;
 				UpdateCounter();
@@ -351,8 +355,11 @@ async function CheckUnread(isPopup, callback)
 				{
 					PopupUnread(unreadMessages);
 				}
-
-				NcLatestMinUnreadDate = new Date(Math.max.apply(null, messages.map(e => new Date(e.date))));
+				else
+				{
+					NcPopupUnreadThreshold = NcMaxDate([NcLatestMenuOpenDate, NcUnreadThreshold, NcPopupUnreadThreshold,
+						...messages.map(e => new Date(e.date))]);
+				}
 			}
 			catch (e)
 			{
@@ -426,6 +433,12 @@ function UpdateCounter()
 	}
 }
 
+function ResetCounter()
+{
+	NcUnreadCount = 0;
+	UpdateCounter();
+}
+
 //#endregion
 
 //#region Popup
@@ -453,7 +466,7 @@ function PopupUnread(unreadMessages)
 
 		for (var i = 0; i < unreadMessages.length; i++)
 		{
-			if (!NcLatestMinUnreadDate || new Date(unreadMessages[i].date) > NcLatestMinUnreadDate)
+			if (!NcPopupUnreadThreshold || new Date(unreadMessages[i].date) > NcPopupUnreadThreshold)
 			{
 				GetMessage(unreadMessages[i].id, function(message)
 				{
@@ -525,10 +538,8 @@ function PopupUnread(unreadMessages)
 			}
 		}
 
-		if (unreadMessages.length)
-		{
-			NcLatestMinUnreadDate = new Date(unreadMessages[unreadMessages.length - 1].date);
-		}
+		NcPopupUnreadThreshold = NcMaxDate([NcLatestMenuOpenDate, NcUnreadThreshold, NcPopupUnreadThreshold,
+			...unreadMessages.map(e => new Date(e.date))]);
 	}
 	catch (e)
 	{
@@ -745,14 +756,19 @@ var NcMenu = function()
 
 			ncFrame.prepend('<div id="ncTopBar">' +
 				'<div id="ncNewIconContainer">' +
-				'<a href="#" onkeypress="return true;" onclick="return false;">' +
-				'<img id="ncNewIcon" src="' + Xrm.Page.context.getClientUrl() + '/WebResources/ldv_PlusGreyIconPng25" />' +
-				'<div id="ncNewIconText"> Create New Notification</div>' +
+				'<a href="#" id="ncCreateNewMessage" onkeypress="return true;" onclick="return false;">' +
+				'<img class="ncNewIcon" src="' + Xrm.Page.context.getClientUrl() + '/WebResources/ldv_PlusGreyIconPng25" />' +
+				'<div class="ncNewIconText">Create New Notification</div>' +
+				'</a>' +
+				'<a href="#" id="ncMarkAllRead" onkeypress="return true;" onclick="return false;">' +
+				'<img class="ncNewIcon" src="' + Xrm.Page.context.getClientUrl() + '/WebResources/ldv_ReadIconPng15" />' +
+				'<div class="ncNewIconText">Mark all as read</div>' +
 				'</a>' +
 				'</div>' +
 				'</div>');
 
 			registerNcQuickCreateClick();
+			registerMarkAllReadClick();
 
 			ncFrame.fadeIn(600);
 		}
@@ -828,7 +844,7 @@ var NcMenu = function()
 
 	function registerNcQuickCreateClick()
 	{
-		$("#ncNewIconContainer")
+		$("#ncCreateNewMessage")
 			.click(function(event)
 			{
 				try
@@ -837,7 +853,24 @@ var NcMenu = function()
 				}
 				catch (e)
 				{
-					console.error('Notifications Centre => RegisterNcIconClick => icon click');
+					console.error('Notifications Centre => registerNcQuickCreateClick => icon click');
+					console.error(e);
+				}
+			});
+	}
+
+	function registerMarkAllReadClick()
+	{
+		$("#ncMarkAllRead")
+			.click(function(event)
+			{
+				try
+				{
+					markAllRead();
+				}
+				catch (e)
+				{
+					console.error('Notifications Centre => registerMarkAllReadClick => icon click');
 					console.error(e);
 				}
 			});
@@ -853,9 +886,14 @@ var NcMenu = function()
 		{
 			try
 			{
-				var formWindow = $('#NavBarGloablQuickCreate')[0].contentWindow;
-				NcLibrary.LoadWebResources(['ldv_CommonGenericJs', 'ldv_CommonGenericSchemaJs', 'ldv_NotificationsCentreFormJs'],
-					null, formWindow);
+				const quickCreateFrame = $('#NavBarGloablQuickCreate');
+
+				if (quickCreateFrame.length)
+				{
+					const formWindow = quickCreateFrame[0].contentWindow;
+					NcLibrary.LoadWebResources(['ldv_CommonGenericJs', 'ldv_CommonGenericSchemaJs', 'ldv_NotificationsCentreFormJs'],
+						null, formWindow);
+				}
 			}
 			catch (e)
 			{
@@ -863,6 +901,14 @@ var NcMenu = function()
 				console.error(e);
 			}
 		}, 500);
+	}
+
+	function markAllRead()
+	{
+		NcUnreadThreshold = new Date();
+		ResetCounter();
+		NcSaveCache();
+		CloseMenu(ncFrame);
 	}
 
 	function showNextBatch()
@@ -944,7 +990,9 @@ var NcMenu = function()
 								for (var i = 0; i < results.length; i++)
 								{
 									var messageObject = results[i];
-									messageObject.isRead = NcReadMessages.includes(messageObject.id);
+									messageObject.isRead =
+										(NcUnreadThreshold && new Date(messageObject.modifiedon) < NcUnreadThreshold)
+										|| NcReadMessages.includes(messageObject.id);
 									messageObject.regarding = messageObject.regarding || {};
 
 									if (!NcLibrary.Contains(messagesList, null, messageObject.id))
@@ -1458,31 +1506,44 @@ async function NcStartCacheLoop()
 	}
 }
 
-async function NcUpdateReadMessages()
+async function NcUpdateCache()
 {
-	const readCache = await Xrm.WebApi.online
+	const result = await Xrm.WebApi.online
 		.retrieveMultipleRecords("ldv_notificationscentreconfig",
-			`?$select=ys_readmessagescache&$filter=ldv_notificationscentreconfigid eq ${NcSettings.Id}`);
-	NcReadMessages = NcConsolidateArrays(NcParseReadCacheRaw(readCache), NcReadMessages);
+			`?$select=ys_readmessagescache,ys_latestmenuopendate,ys_unreadthresholddate&$filter=ldv_notificationscentreconfigid eq ${NcSettings.Id}`);
+
+	const cache = ((result && result.entities) || [])[0] ?? {};
+
+	let latestMenuOpenDate = cache.ys_latestmenuopendate;
+	latestMenuOpenDate = latestMenuOpenDate ? new Date(latestMenuOpenDate) : null;
+	let unreadThreshold = cache.ys_unreadthresholddate;
+	unreadThreshold = unreadThreshold ? new Date(unreadThreshold) : null;
+
+	NcLatestMenuOpenDate = NcMaxDate([NcLatestMenuOpenDate, latestMenuOpenDate]);
+	NcUnreadThreshold = NcMaxDate([NcUnreadThreshold, unreadThreshold]);
+
+	NcReadMessages = NcConsolidateArrays(NcParseReadCacheRaw(cache.ys_readmessagescache), NcReadMessages);
 }
 
 function NcParseReadCacheRaw(readCache)
 {
-	return JSON.parse((((readCache && readCache.entities) || [])[0] ?? {}).ys_readmessagescache ?? '[]');
+	return JSON.parse(readCache ?? '[]');
 }
 
 async function NcSaveCache()
 {
-	if (!NcReadMessages.length)
+	if (!NcReadMessages.length && !NcLatestMenuOpenDate && !NcUnreadThreshold)
 	{
 		return;
 	}
 
-	await NcUpdateReadMessages();
+	await NcUpdateCache();
 
 	const record =
 	{
-		ys_readmessagescache: JSON.stringify(NcReadMessages ?? [])
+		ys_readmessagescache: JSON.stringify(NcReadMessages ?? []),
+		ys_latestmenuopendate: NcLatestMenuOpenDate,
+		ys_unreadthresholddate: NcUnreadThreshold
 	};
 
 	await Xrm.WebApi.online.updateRecord("ldv_notificationscentreconfig", NcSettings.Id, record);
@@ -1505,6 +1566,18 @@ function GetValueFromLocalStorage(key)
 function StoreValueInLocalStorage(key, value)
 {
 	localStorage.setItem(key, JSON.stringify(value));
+}
+
+function NcMaxDate(dateArray)
+{
+	const dates = dateArray.filter(e => !!e);
+	
+	if (!dates.length)
+	{
+		return null;
+	}
+
+	return new Date(Math.max.apply(null, dates));
 }
 
 //#endregion

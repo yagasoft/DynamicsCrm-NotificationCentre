@@ -176,23 +176,27 @@
 
 #ncTopBar
 {
-	padding-top: 2px;
-	padding-right: 5px;
 	margin-bottom: 1px;
 	text-align: right;
 	background-color: #FFF;
 	box-shadow: 0px 1px 6px #000;
 }
 
-#ncNewIcon
+#ncNewIconContainer
 {
-	height: 17px;
-	width: 17px;
-	padding: 0px;
-	margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
 }
 
-#ncNewIconText
+.ncNewIcon
+{
+	height: 13px;
+	margin-bottom: -2px;
+}
+
+.ncNewIconText
 {
 	margin-left: 2px;
 	float: right;
